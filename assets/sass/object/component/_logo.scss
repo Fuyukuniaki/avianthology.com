@@ -1,0 +1,17 @@
+@use "../../foundation/" as *;
+
+.c-logo {
+	background-image:url(../images/logo.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: $textColor_0color;
+	display: inline-block;
+	@include media(iPhone){
+		height: calc(( 36.23 * 100 / 750 ) * 1svw);
+		width: calc(( 82.71 * 100 / 750 ) * 1svw);
+	}
+	@include media(PC){
+		height: 36.23px;
+		width: 82.71px;
+	}
+}

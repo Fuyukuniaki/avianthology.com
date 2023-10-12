@@ -2,7 +2,7 @@ $textColor_Black  : #2F2D2C;
 $textColor_White  : #F2F2F2;
 $textColor_PGray  : #EAEAEA;
 $textColor_Brown  : #3C2A10;
-$textColor_Blue   : #4A6C9B;
+$textColor_0color : transparent;
 
 $textFont_English : '源ノ角ゴシック JP';
 $textFont_Japanese: '源ノ角ゴシック JP';
@@ -18,20 +18,7 @@ $linearGradientE  : #DED8D3;
 
 $bgColor_Black    : #0B0B0B;
 
-$imgOpacity_Map   : 0.6;
-
-$navMenuWidth_PC  : 19vw;
-$headerWidth_PC   : 100vw - $navMenuWidth_PC;
-
-$mainArchiveW_PC  : 70.5vw;
-$mainArchiveW_iPad: 91vw;
-
-$headerHeight_PC  : 11.3vw;
-$searchHeight_PC  : 2.4vw;
-$footerHeight_PC  : 7.8125vw;
-
-$headerH_iPhone   : 58.7vw;
-$navMenuW_iPhone  : 87.5vw;
+$widthMainContent : 750px;
 
 $breakpoints      : (
             iPhone:  "only screen and (max-width:750px)",

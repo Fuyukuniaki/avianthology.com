@@ -1,0 +1,19 @@
+@use "../foundation/" as *;
+
+.l-header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	@include media(iPhone){
+		padding-top: calc(( 32 * 100 / 750 ) * 1svw);
+		padding-right: 0;
+		padding-bottom: calc(( 30 * 100 / 750 ) * 1svw);
+		padding-left: calc(( 32 * 100 / 750 ) * 1svw);
+		width: 100svw;
+	}
+	@include media(PC){
+		padding: 32px 0 30px 32px; 
+		width: $widthMainContent;
+	}
+}

@@ -1,0 +1,48 @@
+@use "../../foundation/" as *;
+
+.c-icon {
+	&__hamburger {
+		display: block;
+		position: relative;
+		background-color: $textColor_White;
+		color: $textColor_0color;
+		@include media(iPhone){
+			height: calc(( 4 * 100 / 750 )* 1svw);
+			width: calc(( 45 * 100 / 750 )* 1svw);
+			&::before,
+			&::after {
+				position: absolute;
+				content: "";
+				display: block;
+				background-color: $textColor_White;
+				height: calc(( 4 * 100 / 750 )* 1svw);
+				width: calc(( 45 * 100 / 750 )* 1svw);	
+			}
+			&::before {
+				top: calc(( 12 * 100 / 750 )* -1svw);
+			}
+			&::after {
+				top: calc(( 12 * 100 / 750 )* 1svw);;
+			}
+		}
+		@include media(PC){
+			height: 4px;
+			width: 45px;
+			&::before,
+			&::after {
+				position: absolute;
+				content: "";
+				display: block;
+				background-color: $textColor_White;
+				height: 4px;
+				width: 45px;	
+			}
+			&::before {
+				top: -12px;
+			}
+			&::after {
+				top: 12px;
+			}
+		}
+	}
+}
