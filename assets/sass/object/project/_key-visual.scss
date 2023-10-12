@@ -1,0 +1,19 @@
+@use "../../foundation/" as *;
+
+.p-key-visual {
+	display: block;
+	background-image: url(../images/key-visual.jpg);
+	background-color: #0B0B0B;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	@include media(iPhone){
+		width: calc((635 * 100 / 750)* 1svw);
+		min-height: calc((1000 * 100 / 750)* 1svw);
+		background-size: 75% auto;
+	}
+	@include media(PC){
+		width: 635px;
+		height: max-content;
+		background-size: 75% auto;
+	}
+}

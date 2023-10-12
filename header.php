@@ -11,7 +11,12 @@
 <body <?php body_class( 'l-body js-body' ); ?>>
 	<header id="top" class="l-header js-header">
 		<a class="p-header">
-			<h1 href="/#top" class="c-logo"></h1>
+			<h1 href="/#top" class="c-logo">閃火</h1>
 		</a>
-		<button class="p-hamburger-menu"></button>
+		<dl class="p-hamburger-menu">
+			<dt class="c-icon__hamburger">≡</dt>
+			<dd class="p-hidden-menu">
+				<!-- menu -->
+			</dd>
+		</dl>
 	</header>

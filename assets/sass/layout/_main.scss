@@ -1,0 +1,26 @@
+@use "../foundation/" as *;
+
+.l-top-part {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background: url(../images/background-part1.png);
+	background-position: top left;
+	background-size: cover;
+	color: $textColor_White;
+	@include media(iPhone){
+		width: 100svw;
+	}
+	@include media(PC){
+			width: 100%;
+	}
+}
+.l-main {
+	@include media(iPhone){
+			width: 100svw;
+	}
+	@include media(PC){
+			width: 750px;
+	}
+}

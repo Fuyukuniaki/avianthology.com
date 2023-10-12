@@ -7,7 +7,7 @@
 	  //ブロックのプロパティ（動作を定義するオブジェクト）
 	  {
 		title: 'AVI News',
-		icon: 'dashicons-editor-ol',
+		icon: 'editor-ol',
 		category: 'layout',
 		//エディター内でのブロックの構造を記述する関数
 		edit: function() {

@@ -1,0 +1,10 @@
+@use "../foundation/" as *;
+
+.l-body {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+	color: $textColor_White;
+	background-color: $bgColor_Black;
+}

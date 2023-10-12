@@ -1,56 +1,62 @@
-body {
-	font-family: '源ノ角ゴシック JP';
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	align-items: center;
-	color: #F2F2F2;
-}
-@media only screen and ( max-width : 750px) {
-	.l-main{
-		width: 100svw;
-	}
-}
-@media only screen and ( min-width : 751px) {
-	.l-main{
-		width: 750px;
-	}
+.l-body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  color: #F2F2F2;
+  background-color: #0B0B0B;
 }
 
 .l-top-part {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-end;
-	align-items: flex-end;
-	background: url(../images/background-part1.png);
-	background-position: top left;
-	background-size: cover;
-}
-.p-key-visual {
-	display: block;
-	background-image: url(../images/key-visual.jpg);
-	background-color: #0B0B0B;
-	background-repeat: no-repeat;
-	background-position: bottom right;
-}
-@media only screen and ( max-width : 750px) {
-	.l-top-part {
-		width: 100svw;
-	}
-	.p-key-visual {
-		width: calc((635 * 100 / 750)* 1svw);
-		height: max-content;
-		background-size: 75% auto;
-	}
-}
-@media only screen and ( min-width : 751px) {
-	.l-top-part {
-		width: 100%;
-	}
-	.p-key-visual {
-		width: 635px;
-		height: max-content;
-		background-size: 75% auto;
-	}
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: url(../images/background-part1.png);
+  background-position: top left;
+  background-size: cover;
+  color: #F2F2F2;
 }
 
+@media only screen and (max-width: 750px) {
+  .l-top-part {
+    width: 100svw;
+  }
+}
+@media only screen and (min-width: 751px) {
+  .l-top-part {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .l-main {
+    width: 100svw;
+  }
+}
+@media only screen and (min-width: 751px) {
+  .l-main {
+    width: 750px;
+  }
+}
+.p-key-visual {
+  display: block;
+  background-image: url(../images/key-visual.jpg);
+  background-color: #0B0B0B;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+@media only screen and (max-width: 750px) {
+  .p-key-visual {
+    width: 84.6666666667svw;
+    min-height: 133.3333333333svw;
+    background-size: 75% auto;
+  }
+}
+@media only screen and (min-width: 751px) {
+  .p-key-visual {
+    width: 635px;
+    height: max-content;
+    background-size: 75% auto;
+  }
+}
