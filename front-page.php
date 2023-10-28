@@ -2,30 +2,31 @@
 <main class="l-main">
 	<section class="l-top-part">
 		<article class="p-key-visual">
-			<p class="c-keyvisual__title">
-				PSYCHO-PASS : PROVIDENCE<br>
-				煇・ワシリー・イグナトフ中心<br>
-				非公式アンソロジー
-			</p>
 			<h2 class="c-keyvisual__logo">
-				閃火<!--<img class="c-keyvisual__logo--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">-->
+				閃火
 			</h2>
+			<p class="c-keyvisual__title">
+				PSYCHO-PASS<br>
+				煇・ワシリー・イグナトフ中心<br>
+				非公式全年齢アンソロジー
+			</p>
 		</article>
 		<p class="c-keyvisual__data">
 			2024年3月17日<br>
 			HARU COMIC CITY 32
 		</p>
 		<p class="c-keyvisual__text">
-			当サイトは2024年3月17日<br>
-			HARU COMIC CITY 32にて発行予定の<br>
-			煇・ワシリー・イグナトフ中心<br>
-			非公式全年齢アンソロジーの<br>
-			告知・情報サイトです。<br>
-			<br>
-			非公式ファン企画であり、<br>
-			版権元・全ての実在・非実在の団体とは<br>
-			関係がありません。
+		当サイトは2024年3月17日<br>
+		HARU COMIC CITY 32にて発行予定の<br>
+		煇・ワシリー・イグナトフ中心<br>
+		非公式全年齢アンソロジー『閃火』の<br>
+		告知・情報サイトです。<br>
+		<br>
+		非公式ファン企画であり、<br>
+		版権元・全ての実在・非実在の団体とは<br>
+		関係がありません。
 		</p>
+		</section>
 		<article class="p-news">
 			<h2 class="c-news__title">news</h2>
 			<dl class="p-news-contents__wrap">
@@ -35,7 +36,6 @@
 				<dd class="c-news-contents__date">2023/XX/XX</dd>
 			</dl>
 		</article>
-	</section>
 	<section class="l-about-part">
 		<figure class="c-bookcover__image--wrap">
 			<img class="c-bookcover__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="書影">

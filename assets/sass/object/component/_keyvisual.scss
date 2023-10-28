@@ -1,0 +1,96 @@
+@use "../../foundation/" as *;
+
+.c-keyvisual {
+	&__logo {
+		background-image:url(../images/logo.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: $textColor_0color;
+		display: inline-block;
+		@include media(iPhone){
+			width: calc(( 320.51 * 100 / 750 ) * 1svw);
+			height: calc(( 152.66 * 100 / 750 ) * 1svw);
+			margin-bottom: calc(( 38 * 100 / 750 ) * 1svw);
+		}
+		@include media(PC){
+			width: 320.51px;
+			height: 152.66px;
+			margin-bottom: 38px;
+		}
+	}
+	&__title {
+		@include media(iPhone){
+			font-size: calc(( 32 * 100 / 750 ) * 1svw);
+			line-height: calc(( 43 * 100 / 750 ) * 1svw);
+		}
+		@include media(PC){
+			font-size: 32px;
+			line-height: 43px;
+		}
+	}
+	&__data {
+		@include media(iPhone){
+			font-size: calc(( 52 * 100 / 750 ) * 1svw);
+			line-height: calc(( 64 * 100 / 750 ) * 1svw);
+			letter-spacing: calc(( 1.6 * 100 / 750 ) * 1svw);
+			margin: calc(( 90 * 100 / 750 ) * -1svw) calc(( 38 * 100 / 750 ) * 1svw) auto auto;
+		}
+		@include media(PC){
+			font-size: 52px;
+			line-height: 64px;
+			letter-spacing: 1.6;
+			margin: -90px 38px auto auto;
+		}
+		&::before {
+			content: "";
+			display: block;
+			animation: scroll 700ms ease-in infinite;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-image: url(../images/icon-scroll-00.svg);
+			@include media(iPhone){
+				width: calc(( 18 * 100 / 750 ) * 1svw);
+				height: calc(( 163 * 100 / 750 ) * 1svw);
+				margin: calc(( 163 * 100 / 750 ) * -1svw) 100% auto auto;
+			}
+			@include media(PC){
+				width: 18px;
+				height: 163px;
+				margin: -163px 100% auto auto;
+			}
+		}
+		&::after {
+			content: "";
+			display: block;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-image: url(../images/caption-keyvisual.svg);
+			@include media(iPhone){
+				width: calc(( 717.46 * 100 / 750 ) * 1svw);
+				height: calc(( 31.98 * 100 / 750 ) * 1svw);
+				margin: calc(( 30 * 100 / 750 ) * 1svw) calc(( 38 * 100 / 750 ) * -1svw) auto calc(( 116 * 100 / 750 ) * -1svw);
+			}
+			@include media(PC){
+				width: 717.46px;
+				height: 31.98px;
+				margin: 30px -38px auto -116px;
+			}
+		}
+
+	}
+	&__text {
+		display: block;
+		width: 100%;
+		text-align: center;
+		@include media(iPhone){
+			margin: calc(( 200 * 100 / 750 ) * 1svw) auto calc(( 187 * 100 / 750 ) * 1svw) auto;
+			font-size: calc(( 32 * 100 / 750 ) * 1svw);
+			line-height: calc(( 65 * 100 / 750 ) * 1svw);
+		}
+		@include media(PC){
+			margin: 200px auto 187px auto;
+			font-size: 32px;
+			line-height: 65px;
+		}
+	}
+}

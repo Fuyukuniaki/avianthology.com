@@ -1,6 +1,6 @@
 @use "../foundation/" as *;
-
 .l-header {
+	position: relative;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -15,5 +15,11 @@
 	@include media(PC){
 		padding: 32px 0 30px 32px; 
 		width: $widthMainContent;
+	}
+	&:has(:not(.js-open)) {
+		overflow: hidden;
+	}
+	&:has(.js-open) {
+		overflow: visible;
 	}
 }

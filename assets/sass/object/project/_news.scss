@@ -1,0 +1,29 @@
+@use "../../foundation/" as *;
+
+.p-news {
+	display: block;
+	background: #0B0B0B;
+	width: 100%;
+	@include media(iPhone){
+		margin: auto calc((30 * 100 / 750)* 1svw);
+	}
+	@include media(PC){
+		margin: auto 30px;
+	}
+	&-contents {
+		&__wrap {
+			background: $bgColor_White;
+			@include media(iPhone){
+				border-radius: calc((9 * 100 / 750)* 1svw);
+				margin: auto calc((30 * 100 / 750)* 1svw);
+				padding: calc((40 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				border-radius: 9px;
+				margin: auto 30px;
+				padding: 40px;
+			}
+		
+		}
+	}
+}

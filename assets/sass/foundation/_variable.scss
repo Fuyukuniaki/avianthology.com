@@ -4,12 +4,11 @@ $textColor_PGray  : #EAEAEA;
 $textColor_Brown  : #3C2A10;
 $textColor_0color : transparent;
 
-$textFont_English : '源ノ角ゴシック JP';
-$textFont_Japanese: '源ノ角ゴシック JP';
+$textFont_English : "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+$textFont_Japanese: "fot-tsukuaoldmin-pr6n", a-otf-ryumin-pr6n, sans-serif;
 $textFont_Icon    : 'Font Awesome 6 Free';
-$textFont_WeightRegular : 400;
+$textFont_WeightRegular : 300;
 $textFont_WeightBold    : 700;
-
 
 $iconColor_Gray   : #808080;
 
@@ -17,6 +16,7 @@ $linearGradientS  : #F2EDE9;
 $linearGradientE  : #DED8D3;
 
 $bgColor_Black    : #0B0B0B;
+$bgColor_White    : #F4F4F4;
 
 $widthMainContent : 750px;
 
@@ -24,3 +24,44 @@ $breakpoints      : (
             iPhone:  "only screen and (max-width:750px)",
             PC    :  "only screen and (min-width:751px)",
 );
+
+@keyframes shine {
+	100% {
+		left: 175%;
+		opacity: 0;
+	}
+}
+@keyframes frame-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		right: 0;
+		opacity: 1;
+	}
+}
+@keyframes frame-out {
+	99% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes scroll {
+	0% {
+		background-image: url(../images/icon-scroll-00.svg);
+	}
+	30% {
+		background-image: url(../images/icon-scroll-01.svg);
+	}
+	60% {
+		background-image: url(../images/icon-scroll-02.svg);
+	}
+	90% {
+		background-image: url(../images/icon-scroll-03.svg);
+	}
+	100% {
+		background-image: url(../images/icon-scroll-03.svg);
+	}
+}

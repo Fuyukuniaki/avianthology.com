@@ -6,9 +6,11 @@
 		position: relative;
 		background-color: $textColor_White;
 		color: $textColor_0color;
+		
 		@include media(iPhone){
 			height: calc(( 4 * 100 / 750 )* 1svw);
 			width: calc(( 45 * 100 / 750 )* 1svw);
+			margin: calc(( 40 * 100 / 750 )* 1svw) calc(( 38 * 100 / 750 )* 1svw) auto calc(( 83 * 100 / 750 )* -1svw);
 			&::before,
 			&::after {
 				position: absolute;
@@ -28,6 +30,7 @@
 		@include media(PC){
 			height: 4px;
 			width: 45px;
+			margin: 40px 38px auto -83px;
 			&::before,
 			&::after {
 				position: absolute;
@@ -42,6 +45,58 @@
 			}
 			&::after {
 				top: 12px;
+			}
+		}
+	}
+}
+.js-open .c-icon {
+	&__hamburger {
+		display: block;
+		position: relative;
+		background-color: $textColor_0color;
+		color: $textColor_0color;
+		@include media(iPhone){
+			height: calc(( 80 * 100 / 750 )* 1svw);
+			width: calc(( 45 * 100 / 750 )* 1svw);
+			margin: calc(( 40 * 100 / 750 )* 1svw) calc(( 38 * 100 / 750 )* 1svw) calc(( 38 * 100 / 750 )* -1svw) auto;
+			&::before,
+			&::after {
+				position: absolute;
+				content: "";
+				display: block;
+				background-color: $bgColor_Black;
+				height: calc(( 4 * 100 / 750 )* 1svw);
+				width: calc(( 45 * 100 / 750 )* 1svw);	
+			}
+			&::before {
+				top: calc(( 12 * 100 / 750 )* -1svw);
+				transform: rotate(45deg);
+			}
+			&::after {
+				top: calc(( 12 * 100 / 750 )* -1svw);
+				transform: rotate(-45deg);
+			}
+		}
+		@include media(PC){
+			height: 80px;
+			width: 45px;
+			margin: 40px 38px -38px auto;
+			&::before,
+			&::after {
+				position: absolute;
+				content: "";
+				display: block;
+				background-color: $bgColor_Black;
+				height: 4px;
+				width: 45px;	
+			}
+			&::before {
+				top: -12px;
+				transform: rotate(45deg);
+			}
+			&::after {
+				top: -12px;
+				transform: rotate(-45deg);
 			}
 		}
 	}

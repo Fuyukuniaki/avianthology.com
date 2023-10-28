@@ -5,22 +5,24 @@
 	flex-flow: column wrap;
 	justify-content: flex-end;
 	align-items: flex-end;
-	background: url(../images/background-part1.png);
+	background: url(../images/background-part1.svg);
 	background-position: top left;
-	background-size: cover;
+	background-repeat: no-repeat;
 	color: $textColor_White;
 	@include media(iPhone){
+		background-size: 100%;
 		width: 100svw;
 	}
 	@include media(PC){
-			width: 100%;
+		background-size: auto;
+		width: 100%;
 	}
 }
 .l-main {
 	@include media(iPhone){
-			width: 100svw;
+		width: 100svw;
 	}
 	@include media(PC){
-			width: 750px;
+		width: 750px;
 	}
 }

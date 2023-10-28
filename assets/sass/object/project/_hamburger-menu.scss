@@ -1,0 +1,32 @@
+@use "../../foundation/" as *;
+
+.p-hamburger-menu {
+	position: absolute;
+	top: 0;
+	display: block;
+	height: auto;
+	background-color: rgba(255,255,255,0.9);
+	margin: 0 0 0 auto;
+	overflow: visible;
+	@include media(iPhone){
+		right: calc(( 610 * 100 / 750 )* -1svw);
+		width: calc(( 610 * 100 / 750 )* 1svw);
+	}
+	@include media(PC){
+		right: -610px;
+		width: 610px;
+	}
+	
+	&.js-open {
+		overflow: hidden;
+		right: 0;
+		animation: frame-in 700ms;
+	}
+	&:not(.js-open) {
+		animation: frame-out 700ms;
+	}
+	&__button {
+		width: 100%;
+		height: auto;
+	}
+}

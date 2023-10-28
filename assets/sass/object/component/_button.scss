@@ -1,0 +1,41 @@
+@use "../../foundation/" as *;
+
+.c-button {
+	&__close {
+		display: block;
+		position: relative;
+		color: $textColor_0color;
+		background-image: url(../images/button-close.png);
+		background-size: cover;
+		@include media(iPhone){
+			height: calc(( 36 * 100 / 750 )* 1svw);
+			width: calc(( 176 * 100 / 750 )* 1svw);
+			margin: calc(( 120 * 100 / 750 )* 1svw) auto calc(( 120 * 100 / 750 )* 1svw) calc(( 60 * 100 / 750 )* 1svw);
+		}
+		@include media(PC){
+			height: 36px;
+			width: 176px;
+			margin: 120px auto 120px 60px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -175%;
+			background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,.3) 100%);
+			opacity: 1;
+			transform: skewX(25deg);
+			@include media(iPhone){
+				height: calc(( 36 * 100 / 750 )* 1svw);
+				width: calc(( 176 * 100 / 750 )* 1svw);
+			}
+			@include media(PC){
+				height: 36px;
+				width: 176px;
+			}
+		}
+		&:hover::before {
+			animation: shine 700ms;
+		}
+	}
+}

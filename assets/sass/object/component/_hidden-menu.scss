@@ -1,0 +1,60 @@
+@use "../../foundation/" as *;
+
+.c-hidden-menu {
+	&__lists{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: flex-start;
+		font-family: $textFont_English;
+		&--list {
+			color: $bgColor_Black;
+			@include media(iPhone){
+				min-height: calc(( 80 * 100 / 750 )* 1svw);
+				line-height: calc(( 80 * 100 / 750 )* 1svw);
+				text-indent: calc(( 60 * 100 / 750 )* 1svw);
+			}
+			@include media(PC){
+				min-height: 80px;
+				line-height: 80px;
+				text-indent: 60px;
+			}
+		}
+	}
+	&__link {
+		display: block;
+		color: transparent;
+		position: relative;
+		background-repeat: no-repeat;
+		@include media(iPhone){
+			background-size: contain;
+			height: calc(( 60 * 100 / 750 )* 1svw);
+			min-width: calc(( 290 * 100 / 750 )* 1svw);
+			width: calc(( 610 * 100 / 750 )* 1svw);
+			background-position: calc(( 60 * 100 / 750 )* 1svw) center;
+			margin: calc(( 20 * 100 / 750 )* 1svw) 0;
+		}
+		@include media(PC){
+			background-size: inherit;
+			height: 60px;
+			min-width: 290px;
+			width: 610px;
+			background-position: 60px center;
+			margin: 20px 0;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -175%;
+			background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,.3) 100%);
+			opacity: 1;
+			transform: skewX(25deg);
+			height: 100%;
+			width: 25%;
+		}
+		&:hover::before, &.js-hover::before {
+			animation: shine 700ms;
+		}
+	}
+}
