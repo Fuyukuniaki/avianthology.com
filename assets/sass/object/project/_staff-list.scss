@@ -4,8 +4,13 @@
 	display: block;
 	width: 100%;
 	margin: auto;
-	background: $bgColor_White;
 	&__lists {
 		color: $bgColor_Black;
+		@include media(iPhone){
+			padding: calc((250 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc((175 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			padding: 250px 30px 175px 30px;
+		}
 	}
 }

@@ -1,0 +1,80 @@
+@use "../../foundation/" as *;
+
+.c-flyer {
+	&__lists{
+		&--title {
+			display: inline-block;
+			background: $bgColor_Black;
+			color: $bgColor_White;
+			@include media(iPhone){
+				line-height: calc((65 * 100 / 750)* 1svw);
+				height: calc((65 * 100 / 750)* 1svw);
+				font-size: calc((32 * 100 / 750)* 1svw);
+				padding: 0 calc((16.5 * 100 / 750)* 1svw);
+				margin-bottom: calc((35 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				line-height: 65px;
+				height: 65px;
+				font-size: 32px;
+				padding: 0 16.5px;
+				margin-bottom: 35px;
+			}
+		}
+		&--list {
+			display: block;
+			font-family: $textFont_English;
+			@include media(iPhone){
+				line-height: calc((54 * 100 / 750)* 1svw);
+				min-height: calc((54 * 100 / 750)* 1svw);
+				font-size: calc((28 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				line-height: 54px;
+				min-height: 54px;
+				font-size: 28px;
+			}
+		}
+		&--title + &--list {
+			@include media(iPhone){
+				padding-bottom: calc((50 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				padding-bottom: 50px;
+			}
+		}
+	}
+	&__image {
+		&--wrap {
+			display: block;
+			width: 100%;
+			margin: auto;
+			color: $bgColor_Black;
+			background: url('../images/background-flyer.svg');
+			background-repeat: no-repeat;
+			@include media(iPhone){
+				background-size: 100svw;
+				padding: calc((150 * 100 / 750)* 1svw) calc((130 * 100 / 750)* 1svw) calc((100 * 100 / 750)* 1svw) 0;
+			}
+			@include media(PC){
+				background-size: 750px; 
+				padding: 150px 130px 100px 0;
+			}
+		}
+	}
+	&__explain {
+		display: block;
+		font-family: $textFont_English;
+		color: $bgColor_Black;
+		@include media(iPhone){
+			font-size: calc((28 * 100 / 750)* 1svw);
+			line-height: calc((50 * 100 / 750)* 1svw);
+			padding: calc((150 * 100 / 750)* 1svw) calc((130 * 100 / 750)* 1svw) calc((100 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			font-size: 28px; 
+			line-height: 50px;
+			padding: 150px 130px 100px 30px;
+		}
+	}
+}

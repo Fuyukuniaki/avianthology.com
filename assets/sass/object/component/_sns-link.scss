@@ -1,0 +1,36 @@
+@use "../../foundation/" as *;
+
+.c-sns-link {
+	&--twitter {
+		background-image: url(../images/logo-x-twitter.svg);
+		background-color: #000000;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 60%;
+		color: $textColor_0color;
+		border-radius: 50%;
+		@include media(iPhone){
+			width: calc((83 * 100 / 750)* 1svw);
+			height: calc((83 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			width: 83px;
+			height: 83px;
+		}
+	}
+	&--pixiv {
+		background: url(../images/logo-pixiv.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: $textColor_0color;
+		@include media(iPhone){
+			width: calc((83 * 100 / 750)* 1svw);
+			height: calc((83 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			width: 83px;
+			height: 83px;
+		}
+	}
+}
