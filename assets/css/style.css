@@ -399,6 +399,26 @@ meter {
 .c-button__close:hover::before {
   animation: shine 700ms;
 }
+.c-button__flyer {
+  display: block;
+  color: transparent;
+  background-image: url(../images/);
+  background-size: cover;
+}
+@media only screen and (max-width:750px) {
+  .c-button__flyer {
+    height: 4.8svw;
+    width: 23.4666666667svw;
+    margin: 16svw auto 16svw 8svw;
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-button__flyer {
+    height: 36px;
+    width: 176px;
+    margin: 120px auto 120px 60px;
+  }
+}
 
 .c-keyvisual__logo {
   background-image: url(../images/logo.svg);
@@ -1300,14 +1320,14 @@ meter {
   .c-flyer__explain {
     font-size: 3.7333333333svw;
     line-height: 6.6666666667svw;
-    padding: 20svw 17.3333333333svw 13.3333333333svw 4svw;
+    padding: 0 17.3333333333svw 13.3333333333svw 4svw;
   }
 }
 @media only screen and (min-width:751px) {
   .c-flyer__explain {
     font-size: 28px;
     line-height: 50px;
-    padding: 150px 130px 100px 30px;
+    padding: 0 130px 100px 30px;
   }
 }
 

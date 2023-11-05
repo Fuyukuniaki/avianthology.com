@@ -450,7 +450,78 @@
 		ご連絡をいただけますと幸いです。<br>
 		ご検討のほど何卒よろしくお願いいたします。
 		</p>
-		<button class="c-button">ペーパー配布ご協力フォーム</button>
+		<button class="c-button__flyer">ペーパー配布ご協力フォーム</button>
+	</section>
+	<section class="l-project">
+		<dl class="p-project">
+			<dt class="c-project__title">project</dt>
+			<dd class="c-project__headline">
+				運営公式X(Twitter)アカウントにて、<br>
+				どなたでもご参加頂けるハッシュタグ企画<br>
+				「#こんな煇イグナトフを見てみたい」<br>
+				を実施中！<br>
+				<p class="c-text__unbold">投稿企画にご参加いただいた上、頒布イベント当日スペースに来てくださった方には<br>
+				先着順でノベルティをプレゼント！<br>
+				参加方法は下記をご覧ください。</p>
+			</dd>
+			<dd class="c-project__caption">
+				※投稿数に関わらずお一人様一点のみのお渡しとなります。<br>
+				数に限りがございます。<br>
+				また、イベントでの頒布が諸般の事情にて困難になった際は他のイベントでの配布に変更、もしくは配布を中止する可能性がございます。あらかじめご了承ください。
+			</dd>
+		</dl>
+		<dl class="p-project__detail">
+			<dt class="c-project__detail--title">参加方法・注意事項はこちらをチェック！</dt>
+			<dd class="c-project__detail--text">
+				<dl class="c-project-detail__text--wrap">
+					<dt class="c-project-detail__text--title">参加方法</dt>
+					<dd class="c-project-detail__text--text">
+						<ol class="c-project-detail-text__wrap c-lists__number">
+							<li class="c-project-detail-text__title">公式アカウントの投稿をチェック！
+								<p class="c-project-detail-text__text">不定期的に公式アカウント(@AVIantholo2024)から発表されるお題と投稿期間をチェック！</p>
+							</li>
+							<li class="c-project-detail-text__title">投稿期間内にハッシュタグ<br>「#こんな煇イグナトフを見てみたい」<br>をつけてX(Twitter)に投稿！
+								<p class="c-project-detail-text__text">
+									投稿期間内にお題に沿った文章、イラスト、写真などにハッシュタグ「#こんな煇イグナトフを見てみたい」を付けてX(Twitter)にてご投稿ください。<br>
+									「〇〇な煇が見てみたい……」<br>
+									「煇には〇〇が似合いそう！」<br>
+									といった妄想ポスト（ツイート）も大歓迎！<br>
+									是非お気軽にご参加ください。<br>
+									素敵なご投稿はRPにてご紹介させて頂きます。
+								</p>
+							</li>
+							<li class="c-project-detail-text__title">アンソロジー頒布イベント当日<br>頒布スペースにてノベルティをゲット！
+								<p class="c-project-detail-text__text">
+									頒布イベント当日、頒布スペースにて<br>
+									投稿したポスト画面をご提示ください。<br>
+									ノベルティをお渡しいたします！
+								</p>
+							</li>
+						</ol>
+						<p class="c-text__caption">※投稿数に関わらずお一人様一点のみのお渡しとなります。<br>数に限りがございます。<br>
+						<br>
+						また、イベントでの頒布が諸般の事情にて困難になった際は他のイベントでの配布に変更、もしくは配布を中止する可能性がございます。あらかじめご了承ください。</p>
+					</dd>
+					<dt class="c-project-detail__text--title">注意事項</dt>
+					<dd class="c-project-detail__text--text">
+						<ul class="c-project-detail-text__wrap c-lists__bull">
+							<li class="c-project-detail-text__title">公序良俗に反する内容を含むご投稿や、<br>特定のキャラクター・作品・人物・団体等を<br>批判する意図でのご投稿はご遠慮ください。
+								<p class="c-project-detail-text__text">なるべく多くの方に楽しんでいただきたいため、<br>R-18・R-18Gに該当するご投稿は非推奨ですが、<br>どうしても投稿したい場合は必ずセンシティブ設定や<br>ふせったーなどをご利用の上ご投稿ください。</p>
+							</li>
+							<li class="c-project-detail-text__title">運営アカウントがRPする可能性がございます。<br>ご了承の上ご参加ください。
+								<p class="c-project-detail-text__text">ご投稿は運営アカウントがRP（RT）にて<br>ご紹介する可能性がございます。<br>ご了承いただけますと幸いです。<br>選定は優劣を判断するものではございません。<br>また、選定の基準につきましては<br>お問い合わせいただきましてもお答え致しかねます。<br>予めご了承ください。</p>
+							</li>
+							<li class="c-project-detail-text__title">ネタ被りは気にしすぎず、<br>同じ趣味である喜びを分かち合いましょう
+								<p class="c-project-detail-text__text">情報量が少ないキャラクターのため、<br>投稿するネタが被る可能性は十分に考えられます。<br>もし誰かとネタが被っても落ち込まず/怒らず<br>ポジティブに楽しんでいただければ幸いです。</p>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</dd>
+			<dd class="c-project__detail--posts">
+				<a class="twitter-timeline" href="https://twitter.com/hashtag/%E3%81%93%E3%82%93%E3%81%AA%E7%85%87%E3%82%A4%E3%82%B0%E3%83%8A%E3%83%88%E3%83%95%E3%81%8C%E8%A6%8B%E3%81%A6%E3%81%BF%E3%81%9F%E3%81%84?src=hashtag_click&f=live">Tweets by AVIantholo2024</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</dd>
+		</dl>
 	</section>
 	<section class="l-concept-part">
 		<figure class="c-concept__image--wrap">

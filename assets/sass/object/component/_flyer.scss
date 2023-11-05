@@ -69,12 +69,12 @@
 		@include media(iPhone){
 			font-size: calc((28 * 100 / 750)* 1svw);
 			line-height: calc((50 * 100 / 750)* 1svw);
-			padding: calc((150 * 100 / 750)* 1svw) calc((130 * 100 / 750)* 1svw) calc((100 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
+			padding: 0 calc((130 * 100 / 750)* 1svw) calc((100 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
 		}
 		@include media(PC){
 			font-size: 28px; 
 			line-height: 50px;
-			padding: 150px 130px 100px 30px;
+			padding: 0 130px 100px 30px;
 		}
 	}
 }

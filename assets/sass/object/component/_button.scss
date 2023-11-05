@@ -38,4 +38,20 @@
 			animation: shine 700ms;
 		}
 	}
+	&__flyer {
+		display: block;
+		color: $textColor_0color;
+		background-image: url(../images/);
+		background-size: cover;
+		@include media(iPhone){
+			height: calc(( 36 * 100 / 750 )* 1svw);
+			width: calc(( 176 * 100 / 750 )* 1svw);
+			margin: calc(( 120 * 100 / 750 )* 1svw) auto calc(( 120 * 100 / 750 )* 1svw) calc(( 60 * 100 / 750 )* 1svw);
+		}
+		@include media(PC){
+			height: 36px;
+			width: 176px;
+			margin: 120px auto 120px 60px;
+		}
+	}
 }
