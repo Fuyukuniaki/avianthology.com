@@ -18,6 +18,24 @@
 		width: 100%;
 	}
 }
+.l-about-part {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: flex-start;
+	background: url(../images/background-part2-line.svg);
+	background-position: top right;
+	background-repeat: repeat-y;
+	color: $textColor_White;
+	@include media(iPhone){
+		background-size: 100%;
+		width: 100svw;
+	}
+	@include media(PC){
+		background-size: auto;
+		width: 100%;
+	}
+}
 .l-main {
 	@include media(iPhone){
 		width: 100svw;

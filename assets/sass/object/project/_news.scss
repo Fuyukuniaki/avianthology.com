@@ -5,25 +5,27 @@
 	background: #0B0B0B;
 	width: 100%;
 	@include media(iPhone){
-		margin: auto calc((30 * 100 / 750)* 1svw);
+		margin: auto auto calc((140 * 100 / 750)* 1svw) auto;
 	}
 	@include media(PC){
-		margin: auto 30px;
+		margin: auto auto 140px auto;
 	}
 	&-contents {
 		&__wrap {
 			background: $bgColor_White;
+			overflow: scroll;
 			@include media(iPhone){
+				height: calc((400 * 100 / 750)* 1svw);
 				border-radius: calc((9 * 100 / 750)* 1svw);
 				margin: auto calc((30 * 100 / 750)* 1svw);
-				padding: calc((40 * 100 / 750)* 1svw);
+				padding: 0 calc((40 * 100 / 750)* 1svw);
 			}
 			@include media(PC){
+				height: 400px;
 				border-radius: 9px;
 				margin: auto 30px;
-				padding: 40px;
+				padding: 0 40px;
 			}
-		
 		}
 	}
 }

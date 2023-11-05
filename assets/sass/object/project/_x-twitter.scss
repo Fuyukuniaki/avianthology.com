@@ -1,0 +1,14 @@
+@use "../../foundation/" as *;
+
+.p-x-twitter {
+	display: block;
+	background: $bgColor_Black;
+	width: 100%;
+	margin: auto;
+	@include media(iPhone){
+		padding-bottom: calc((150 * 100 / 750)* 1svw);
+	}
+	@include media(PC){
+		padding-bottom: 150px;
+	}
+}

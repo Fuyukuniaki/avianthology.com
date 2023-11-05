@@ -1,0 +1,18 @@
+@use "../../foundation/" as *;
+
+.p-author-list {
+	display: block;
+	width: 100%;
+	font-family: "fot-tsukuardgothic-std", sans-serif;
+	font-weight: 700;
+	@include media(iPhone){
+		margin-bottom: calc((150 * 100 / 750)* 1svw);
+	}
+	@include media(PC){
+		margin-bottom: 150px;
+	}
+	background: $bgColor_White;
+	&__lists {
+		color: $bgColor_Black;
+	}
+}

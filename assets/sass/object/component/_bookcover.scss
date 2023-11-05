@@ -1,0 +1,30 @@
+@use "../../foundation/" as *;
+
+.c-bookcover {
+	&__image {
+		@include media(iPhone){
+			width: calc(( 620 * 100 / 750 ) * 1svw);
+		}
+		@include media(PC){
+			width: 620px;
+		}
+		&--wrap {
+			background-image:url(../images/background-part2.svg);
+			background-size: 100%;
+			background-position: right top;
+			background-repeat: no-repeat;
+			color: $textColor_0color;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-end;
+			width: 100%;
+			height: auto;
+			@include media(iPhone){
+				padding-top: calc(( 150 * 100 / 750 ) * 1svw);
+			}
+			@include media(PC){
+				padding-top: 150px;
+			}
+		}
+	}
+}

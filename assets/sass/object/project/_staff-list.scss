@@ -1,0 +1,11 @@
+@use "../../foundation/" as *;
+
+.p-staff-list {
+	display: block;
+	width: 100%;
+	margin: auto;
+	background: $bgColor_White;
+	&__lists {
+		color: $bgColor_Black;
+	}
+}

@@ -8,12 +8,13 @@
 		background-repeat: no-repeat;
 		color: $textColor_0color;
 		display: inline-block;
-		width: 100%;
 		@include media(iPhone){
+			width: calc(100% + (( 60 * 100 / 750 ) * -1svw));
 			height: calc(( 34 * 100 / 750 ) * 1svw);
 			margin: 0 calc(( 30 * 100 / 750 ) * 1svw) calc(( 60 * 100 / 750 ) * 1svw) calc(( 30 * 100 / 750 ) * 1svw);
 		}
 		@include media(PC){
+			width: calc( 100% - 60px );
 			height: 34px;
 			margin: 0 30px 60px 30px;
 		}
@@ -81,6 +82,37 @@
 			margin: 200px auto 187px auto;
 			font-size: 32px;
 			line-height: 65px;
+		}
+	}
+	&-contents {
+		&__date {
+			color: $bgColor_Black;
+			@include media(iPhone){
+				font-size: calc((32 * 100 / 750)* 1svw);
+				line-height: calc((50 * 100 / 750)* 1svw);
+				padding-top: calc((30 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				font-size: 32px;
+				line-height: 50px;
+				padding-top: 30px;
+			}
+		}
+		&__text {
+			color: $bgColor_Black;
+			@include media(iPhone){
+				font-size: calc((26 * 100 / 750)* 1svw);
+				line-height: calc((39 * 100 / 750)* 1svw);
+				padding-bottom: calc((30 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				font-size: 26px;
+				line-height: 39px;
+				padding-bottom: 30px;
+			}
+		}
+		&__date + &__text:not(:last-of-type) {
+			border-bottom: 1px $bgColor_DarkGray solid;
 		}
 	}
 }

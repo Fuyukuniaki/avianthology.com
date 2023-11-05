@@ -1,0 +1,47 @@
+@use "../../foundation/" as *;
+
+.c-lists-about {
+	display: inline-block;
+	width: 100%;
+	margin: auto;
+	color: $bgColor_Black;
+	&__category {
+		display: inline-block;
+		background: $bgColor_Black;
+		color: $bgColor_White;
+		@include media(iPhone){
+			line-height: calc((65 * 100 / 750)* 1svw);
+			height: calc((65 * 100 / 750)* 1svw);
+			font-size: calc((32 * 100 / 750)* 1svw);
+			padding: 0 calc((16.5 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			line-height: 65px;
+			height: 65px;
+			font-size: 32px;
+			padding: 0 16.5px;
+		}
+	}
+	&__content {
+		display: block;
+		font-family: $textFont_English;
+		@include media(iPhone){
+			line-height: calc((54 * 100 / 750)* 1svw);
+			min-height: calc((54 * 100 / 750)* 1svw);
+			font-size: calc((28 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			line-height: 54px;
+			min-height: 54px;
+			font-size: 28px;
+		}
+	}
+	&__category + &__content {
+		@include media(iPhone){
+			padding-bottom: calc((50 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			padding-bottom: 50px;
+		}
+	}
+}

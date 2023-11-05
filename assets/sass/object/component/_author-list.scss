@@ -1,0 +1,85 @@
+@use "../../foundation/" as *;
+
+.c-author-list {
+	&__title {
+		display: block;
+		background: url(../images/title-author-list.svg);
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: $textColor_0color;
+		@include media(iPhone){
+			line-height: calc((34 * 100 / 750)* 1svw);
+			height: calc((34 * 100 / 750)* 1svw);
+			margin-top: calc((25 * 100 / 750)* -1svw);
+		}
+		@include media(PC){
+			line-height: 34px;
+			height: 34px;
+			margin-top: -25px;
+		}
+	}
+	&__lists {
+		&--title {
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			align-items: flex-start;
+			@include media(iPhone){
+				width: calc(100svw + ((50 * 100 / 750)* 1svw));
+				margin: auto calc((25 * 100 / 750)* -1svw);
+				padding: 0 calc((55 * 100 / 750)* 1svw);
+				font-size: calc((32 * 100 / 750)* 1svw);
+				line-height: calc((50 * 100 / 750)* 1svw);
+				height: calc((80 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				width: calc(100svw + 50px);
+				margin: auto -25px;
+				padding: 0 55px;
+				font-size: 32px;
+				line-height: 50px;
+				height: 80px;
+			}
+		}
+		&--member {
+			display: flex;
+			flex-flow: row wrap;
+		}
+		&--list {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(4, 1fr);
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+			@include media(iPhone){
+				width: 50svw;
+			}
+			@include media(PC){
+				width: 50px;
+			}
+		}
+	}
+	&__name--wrap {
+		grid-area: 1 / 1 / 5 / 2;
+	}
+	&__name, &__image, &__color, &__sns {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	&__caption {
+		color: $bgColor_Black;
+		@include media(iPhone){
+			font-size: calc((28 * 100 / 750)* 1svw);
+			line-height: calc((60 * 100 / 750)* 1svw);
+			padding: calc((60 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc((55 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			font-size: 28px;
+			line-height: 60px;
+			padding: 60px 30px 55px 30px;
+		}
+	}
+}

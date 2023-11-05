@@ -1,0 +1,18 @@
+@use "../../foundation/" as *;
+
+.p-lists-about {
+	display: block;
+	width: 100%;
+	margin: auto;
+	color: $bgColor_Black;
+	@include media(iPhone){
+		padding: calc((250 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc((175 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
+	}
+	@include media(PC){
+		padding: 250px 30px 175px 30px;
+	}
+	&__category {
+		background: $bgColor_Black;
+		color: $bgColor_White;
+	}
+}
