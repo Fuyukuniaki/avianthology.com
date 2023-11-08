@@ -1,25 +1,48 @@
 @use "../foundation/" as *;
+
 .l-header {
-	position: relative;
+	position: fixed;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
+	background-color: $bgColor_Black;
+	height: 100px;
+	overflow: visible;
 	@include media(iPhone){
 		padding-top: calc(( 32 * 100 / 750 ) * 1svw);
 		padding-right: 0;
 		padding-bottom: calc(( 30 * 100 / 750 ) * 1svw);
 		padding-left: calc(( 32 * 100 / 750 ) * 1svw);
 		width: 100svw;
+		height: calc(( 100 * 100 / 750 ) * 1svw);
 	}
 	@include media(PC){
 		padding: 32px 0 30px 32px; 
 		width: $widthMainContent;
+		height: 100px;
 	}
-	&:has(:not(.js-open)) {
-		overflow: hidden;
-	}
-	&:has(.js-open) {
+	&.js-open {
+		position: fixed;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $textColor_0color;
+		height: 100px;
 		overflow: visible;
+		@include media(iPhone){
+			padding-top: calc(( 32 * 100 / 750 ) * 1svw);
+			padding-right: 0;
+			padding-bottom: calc(( 30 * 100 / 750 ) * 1svw);
+			padding-left: calc(( 32 * 100 / 750 ) * 1svw);
+			width: 100svw;
+			height: calc(( 100 * 100 / 750 ) * 1svw);
+		}
+		@include media(PC){
+			padding: 32px 0 30px 32px; 
+			width: $widthMainContent;
+			height: 100px;
+		}
 	}
 }

@@ -1,0 +1,63 @@
+@use "../../foundation/" as *;
+
+.c-concept {
+	&__lists {
+		font-family: $textFont_English;
+		font-weight: $textFont_WeightRegular;
+		display: block;
+		width: 100%;
+		margin: auto;
+		color: $bgColor_Black;
+		background: url('../images/title-concept.svg');
+		background-repeat: no-repeat;
+		color: $bgColor_Black;
+		@include media(iPhone){
+			background-size: 100svw;
+			padding: calc(( 450 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw) calc(( 50 * 100 / 750 )* 1svw) calc(( 55 * 100 / 750 )* 1svw);
+		}
+		@include media(PC){
+			background-size: 750px;
+			padding: 450px 108px 50px 55px;
+		}
+		&--category {
+			display: inline-block;
+			font-family: $textFont_Japanese;
+			background: $bgColor_Black;
+			color: $bgColor_White;
+			@include media(iPhone){
+				line-height: calc((60 * 100 / 750)* 1svw);
+				height: calc((60 * 100 / 750)* 1svw);
+				font-size: calc((32 * 100 / 750)* 1svw);
+				padding: 0 calc((16.5 * 100 / 750)* 1svw);
+				margin-bottom: calc((25 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				line-height: 60px;
+				height: 60px;
+				font-size: 32px;
+				padding: 0 16.5px;
+				margin-bottom: 25px;
+			}
+		}
+		&--text + &--category {
+			@include media(iPhone){
+				margin-top: calc((60 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				margin-top: 60px;
+			}
+		}
+		&--text {
+			font-family: $textFont_English;
+			letter-spacing: 20;
+			@include media(iPhone){
+				font-size: calc((28 * 100 / 750)* 1svw);
+				line-height: calc((48 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				font-size: 28px;
+				line-height: 48px;
+			}
+		}
+	}
+}

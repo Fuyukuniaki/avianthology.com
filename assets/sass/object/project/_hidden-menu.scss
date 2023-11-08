@@ -1,7 +1,7 @@
 @use "../../foundation/" as *;
 
 :not(.js-open) .p-hidden-menu {
-	opacity: 0.3;
+	opacity: 0;
 	transition: all 700ms;
 }
 .js-open .p-hidden-menu {

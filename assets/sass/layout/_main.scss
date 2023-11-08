@@ -53,11 +53,64 @@
 		width: 100%;
 	}
 }
-.l-main {
+.l-project {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: flex-start;
+	background: url(../images/background-info-line.svg);
+	background-position: top right;
+	background-repeat: repeat-y;
 	@include media(iPhone){
+		background-size: 100%;
 		width: 100svw;
 	}
 	@include media(PC){
+		background-size: auto;
+		width: 100%;
+	}
+}
+.l-concept-part{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: flex-start;
+	background: url(../images/background-part2-line.svg);
+	background-position: top right;
+	background-repeat: repeat-y;
+	@include media(iPhone){
+		background-size: 100%;
+		width: 100svw;
+	}
+	@include media(PC){
+		background-size: auto;
+		width: 100%;
+	}
+}
+.l-contact {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: flex-start;
+	background: url(../images/background-info-line.svg);
+	background-position: top right;
+	background-repeat: repeat-y;
+	@include media(iPhone){
+		background-size: 100%;
+		width: 100svw;
+	}
+	@include media(PC){
+		background-size: auto;
+		width: 100%;
+	}
+}
+.l-main {
+	@include media(iPhone){
+		width: 100svw;
+		padding-top: calc(( 100 * 100 / 750 ) * 1svw);
+	}
+	@include media(PC){
+		padding-top: 100px;
 		width: 750px;
 	}
 }

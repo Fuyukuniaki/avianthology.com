@@ -1,0 +1,34 @@
+@use "../foundation/" as *;
+.l-footer {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	@include media(iPhone){
+		padding-top: calc(( 70 * 100 / 750 ) * 1svw) 0;
+		width: 100svw;
+	}
+	@include media(PC){
+		padding: 70px 0; 
+		width: $widthMainContent;
+	}
+	& > .c-logo {
+		display: block;
+		@include media(iPhone){
+			height: calc(( 32 * 100 / 750 ) * 1svw);
+		}
+		@include media(PC){
+			height: 32px;
+		}
+		aspect-ratio: 349 / 153;
+		width:auto;
+	}
+	&__copyright {
+		@include media(iPhone){
+			font-size: calc(( 18 * 100 / 750 ) * 1svw);
+		}
+		@include media(PC){
+			font-size: 18px;
+		}
+	}
+}

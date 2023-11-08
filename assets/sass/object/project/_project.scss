@@ -1,18 +1,24 @@
 @use "../../foundation/" as *;
 
 .p-project {
+	font-family: $textFont_English;
+	font-weight: $textFont_WeightBold;
 	display: block;
 	width: 100%;
-	font-family: "fot-tsukuardgothic-std", sans-serif;
-	font-weight: 700;
+	margin: auto;
+	color: $bgColor_Black;
+	background: url('../images/title-project.svg') 0 -1px;
+	background-repeat: no-repeat;
 	@include media(iPhone){
-		margin-bottom: calc((150 * 100 / 750)* 1svw);
+		background-size: 100svw;
+		padding: calc(( 150 * 100 / 750 )* 1svw) calc(( 30 * 100 / 750 )* 1svw) calc(( 50 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw);
 	}
 	@include media(PC){
-		margin-bottom: 150px;
+		background-size: 750px;
+		padding: 150px 30px 50px 108px;
 	}
-	background: $bgColor_White;
-	&__lists {
-		color: $bgColor_Black;
+	color: $bgColor_Black;
+	&__detail {
+		color: $textColor_Black;
 	}
 }

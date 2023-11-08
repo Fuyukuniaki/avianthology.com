@@ -1,40 +1,74 @@
-window.addEventListener('load resize', function(){
+$(window).on('load resize', function(){
 
-	const myHoverElements = document.getElementsByClassName('c-hidden-menu__link');
+	$(function () {
+		let headerHight = 100;
+		$('a[href^="#"]').click(function () {
+		let href = $(this).attr("href");
+		let target = $(href == "#" || href == "" ? "html" : href);
+		let position = target.offset().top - headerHight;
+		$("html, body").animate({
+		scrollTop: position
+		}, 500, "swing");
+		return false;
+		});
+	});
 
-	for (let i = 0; i < myHoverElements.length; i++) {
-		myHoverElements[i].addEventListener("touchstart", function() {
-			myHoverElements[i].classList.add('js-hover')
-		})
-
-		myHoverElements[i].addEventListener("touchend", function() {
-			myHoverElements[i].classList.remove('js-hover')
-		})
-	}
-
-	const myCloseButton = document.getElementsByClassName('c-button__close');
-	const myHiddenMenue = document.getElementsByClassName('p-hamburger-menu');
-	const myHamburgerBtn = document.getElementsByClassName('c-icon__hamburger');
-
-	if ( ! myHiddenMenue[0].classList.contains('js-open') ){
-		myHamburgerBtn[0].addEventListener("touched", function() {
-			myHiddenMenue[0].classList.add('js-open')
-		})
-		myCloseButton[0].addEventListener("click", function() {
-			myHiddenMenue[0].classList.add('js-open')
-		})
-	} else {
-		myHamburgerBtn[0].addEventListener("touched", function() {
-			myHiddenMenue[0].classList.remove('js-open')
-		})
-		myCloseButton[0].addEventListener("click", function() {
-			myHiddenMenue[0].classList.remove('js-open')
-		})
-		myCloseButton[0].addEventListener("touchend", function() {
-			myHiddenMenue[0].classList.remove('js-open')
-		})
-		myCloseButton[0].addEventListener("click", function() {
-			myHiddenMenue[0].classList.remove('js-open')
-		})
-	}
-})
+	$(function () {
+		$('.c-icon__hamburger').each(function(){
+			$(this).on('click', function(){
+				$(this).toggleClass('js-open');
+				$('.p-hamburger-menu').toggleClass('js-open');
+				$('.l-header').toggleClass('js-open');
+			});
+		});
+		$('.c-button__close').each(function(){
+			$(this).on('click', function(){
+				$('.p-hamburger-menu').toggleClass('js-open');
+				$('.l-header').toggleClass('js-open');
+			});
+		});
+	});
+	$(function () {
+		$('.c-author-list__lists--title').each(function(){
+			$(this).on('click', function(){
+				$(this).next('.c-author-list__lists--wrap').toggleClass('js-open');
+				$('.l-header').toggleClass('js-open');
+			});
+		});
+		$('.c-button__modal-close').each(function(){
+			$(this).on('click', function(){
+				$(this).parent('.c-author-list__lists--wrap').toggleClass('js-open');
+				$('.l-header').toggleClass('js-open');
+			});
+		});
+	});
+	$(function () {
+		$('.c-project__detail--title').each(function(){
+			$(this).on('click', function(){
+				$(this).next('.c-project__detail--text').toggleClass('js-open');
+				$('.l-header').toggleClass('js-open');
+			});
+		});
+		$('.c-button__modal-close').each(function(){
+			$(this).on('click', function(){
+				$(this).parent('.c-project__detail--text').removeClass('js-open');
+				$('.l-header').toggleClass('js-open');
+			});
+		});
+	});
+	$(function () {
+		$('.c-button__flyer--wrapper').each(function(){
+			$(this).on('click', function(){
+				$(this).next('.c-form__wrap').toggleClass('js-open');
+				$('.l-header').toggleClass('js-open');
+			});
+		});
+		$('.c-button__modal-close').each(function(){
+			$(this).on('click', function(){
+				$(this).parent('.c-form__wrap').removeClass('js-open');
+				$('.l-header').toggleClass('js-open');
+			});
+		});
+	});
+	
+});

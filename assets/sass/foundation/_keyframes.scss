@@ -1,0 +1,70 @@
+@use "./mixin" as *;
+
+@keyframes slideUp {
+	0% {
+		height: 100%;
+	}
+	100% {
+		height: 0%;
+	}
+}
+
+@keyframes slideDown {
+	0% {
+		height: 0%;
+	}
+	100% {
+		height: 100%;
+	}
+}
+
+@keyframes frame-in {
+	0% {
+		@include media(iPhone){
+			right: calc(( 610 * 100 / 750 )* -1svw);
+		}
+		@include media(PC){
+			right: -610px;
+		}
+		opacity: 0;
+	}
+	100% {
+		right: 0;
+		opacity: 1;
+	}
+}
+@keyframes frame-out {
+	0% {
+		right: 0;
+		opacity: 1;
+	}
+	99% {
+		@include media(iPhone){
+			right: calc(( 610 * 100 / 750 )* -1svw);
+		}
+		@include media(PC){
+			right: -610px;
+		}
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes scroll {
+	0% {
+		background-image: url(../images/icon-scroll-00.svg);
+	}
+	30% {
+		background-image: url(../images/icon-scroll-01.svg);
+	}
+	60% {
+		background-image: url(../images/icon-scroll-02.svg);
+	}
+	90% {
+		background-image: url(../images/icon-scroll-03.svg);
+	}
+	100% {
+		background-image: url(../images/icon-scroll-03.svg);
+	}
+}

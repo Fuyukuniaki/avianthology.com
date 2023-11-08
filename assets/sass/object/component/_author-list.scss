@@ -20,54 +20,60 @@
 		}
 	}
 	&__lists {
-		&--wrap {
+		&--wrap.js-open {
 			display: block;
 			background: $bgColor_PaleGray;
 			border-width: 1px;
 			border-color: $textColor_0color $textColor_0color $bgColor_Black $textColor_0color;
 			border-style: solid;
-			position: relative;
+			height: 100%;
+			overflow: hidden;
 			@include media(iPhone){
 				width: calc(100svw + ((50 * 100 / 750)* 1svw));
 				margin: auto calc((25 * 100 / 750)* -1svw);
-				padding: 0 calc((55 * 100 / 750)* 1svw) calc((132 * 100 / 750)* 1svw) calc((55 * 100 / 750)* 1svw);
+				padding: 0 calc((55 * 100 / 750)* 1svw);
 				font-size: calc((32 * 100 / 750)* 1svw);
 			}
 			@include media(PC){
 				width: calc(100% + 50px);
 				margin: auto -25px;
-				padding: 0 55px 132px 55px;
+				padding: 0 55px;
 				font-size: 32px;
 			}
-			&::before {
-				position: absolute;
-				content: "閉じる";
-				left: 40%;
-				font-family: $textFont_Japanese;
-				@include media(iPhone){
-					bottom: calc((100 * 100 / 750)* 1svw);
-					font-size: calc((32 * 100 / 750)* 1svw);
-				}
-				@include media(PC){
-					bottom: 100px;
-					font-size: 32px;
-				}
-			}
-			&::after {
-				position: absolute;
-				content: url('../images/icon-down.svg');
-				transform: rotate(180deg);
-				right: 40%;
-				@include media(iPhone){
-					bottom: calc((100 * 100 / 750)* 1svw);
-					font-size: calc((32 * 100 / 750)* 1svw);
-				}
-				@include media(PC){
-					bottom: 100px;
-					font-size: 32px;
-				}
+			animation: slideDown 700ms 1;
+			transition: all 700ms ease-in-out;
+			& > .c-author-list__lists--member {
+				opacity: 1;
+				transition: all 600ms ease-in-out;
 			}
 		}
+		&--wrap {
+			display: block;
+			background: $bgColor_PaleGray;
+			border-width: 1px;
+			border-color: $bgColor_Black $textColor_0color $textColor_0color $textColor_0color;
+			border-style: solid;
+			height: 0;
+			overflow: hidden;
+			@include media(iPhone){
+				width: calc(100svw + ((50 * 100 / 750)* 1svw));
+				margin: auto calc((25 * 100 / 750)* -1svw);
+				padding: 0 calc((55 * 100 / 750)* 1svw);
+				font-size: calc((32 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				width: calc(100% + 50px);
+				margin: auto -25px;
+				padding: 0 55px;
+				font-size: 32px;
+			}
+			animation: slideUp 700ms 1;
+			transition: all 700ms ease-in-out;
+			& > .c-author-list__lists--member {
+				opacity: 0;
+				transition: all 600ms ease-in-out;
+			}
+		} 
 		&--title {
 			display: flex;
 			flex-flow: row wrap;
@@ -100,9 +106,9 @@
 				transform: rotate(0deg);
 				transition: all;
 			}
-			&.js-list-open::after {
+			&:has( + .js-open)::after {
 				content: url('../images/icon-down.svg');
-				opacity: 0;
+				opacity: 1;
 				transform: rotate(180deg);
 				transition: all;
 			}

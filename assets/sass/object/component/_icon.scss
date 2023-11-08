@@ -48,6 +48,44 @@
 			}
 		}
 	}
+	&__list {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		@include media(iPhone){
+			gap: calc(( 40 * 100 / 750 )* 1svw);
+		}
+		@include media(PC){
+			gap: 40px;
+		}	}
+	&__sns {
+		display: block;
+		background-image: url(../images/logo-x-twitter.svg);
+		background-color: #000000;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 60%;
+		color: transparent;
+		border-radius: 50%;
+		@include media(iPhone){
+			height: calc(( 83 * 100 / 750 )* 1svw);
+			width: calc(( 83 * 100 / 750 )* 1svw);
+		}
+		@include media(PC){
+			height: 83px;
+			width: 83px;
+		}
+	}
+	&__mail {
+		height: 83px;
+		width: 83px;
+		display: block;
+		color: $bgColor_PureSnow;
+		background: $textColor_PGray;
+		text-align: center;
+		border-radius: 100%;
+	}
 }
 .js-open .c-icon {
 	&__hamburger {

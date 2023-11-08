@@ -1,55 +1,31 @@
 @use "../../foundation/" as *;
 
 .c-project {
-	&__detail {
-		&--title {
-			display: block;
-			background: $bgColor_PaleGray;
-			border-width: 1px;
-			border-color: $textColor_0color $textColor_0color $bgColor_Black $textColor_0color;
-			border-style: solid;
-			position: relative;
-			@include media(iPhone){
-				width: calc(100svw + ((50 * 100 / 750)* 1svw));
-				margin: auto calc((25 * 100 / 750)* -1svw);
-				padding: 0 calc((55 * 100 / 750)* 1svw) calc((132 * 100 / 750)* 1svw) calc((55 * 100 / 750)* 1svw);
-				font-size: calc((32 * 100 / 750)* 1svw);
-			}
-			@include media(PC){
-				width: calc(100% + 50px);
-				margin: auto -25px;
-				padding: 0 55px 132px 55px;
-				font-size: 32px;
-			}
-			&::before {
-				position: absolute;
-				content: "閉じる";
-				left: 40%;
-				font-family: $textFont_Japanese;
-				@include media(iPhone){
-					bottom: calc((100 * 100 / 750)* 1svw);
-					font-size: calc((32 * 100 / 750)* 1svw);
-				}
-				@include media(PC){
-					bottom: 100px;
-					font-size: 32px;
-				}
-			}
-			&::after {
-				position: absolute;
-				content: url('../images/icon-down.svg');
-				transform: rotate(180deg);
-				right: 40%;
-				@include media(iPhone){
-					bottom: calc((100 * 100 / 750)* 1svw);
-					font-size: calc((32 * 100 / 750)* 1svw);
-				}
-				@include media(PC){
-					bottom: 100px;
-					font-size: 32px;
-				}
-			}
+	&__headline {
+		@include media(iPhone){
+			line-height: calc(( 50 * 100 / 750 )* 1svw);
+			font-size: calc(( 28 * 100 / 750 )* 1svw);
+			padding-bottom: calc(( 20 * 100 / 750 )* 1svw);
 		}
+		@include media(PC){
+			line-height: 50px;
+			font-size: 28px;
+			padding-bottom: 20px;
+		}
+	}
+	&__caption {
+		@include media(iPhone){
+			line-height: calc(( 40 * 100 / 750 )* 1svw);
+			font-size: calc(( 20 * 100 / 750 )* 1svw);
+			letter-spacing: 20;
+		}
+		@include media(PC){
+			line-height: 40px;
+			font-size: 20px;
+			letter-spacing: 20;
+		}
+	}
+	&__detail {
 		&--title {
 			display: flex;
 			flex-flow: row wrap;
@@ -78,18 +54,16 @@
 			}
 			&::after {
 				content: url('../images/icon-down.svg');
-				opacity: 1;
 				transform: rotate(0deg);
-				transition: all;
+				transition: all 700ms;
 			}
-			&.js-list-open::after {
+			&.js-open::after {
 				content: url('../images/icon-down.svg');
-				opacity: 0;
 				transform: rotate(180deg);
-				transition: all;
+				transition: all 700ms;
 			}
 		}
-		&--wrap + &--title {
+		&--text + &--title {
 			@include media(iPhone){
 				margin-top: calc((20 * 100 / 750)* 1svw);
 			}
@@ -97,117 +71,122 @@
 				margin-top: 20px;
 			}
 		}
-		&--member {
-			display: flex;
-			flex-flow: row wrap;
-		}
-		&--list {
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: repeat(4, 1fr);
-			grid-column-gap: 0px;
-			grid-row-gap: 0px;
+		&--text {
+			display: block;
+			background: $bgColor_PaleGray;
+			border-width: 1px;
+			border-color: $textColor_0color $textColor_0color $bgColor_Black $textColor_0color;
+			border-style: solid;
+			position: relative;
+			height: 0;
+			overflow: hidden;
 			@include media(iPhone){
-				width: 50svw;
+				width: calc(100svw + ((50 * 100 / 750)* 1svw));
+				margin: auto calc((25 * 100 / 750)* -1svw);
+				padding: 0 calc((55 * 100 / 750)* 1svw) 0 calc((55 * 100 / 750)* 1svw);
+				font-size: calc((32 * 100 / 750)* 1svw);
 			}
 			@include media(PC){
-				width: 50%;
+				width: calc(100% + 50px);
+				margin: auto -25px;
+				padding: 0 55px 0 55px;
+				font-size: 32px;
+			}
+			transition: all 700ms ease-in-out;
+			& > .c-project-detail__text--wrap {
+				opacity: 0;
+				transition: opacity 600ms ease-in-out;
 			}
 		}
-	}
-	&__name--wrap {
-		grid-area: 1 / 1 / 5 / 2;
-	}
-	&__caption {
-		color: $bgColor_Black;
-		font-family: $textFont_English;
-		@include media(iPhone){
-			font-size: calc((28 * 100 / 750)* 1svw);
-			line-height: calc((60 * 100 / 750)* 1svw);
-			padding: calc((60 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc((55 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
-		}
-		@include media(PC){
-			font-size: 28px;
-			line-height: 60px;
-			padding: 60px 30px 55px 30px;
-		}
-	}
-	&__name {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		align-items: center;
-		@include media(iPhone){
-			font-size: calc((38 * 100 / 750)* 1svw);
-			line-height: calc((60 * 100 / 750)* 1svw);
-			padding-bottom: calc((26 * 100 / 750)* 1svw);
-		}
-		@include media(PC){
-			font-size: 38px;
-			line-height: 60px;
-			padding-bottom: 26px;
-		}
-	}
-	&__image {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		align-items: center;
-		@include media(iPhone){
-			padding-bottom: calc((26 * 100 / 750)* 1svw);
-		}
-		@include media(PC){
-			padding-bottom: 26px;
-		}
-	}
-	&__sample {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		align-items: center;
-			&--image {
+		&--text.js-open {
+			display: block;
+			overflow: hidden;
+			background: $bgColor_PaleGray;
+			border-width: 1px;
+			border-color: $textColor_0color $textColor_0color $bgColor_Black $textColor_0color;
+			border-style: solid;
+			position: relative;
+			height: 100%;
 			@include media(iPhone){
-				width: calc((213 * 100 / 750)* 1svw);
-				height: calc((213 * 100 / 750)* 1svw);
+				width: calc(100svw + ((50 * 100 / 750)* 1svw));
+				margin: auto calc((25 * 100 / 750)* -1svw);
+				padding: calc((70 * 100 / 750)* 1svw) calc((55 * 100 / 750)* 1svw) 0 calc((55 * 100 / 750)* 1svw);
+				font-size: calc((32 * 100 / 750)* 1svw);
 			}
 			@include media(PC){
-				width: 213px;
-				height: 213px;
+				width: calc(100% + 50px);
+				margin: auto -25px;
+				padding: 70px 55px 0 55px;
+				font-size: 32px;
+			}
+			transition: all 700ms ease-in-out;
+			& > .c-project-detail__text--wrap {
+				opacity: 1;
+				transition: opacity 600ms ease-in-out;
+			}
+		}
+		&--posts {
+			@include media(iPhone) {
+				padding: calc((60 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) 0 calc((30 * 100 / 750)* 1svw);
+				font-size: calc((32 * 100 / 750)* 1svw);
+			}
+			@include media(PC) {
+				padding: 60px 30px 0 30px;
+				font-size: 32px;
 			}
 		}
 	}
-	&__color {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		align-items: center;
-		color: $textColor_PGray;
-		@include media(iPhone){
-			font-size: calc((30 * 100 / 750)* 1svw);
-			line-height: calc((60 * 100 / 750)* 1svw);
-			padding-bottom: calc((26 * 100 / 750)* 1svw);
-		}
-		@include media(PC){
-			font-size: 30px;
-			line-height: 60px;
-			padding-bottom: 26px;
+	&-detail {
+		&__text {
+			&--title {
+				display: inline-block;
+				background: $bgColor_Black;
+				color: $bgColor_White;
+				@include media(iPhone){
+					line-height: calc((60 * 100 / 750)* 1svw);
+					height: calc((60 * 100 / 750)* 1svw);
+					font-size: calc((32 * 100 / 750)* 1svw);
+					padding: 0 calc((16.5 * 100 / 750)* 1svw);
+					margin-bottom: calc((25 * 100 / 750)* 1svw);
+				}
+				@include media(PC){
+					line-height: 60px;
+					height: 60px;
+					font-size: 32px;
+					padding: 0 16.5px;
+					margin-bottom: 25px;
+				}
+			}
+			&--text + &--title {
+				@include media(iPhone){
+					margin-top: calc((60 * 100 / 750)* 1svw);
+				}
+				@include media(PC){
+					margin-top: 60px;
+				}
+			}
+			&--text {
+				font-family: $textFont_English;
+				letter-spacing: 20;
+				font-weight: $textFont_WeightBold;
+				@include media(iPhone){
+					font-size: calc((28 * 100 / 750)* 1svw);
+					line-height: calc((48 * 100 / 750)* 1svw);
+				}
+				@include media(PC){
+					font-size: 28px;
+					line-height: 48px;
+				}
+			}
 		}
 	}
-	&__sns {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		align-items: center;
-		&--link {
+	&-detail-text {
+		&__title + &__title {
 			@include media(iPhone){
-				width: calc((83 * 100 / 750)* 1svw);
-				height: calc((83 * 100 / 750)* 1svw);
-				margin-bottom: calc((100 * 100 / 750)* 1svw);
+				margin-top: calc((40 * 100 / 750)* 1svw);
 			}
 			@include media(PC){
-				width: 83px;
-				height: 83px;
-				margin-bottom: 100px;
+				margin-top: 40px;
 			}
 		}
 	}

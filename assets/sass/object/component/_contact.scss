@@ -1,0 +1,55 @@
+@use "../../foundation/" as *;
+
+.c-contact {
+	&__lists {
+		font-family: $textFont_English;
+		font-weight: $textFont_WeightRegular;
+		display: block;
+		width: 100%;
+		margin: auto;
+		color: $bgColor_Black;
+		background: url('../images/title-contact.svg');
+		background-repeat: no-repeat;
+		color: $bgColor_Black;
+		@include media(iPhone){
+			background-size: 100svw;
+			padding: calc(( 150 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw) calc(( 50 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw);
+		}
+		@include media(PC){
+			background-size: 750px;
+			padding: 150px 108px 50px 108px;
+		}
+		&--category {
+			display: block;
+			font-family: $textFont_Japanese;
+			background: $bgColor_Black;
+			color: $bgColor_White;
+			text-align: center;
+			@include media(iPhone){
+				line-height: calc((60 * 100 / 750)* 1svw);
+				height: calc((60 * 100 / 750)* 1svw);
+				font-size: calc((32 * 100 / 750)* 1svw);
+				padding: 0 calc((16.5 * 100 / 750)* 1svw);
+			}
+			@include media(PC){
+				line-height: 60px;
+				height: 60px;
+				font-size: 32px;
+				padding: 0 16.5px;
+			}
+		}
+		&--list {
+			font-family: $textFont_Icon;
+			@include media(iPhone){
+				font-size: calc((64 * 100 / 750)* 1svw);
+				line-height: calc((83 * 100 / 750)* 1svw);
+				padding: calc((50 * 100 / 750)* 1svw) 0 calc((100 * 100 / 750)* 1svw) 0;
+			}
+			@include media(PC){
+				font-size: 64px;
+				line-height: 83px;
+				padding: 50px 0 100px 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+@use "../../foundation/" as *;
+
+.c-form {
+	&__wrap.js-open {
+		display: block;
+		color: $bgColor_Black;
+		background: $bgColor_PaleGray;
+		height: 100%;
+		margin: auto;
+		overflow: hidden;
+		@include media(iPhone){
+			font-size: calc((32 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			font-size: 32px;
+		}
+		animation: slideDown 700ms 1;
+		transition: all 700ms ease-in-out;
+		input:not([type='submit']), textarea {
+			border: 1px solid $bgColor_Black;
+			background: $bgColor_PureSnow;
+		}
+		p:has(input[type='submit']) {
+			display: block;
+			text-align: center;
+		}
+	}
+	&__wrap {
+		display: block;
+		background: $bgColor_PaleGray;
+		height: 0;
+		overflow: hidden;
+		@include media(iPhone){
+			font-size: calc((32 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			font-size: 32px;
+		}
+		animation: slideUp 700ms 1;
+		transition: all 700ms ease-in-out;
+	} 
+}

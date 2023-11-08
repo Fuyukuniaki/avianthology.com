@@ -17,41 +17,129 @@
 			width: 176px;
 			margin: 120px auto 120px 60px;
 		}
-		&::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: -175%;
-			background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,.3) 100%);
-			opacity: 1;
-			transform: skewX(25deg);
+	}
+	&__modal-close {
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		font-family: $textFont_Japanese;
+		@include media(iPhone){
+			font-size: calc((32 * 100 / 750)* 1svw);
+			margin: calc((100 * 100 / 750)* 1svw) auto;
+		}
+		@include media(PC){
+			font-size: 32px;
+			margin: 100px auto;
+		}
+		&::after {
+			display: inline-block;
+			content: url('../images/icon-down.svg');
+			transform: rotate(180deg);
+			padding: 0 0.5em 0.1em 0;
 			@include media(iPhone){
-				height: calc(( 36 * 100 / 750 )* 1svw);
-				width: calc(( 176 * 100 / 750 )* 1svw);
+				font-size: calc((32 * 100 / 750)* 1svw);
 			}
 			@include media(PC){
-				height: 36px;
-				width: 176px;
+				font-size: 32px;
 			}
-		}
-		&:hover::before {
-			animation: shine 700ms;
 		}
 	}
 	&__flyer {
-		display: block;
-		color: $textColor_0color;
-		background-image: url(../images/);
-		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $bgColor_Black;
+		color: $bgColor_White;
+		text-align: center;
 		@include media(iPhone){
-			height: calc(( 36 * 100 / 750 )* 1svw);
-			width: calc(( 176 * 100 / 750 )* 1svw);
-			margin: calc(( 120 * 100 / 750 )* 1svw) auto calc(( 120 * 100 / 750 )* 1svw) calc(( 60 * 100 / 750 )* 1svw);
+			margin: calc(( 3 * 100 / 750 )* -1svw) auto calc(( 3 * 100 / 750 )* 1svw) auto;
+			line-height: calc(( 100 * 100 / 750 )* 1svw);
+			height: calc(( 100 * 100 / 750 )* 1svw);
+			font-size: calc(( 32 * 100 / 750 )* 1svw);
+			width: calc(( 650 * 100 / 750 )* 1svw);
+			border-radius: calc(( 50 * 100 / 750 )* 1svw);
 		}
 		@include media(PC){
-			height: 36px;
-			width: 176px;
-			margin: 120px auto 120px 60px;
+			margin: -3px auto 3px auto;
+			line-height: 100px;
+			height: 100px;
+			font-size: 32px;
+			width: 650px;
+			border-radius: 50px;
+		}
+		&::after {
+			content: "";
+			display: inline-block;
+			border-width: 0.5em;
+			border-style: solid;
+			border-color: $textColor_0color $textColor_0color $textColor_0color $bgColor_White;
+			margin: 0.1em 0 0 0.5em;
+		}
+		&--wrapper {
+			display: block;
+			background: $textColor_PGray;
+			@include media(iPhone){
+				margin: 0 auto calc(( 150 * 100 / 750 )* 1svw) calc(( 30 * 100 / 750 )* 1svw);
+				height: calc(( 100 * 100 / 750 )* 1svw);
+				width: calc(( 650 * 100 / 750 )* 1svw);
+				border-radius: calc(( 50 * 100 / 750 )* 1svw);
+			}
+			@include media(PC){
+				margin: 0 auto 150px 30px;
+				height: 100px;
+				width: 650px;
+				border-radius: 50px;
+			}
+		}
+	}
+	&__project {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $bgColor_Black;
+		color: $bgColor_White;
+		text-align: center;
+		@include media(iPhone){
+			margin: calc(( 3 * 100 / 750 )* -1svw) auto calc(( 3 * 100 / 750 )* 1svw) auto;
+			line-height: calc(( 100 * 100 / 750 )* 1svw);
+			height: calc(( 100 * 100 / 750 )* 1svw);
+			font-size: calc(( 32 * 100 / 750 )* 1svw);
+			width: calc(( 650 * 100 / 750 )* 1svw);
+			border-radius: calc(( 50 * 100 / 750 )* 1svw);
+		}
+		@include media(PC){
+			margin: -3px auto 3px auto;
+			line-height: 100px;
+			height: 100px;
+			font-size: 32px;
+			width: 650px;
+			border-radius: 50px;
+		}
+		&::after {
+			content: "";
+			display: inline-block;
+			border-width: 0.5em;
+			border-style: solid;
+			border-color: $textColor_0color $textColor_0color $textColor_0color $bgColor_White;
+			margin: 0.1em 0 0 0.5em;
+		}
+		&--wrapper {
+			display: block;
+			background: $textColor_PGray;
+			@include media(iPhone){
+				margin: 0 auto calc(( 150 * 100 / 750 )* 1svw) calc(( 30 * 100 / 750 )* 1svw);
+				height: calc(( 100 * 100 / 750 )* 1svw);
+				width: calc(( 650 * 100 / 750 )* 1svw);
+				border-radius: calc(( 50 * 100 / 750 )* 1svw);
+			}
+			@include media(PC){
+				margin: 0 auto 150px 30px;
+				height: 100px;
+				width: 650px;
+				border-radius: 50px;
+			}
 		}
 	}
 }
