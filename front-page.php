@@ -453,7 +453,7 @@
 	</section>
 	<section class="l-flyer-part" id="flyer">
 		<figure class="c-flyer__image--wrap">
-			<img class="c-flyer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-about-cover.svg" alt="フライヤー" decoding="async">>
+			<img class="c-flyer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-about-cover.svg" width="620" height="690" alt="フライヤー" decoding="async">
 		</figure>
 		<p class="c-flyer__explain">
 		フライヤーの配布にご協力して頂ける方を<br>
@@ -467,13 +467,9 @@
 		ご連絡をいただけますと幸いです。<br>
 		ご検討のほど何卒よろしくお願いいたします。
 		</p>
-		<a class="c-button__flyer--wrapper">
-			<p class="c-button__flyer">ペーパー配布ご協力フォーム</p>
+		<a class="c-button__flyer--wrapper" href="https://docs.google.com/forms/d/e/1FAIpQLSfsdqNCo0kN2P8JtywyHgQNeF0b12a9udvS99Bk7XRPBgld-A/viewform?usp=sf_link">
+			<p class="c-button__flyer">フライヤー配布ご協力フォーム</p>
 		</a>
-		<article class="c-form__wrap">
-			<?php echo do_shortcode('[contact-form-7 id="eac2b66" title="Flyer配布ご協力フォーム"]'); ?>
-			<button class="c-button__modal-close">閉じる</button>
-		</article>
 	</section>
 	<section class="l-project" id="project">
 		<ul class="p-project">
@@ -543,13 +539,18 @@
 			</dd>
 			<dd class="c-project__detail--posts">
 				<a class="c-button__project--wrapper" href="https://twitter.com/hashtag/%E3%81%93%E3%82%93%E3%81%AA%E7%85%87%E3%82%A4%E3%82%B0%E3%83%8A%E3%83%88%E3%83%95%E3%81%8C%E8%A6%8B%E3%81%A6%E3%81%BF%E3%81%9F%E3%81%84?src=hashtag_click&f=live">
-					<p class="c-button__project">#こんな煇イグナトフを見てみたい</p>
+					<p class="c-button__project">#こんな煇イグナトフを見てみたい<br>投稿作品を見る</p>
 				</a>
 			</dd>
 		</dl>
 	</section>
 	<section class="l-concept-part" id="concept">
 		<dl class="c-concept__lists">
+			<dd class="c-concept__lists--picture">
+				<picture class="c-concept__wrap">
+					<img class="c-concept__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sub-visual.png" width="620" height="200" decoding="async">
+				</picture>
+			</dd>
 			<dt class="c-concept__lists--category">
 				閃火&nbsp;タイトルコンセプト
 			</dt>
@@ -571,7 +572,7 @@
 			</dt>
 			<dd class="c-contact__lists--list">
 				<ul class="c-icon__list">
-					<li class="c-icon"><a href="mailto:avianthology2024@gmail.com" class="c-icon__mail c-link"><i class="fa-regular fa-envelope"></i></a></li>
+					<li class="c-icon"><a href="mailto:avianthology2024@gmail.com" class="c-icon__mail c-link">mail</i></a></li>
 					<li class="c-icon"><a href="https://twitter.com/AVIantholo2024" class="c-icon__sns c-link">X</a></li>
 				</ul>
 			</dd>
@@ -580,7 +581,7 @@
 			</dt>
 			<dd class="c-contact__lists--list">
 				<ul class="c-icon__list">
-					<li class="c-icon"><a href="mailto:info@avianthology.com" class="c-icon__mail c-link"><i class="fa-regular fa-envelope"></i></a></li>
+					<li class="c-icon"><a href="mailto:info@avianthology.com" class="c-icon__mail c-link">mail</a></li>
 					<li class="c-icon"><a href="https://twitter.com/856_zatta" class="c-icon__sns c-link">X</a></li>
 				</ul>
 			</dd>

@@ -5,7 +5,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: $textColor_0color;
-	display: inline-block;
+	display: block;
 	@include media(iPhone){
 		height: calc(( 36.23 * 100 / 750 ) * 1svw);
 		width: calc(( 82.71 * 100 / 750 ) * 1svw);

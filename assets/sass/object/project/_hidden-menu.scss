@@ -3,8 +3,10 @@
 :not(.js-open) .p-hidden-menu {
 	opacity: 0;
 	transition: all 700ms;
+	padding-top: 0;
 }
 .js-open .p-hidden-menu {
 	opacity: 1;
 	transition: all 700ms;
+	padding-top: 100px;
 }

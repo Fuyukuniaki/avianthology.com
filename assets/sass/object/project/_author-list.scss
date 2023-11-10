@@ -11,8 +11,8 @@
 	@include media(PC){
 		margin-bottom: 150px;
 	}
-	background: $bgColor_White;
 	&__lists {
 		color: $bgColor_Black;
+		background: $bgColor_White;
 	}
 }

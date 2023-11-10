@@ -3,14 +3,16 @@
 .c-icon {
 	&__hamburger {
 		display: block;
-		position: relative;
+		position: absolute;
 		background-color: $textColor_White;
 		color: $textColor_0color;
-		
+		margin: auto;
+		top: 0;
+		bottom: 0;
 		@include media(iPhone){
 			height: calc(( 4 * 100 / 750 )* 1svw);
 			width: calc(( 45 * 100 / 750 )* 1svw);
-			margin: calc(( 40 * 100 / 750 )* 1svw) calc(( 38 * 100 / 750 )* 1svw) auto calc(( 83 * 100 / 750 )* -1svw);
+			right: calc(( 32 * 100 / 750 )* 1svw);
 			&::before,
 			&::after {
 				position: absolute;
@@ -30,7 +32,7 @@
 		@include media(PC){
 			height: 4px;
 			width: 45px;
-			margin: 40px 38px auto -83px;
+			right: 32px;
 			&::before,
 			&::after {
 				position: absolute;
@@ -78,25 +80,36 @@
 		}
 	}
 	&__mail {
-		height: 83px;
-		width: 83px;
 		display: block;
-		color: $bgColor_PureSnow;
-		background: $textColor_PGray;
-		text-align: center;
-		border-radius: 100%;
+		background-image: url(../images/icon-mail.svg);
+		// background-color: $iconColor_Gray;
+		background-color: $bgColor_DarkGray;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 60%;
+		color: transparent;
+		border-radius: 50%;
+		@include media(iPhone){
+			height: calc(( 83 * 100 / 750 )* 1svw);
+			width: calc(( 83 * 100 / 750 )* 1svw);
+		}
+		@include media(PC){
+			height: 83px;
+			width: 83px;
+		}
 	}
 }
 .js-open .c-icon {
 	&__hamburger {
 		display: block;
-		position: relative;
+		position: absolute;
 		background-color: $textColor_0color;
 		color: $textColor_0color;
 		@include media(iPhone){
 			height: calc(( 80 * 100 / 750 )* 1svw);
 			width: calc(( 45 * 100 / 750 )* 1svw);
-			margin: calc(( 40 * 100 / 750 )* 1svw) calc(( 38 * 100 / 750 )* 1svw) calc(( 38 * 100 / 750 )* -1svw) auto;
+			top: calc(( 64 * 100 / 750 )* 1svw);
+			right: calc(( 64 * 100 / 750 )* 1svw);
 			&::before,
 			&::after {
 				position: absolute;
@@ -118,7 +131,8 @@
 		@include media(PC){
 			height: 80px;
 			width: 45px;
-			margin: 40px 38px -38px auto;
+			top: 64px;
+			right: 64px;
 			&::before,
 			&::after {
 				position: absolute;

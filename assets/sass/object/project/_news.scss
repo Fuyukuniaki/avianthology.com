@@ -13,7 +13,7 @@
 	&-contents {
 		&__wrap {
 			background: $bgColor_White;
-			overflow: scroll;
+			overflow-y: scroll;
 			@include media(iPhone){
 				height: calc((400 * 100 / 750)* 1svw);
 				border-radius: calc((9 * 100 / 750)* 1svw);

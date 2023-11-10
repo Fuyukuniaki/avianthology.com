@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
+	<meta http-equiv="Cache-Control" content="no-cache">
 	<script>
 		(function(d) {
 			var config = {
@@ -16,9 +17,38 @@
 		})(document);
 	</script>
 	<?php wp_head(); ?>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WQ24VNT5');</script>
+	<!-- End Google Tag Manager -->
 </head>
 
 <body <?php body_class( 'l-body js-body' ); ?>>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ24VNT5"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<figure class="c-video">
+		<video id="video" poster="" webkit-playsinline playsinline muted autoplay loop>
+		<!--
+			poster：動画ファイルが利用できない環境で代替表示される画像
+			webkit-playsinline：iOS 9までのSafari用インライン再生指定
+			playsinline：iOS 10以降のSafari用インライン再生指定
+			muted：音声をミュートさせる
+			autoplay：動画を自動再生させる
+			loop：動画をループさせる
+			controls：コントロールバーを表示する
+		-->
+			<source src="https://avianthology.com/wp-content/uploads/mixkit-terrifying-lightening-storm-at-night-during-a-cyclone-47272-medium.mp4" type="video/mp4">
+		</video>
+	</figure>
+
+
+
 	<header id="top" class="l-header js-header">
 		<a class="p-header__link">
 			<h1 href="/#top" class="c-logo">閃火</h1>
@@ -32,20 +62,7 @@
 							<a class="c-hidden-menu__link u-top" href="#top">top</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<dl class="c-hidden-menu__lists--list">
-								<dt class="c-hidden-menu__lists--list">
-									<a class="c-hidden-menu__link u-about" href="#about">about</a>
-								</dt>
-								<dd class="c-hidden-menu__lists--list">
-									About Top - トップ
-								</dd>
-								<dd class="c-hidden-menu__lists--list">
-									Author List - 寄稿者/サンプル
-								</dd>
-								<dd class="c-hidden-menu__lists--list">
-									Staff - スタッフ
-								</dd>
-							</dl>
+							<a class="c-hidden-menu__link u-about" href="#about">about</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
 							<a href="#info" class="c-hidden-menu__link u-info">info</a>

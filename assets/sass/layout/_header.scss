@@ -9,6 +9,7 @@
 	background-color: $bgColor_Black;
 	height: 100px;
 	overflow: visible;
+	z-index: 9999;
 	@include media(iPhone){
 		padding-top: calc(( 32 * 100 / 750 ) * 1svw);
 		padding-right: 0;

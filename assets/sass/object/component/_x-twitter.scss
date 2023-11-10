@@ -20,11 +20,12 @@
 		}
 	}
 	&__data {
-		overflow: scroll;
+		overflow-y: scroll;
+		background: $bgColor_PureSnow;
 		@include media(iPhone){
 			height: calc((600 * 100 / 750)* 1svw);
 			margin: auto calc((30 * 100 / 750)* 1svw);
-			border-radius: calc((10 * 100 / 750)* 1svw);
+			border-radius: 3svw;
 		}
 		@include media(PC){
 			height: 600px;

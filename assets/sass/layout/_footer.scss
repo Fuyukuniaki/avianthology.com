@@ -1,11 +1,12 @@
 @use "../foundation/" as *;
 .l-footer {
+	background: $bgColor_Black;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 	@include media(iPhone){
-		padding-top: calc(( 70 * 100 / 750 ) * 1svw) 0;
+		padding: calc(( 70 * 100 / 750 ) * 1svw) 0;
 		width: 100svw;
 	}
 	@include media(PC){

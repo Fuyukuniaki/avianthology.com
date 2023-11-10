@@ -37,18 +37,18 @@
 			border-color: $bgColor_Black $textColor_0color $textColor_0color $textColor_0color;
 			border-style: solid;
 			@include media(iPhone){
-				width: calc(100svw + ((50 * 100 / 750)* 1svw));
-				margin: auto calc((25 * 100 / 750)* -1svw);
+				width: 100svw;
+				margin: 0;
 				padding: 0 calc((55 * 100 / 750)* 1svw);
-				font-size: calc((32 * 100 / 750)* 1svw);
+				font-size: calc((26 * 100 / 750)* 1svw);
 				line-height: calc((50 * 100 / 750)* 1svw);
 				height: calc((80 * 100 / 750)* 1svw);
 			}
 			@include media(PC){
-				width: calc(100% + 50px);
-				margin: auto -25px;
+				width: 100%;
+				margin: auto;
 				padding: 0 55px;
-				font-size: 32px;
+				font-size: 26px;
 				line-height: 50px;
 				height: 80px;
 			}
@@ -56,11 +56,23 @@
 				content: url('../images/icon-down.svg');
 				transform: rotate(0deg);
 				transition: all 700ms;
+				z-index: 0;
+				@include media(iPhone){
+					transform: rotate(0deg) scale(0.5);
+				}
+			}
+			&.menu-open::after {
+				z-index: -1;
 			}
 			&.js-open::after {
 				content: url('../images/icon-down.svg');
 				transform: rotate(180deg);
 				transition: all 700ms;
+				z-index: 0;
+				@include media(iPhone){
+					transform: rotate(180deg) scale(0.5);
+				}
+
 			}
 		}
 		&--text + &--title {
@@ -77,19 +89,18 @@
 			border-width: 1px;
 			border-color: $textColor_0color $textColor_0color $bgColor_Black $textColor_0color;
 			border-style: solid;
-			position: relative;
 			height: 0;
 			overflow: hidden;
 			@include media(iPhone){
-				width: calc(100svw + ((50 * 100 / 750)* 1svw));
-				margin: auto calc((25 * 100 / 750)* -1svw);
-				padding: 0 calc((55 * 100 / 750)* 1svw) 0 calc((55 * 100 / 750)* 1svw);
+				width: 100svw;
+				margin: 0;
+				padding: 0 calc((55 * 100 / 750)* 1svw);
 				font-size: calc((32 * 100 / 750)* 1svw);
 			}
 			@include media(PC){
-				width: calc(100% + 50px);
-				margin: auto -25px;
-				padding: 0 55px 0 55px;
+				width: 100%;
+				margin: auto;
+				padding: 0 55px;
 				font-size: 32px;
 			}
 			transition: all 700ms ease-in-out;
@@ -108,14 +119,14 @@
 			position: relative;
 			height: 100%;
 			@include media(iPhone){
-				width: calc(100svw + ((50 * 100 / 750)* 1svw));
-				margin: auto calc((25 * 100 / 750)* -1svw);
+				width: 100svw;
+				margin: 0;
 				padding: calc((70 * 100 / 750)* 1svw) calc((55 * 100 / 750)* 1svw) 0 calc((55 * 100 / 750)* 1svw);
 				font-size: calc((32 * 100 / 750)* 1svw);
 			}
 			@include media(PC){
-				width: calc(100% + 50px);
-				margin: auto -25px;
+				width: 100%;
+				margin: auto;				
 				padding: 70px 55px 0 55px;
 				font-size: 32px;
 			}

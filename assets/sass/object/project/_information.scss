@@ -22,11 +22,11 @@
 		background-repeat: no-repeat;
 		@include media(iPhone){
 			background-size: 100svw;
-			padding: calc((155 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc((160 * 100 / 750)* 1svw) calc((108 * 100 / 750)* 1svw);
+			padding: calc((155 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc(((155 - 50) * 100 / 750) * 1svw) calc((108 * 100 / 750)* 1svw);
 		}
 		@include media(PC){
 			background-size: 750px; 
-			padding: 155px 30px 160px 108px;
+			padding: 155px 30px calc(155px - 50px) 108px;
 		}	
 	}
 }

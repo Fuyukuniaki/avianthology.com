@@ -1,0 +1,22 @@
+@use "../../foundation/" as *;
+
+.c-video {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right:0;
+	left:0;
+	bottom:0;
+	overflow: hidden;
+	& > #video {
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 100lvh;
+		aspect-ratio: 16/9;
+		min-height: 100%;
+		min-width: 100%;
+	}
+}

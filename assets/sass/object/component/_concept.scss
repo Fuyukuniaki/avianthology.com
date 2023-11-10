@@ -1,6 +1,18 @@
 @use "../../foundation/" as *;
 
 .c-concept {
+	&__image {
+		overflow: hidden;
+		@include media(iPhone){
+			width: calc(( 620 * 100 / 750 )* 1svw);
+			height: auto;
+		}
+		@include media(PC){
+			width: 620px;
+			height: auto;
+		}
+		aspect-ratio: 620 / 200;
+	}
 	&__lists {
 		font-family: $textFont_English;
 		font-weight: $textFont_WeightRegular;
@@ -10,14 +22,21 @@
 		color: $bgColor_Black;
 		background: url('../images/title-concept.svg');
 		background-repeat: no-repeat;
-		color: $bgColor_Black;
 		@include media(iPhone){
 			background-size: 100svw;
-			padding: calc(( 450 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw) calc(( 50 * 100 / 750 )* 1svw) calc(( 55 * 100 / 750 )* 1svw);
+			padding: 0 calc(( 108 * 100 / 750 )* 1svw) calc(( 155 * 100 / 750 )* 1svw) calc(( 55 * 100 / 750 )* 1svw);
 		}
 		@include media(PC){
 			background-size: 750px;
-			padding: 450px 108px 50px 55px;
+			padding: 0 108px 155px 55px;
+		}
+		&--picture {
+			@include media(iPhone){
+				margin: calc(( 155 * 100 / 750 )* 1svw) 0 calc(( 100 * 100 / 750 )* 1svw) calc(( 55 * 100 / 750 )* -1svw);
+			}
+			@include media(PC){
+				margin: 155px 0 100px -55px;
+			}
 		}
 		&--category {
 			display: inline-block;
