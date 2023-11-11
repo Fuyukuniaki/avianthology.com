@@ -11,7 +11,7 @@
 		background-size: 100svw;;
 	}
 	@include media(PC){
-		background-size: 750px;
+		background-size: $widthMainContent;
 	}
 	&__lists {
 		display: block;
@@ -25,7 +25,7 @@
 			padding: calc((155 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc(((155 - 50) * 100 / 750) * 1svw) calc((108 * 100 / 750)* 1svw);
 		}
 		@include media(PC){
-			background-size: 750px; 
+			background-size: $widthMainContent; 
 			padding: 155px 30px calc(155px - 50px) 108px;
 		}	
 	}

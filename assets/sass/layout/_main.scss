@@ -2,22 +2,24 @@
 
 .l-main {
 	display: block;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	margin: auto;
+	// position: fixed;
+	// top: 0;
+	// right: 0;
+	// left: 0;
+	position: relative;
 	background: $bgColor_Black;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	// overflow-y: scroll;
+	// overflow-x: hidden;
 	z-index: 1;
 	@include media(iPhone){
+		margin: auto;
 		width: 100svw;
-		height: 100lvh;
+		// height: 100lvh;
 	}
 	@include media(PC){
-		width: 750px;
-		height: 100lvh;
+		margin: 0 auto;
+		width: $widthMainContent;
+		// height: 100lvh;
 	}
 }
 .l-top-part {
@@ -78,7 +80,7 @@
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: flex-start;
-	background: url(../images/background-info-line.svg);
+	background: url(../images/background-info-line.svg) $bgColor_PureSnow;
 	background-position: top right;
 	background-repeat: repeat-y;
 	@include media(iPhone){
@@ -112,7 +114,7 @@
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: flex-start;
-	background: url(../images/background-info-line.svg);
+	background: url(../images/background-info-line.svg) $bgColor_PureSnow;
 	background-position: top right;
 	background-repeat: repeat-y;
 	@include media(iPhone){
@@ -131,6 +133,6 @@
 	}
 	@include media(PC){
 		padding-top: 100px;
-		width: 750px;
+		width: $widthMainContent;
 	}
 }

@@ -89,7 +89,7 @@
 			<h2 class="c-author-list__title">author list</h2>
 			<p class="c-author-list__caption">クリックして&nbsp;寄稿者一覧・サンプルを開く</p>
 			<dl class="p-author-list__lists">
-				<dt class="c-author-list__lists--title">
+				<dt class="c-author-list__lists--title" id="illustration">
 					イラスト
 				</dt>
 				<dd class="c-author-list__lists--wrap">
@@ -199,9 +199,9 @@
 							</ul>
 						</li>
 					</ul>
-					<button class="c-button__modal-close">閉じる</button>
+					<button href="#illustration" class="c-button__modal-close">閉じる</button>
 				</dd>
-				<dt class="c-author-list__lists--title">
+				<dt class="c-author-list__lists--title" id="manga">
 					漫画
 				</dt>
 				<dd class="c-author-list__lists--wrap">
@@ -279,9 +279,9 @@
 							</ul>
 						</li>
 					</ul>
-					<button class="c-button__modal-close">閉じる</button>
+					<button href="#manga" class="c-button__modal-close">閉じる</button>
 				</dd>
-				<dt class="c-author-list__lists--title">
+				<dt class="c-author-list__lists--title" id="novel">
 					小説
 				</dt>
 				<dd class="c-author-list__lists--wrap">
@@ -351,9 +351,9 @@
 							</ul>
 						</li>
 					</ul>
-					<button class="c-button__modal-close">閉じる</button>
+					<button href="#novel" class="c-button__modal-close">閉じる</button>
 				</dd>
-				<dt class="c-author-list__lists--title">
+				<dt class="c-author-list__lists--title" id="photo">
 					写真
 				</dt>
 				<dd class="c-author-list__lists--wrap">
@@ -391,7 +391,7 @@
 							</ul>
 						</li>
 					</ul>
-					<button class="c-button__modal-close">閉じる</button>
+					<button href="#photo" class="c-button__modal-close">閉じる</button>
 				</dd>
 			</dl>
 		</article>
@@ -453,7 +453,7 @@
 	</section>
 	<section class="l-flyer-part" id="flyer">
 		<figure class="c-flyer__image--wrap">
-			<img class="c-flyer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-about-cover.svg" width="620" height="690" alt="フライヤー" decoding="async">
+			<img class="c-flyer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-about-cover.svg" alt="フライヤー" decoding="async">
 		</figure>
 		<p class="c-flyer__explain">
 		フライヤーの配布にご協力して頂ける方を<br>
@@ -489,7 +489,7 @@
 			</li>
 		</ul>
 		<dl class="p-project__detail">
-			<dt class="c-project__detail--title">参加方法・注意事項はこちらをチェック！</dt>
+			<dt class="c-project__detail--title" id="project__howto">参加方法・注意事項はこちらをチェック！</dt>
 			<dd class="c-project__detail--text">
 				<dl class="c-project-detail__text--wrap">
 					<dt class="c-project-detail__text--title">参加方法</dt>
@@ -535,7 +535,7 @@
 						</ul>
 					</dd>
 				</dl>
-				<button class="c-button__modal-close">閉じる</button>
+				<button href="#project__howto" class="c-button__modal-close">閉じる</button>
 			</dd>
 			<dd class="c-project__detail--posts">
 				<a class="c-button__project--wrapper" href="https://twitter.com/hashtag/%E3%81%93%E3%82%93%E3%81%AA%E7%85%87%E3%82%A4%E3%82%B0%E3%83%8A%E3%83%88%E3%83%95%E3%81%8C%E8%A6%8B%E3%81%A6%E3%81%BF%E3%81%9F%E3%81%84?src=hashtag_click&f=live">
@@ -588,4 +588,4 @@
 		</dl>
 	</section>
 </main>
-<?php get_footer(); ?>
+	<?php get_footer(); ?>

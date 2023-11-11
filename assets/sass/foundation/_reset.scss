@@ -84,9 +84,10 @@ meter {
 	width: 14px;
 	background-color: $textColor_0color;
 	@include media(iPhone){
-		border-radius: calc((9 * 100 / 750)* 1svw);
+		display: none;
 	}
 	@include media(PC){
+		display: block;
 		border-radius: 9px;
 	}
 }

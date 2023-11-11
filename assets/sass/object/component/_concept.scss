@@ -27,7 +27,7 @@
 			padding: 0 calc(( 108 * 100 / 750 )* 1svw) calc(( 155 * 100 / 750 )* 1svw) calc(( 55 * 100 / 750 )* 1svw);
 		}
 		@include media(PC){
-			background-size: 750px;
+			background-size: contain;
 			padding: 0 108px 155px 55px;
 		}
 		&--picture {

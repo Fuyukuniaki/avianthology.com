@@ -9,11 +9,11 @@
 	@include media(iPhone){
 		width: calc((635 * 100 / 750)* 1svw);
 		min-height: calc((1100 * 100 / 750)* 1svw);
-		background-size: calc((562.5 * 100 / 750)* 1svw) calc((1000 * 100 / 750)* 1svw);
+		background-size: calc((563 * 100 / 750)* 1svw) calc((1000 * 100 / 750)* 1svw);
 	}
 	@include media(PC){
 		width: 635px;
 		min-height: 1100px;
-		background-size: 562.5px 1000px;
+		background-size: 563px 1000px;
 	}
 }

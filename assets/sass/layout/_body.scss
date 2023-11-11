@@ -7,8 +7,9 @@
 	align-items: center;
 	color: $textColor_White;
 	background-color: $bgColor_Black;
-	overflow: hidden;
-	width: 100lvw;
+	// overflow: hidden;
+	overflow-x: hidden;
+	width: 100svw;
 	font-family: $textFont_Japanese;
 	font-weight: $textFont_WeightRegular;
 }

@@ -24,18 +24,28 @@
 			right: calc(( 610 * 100 / 750 )* -1svw);
 		}
 		@include media(PC){
-			right: -610px;
+			right: calc(-610px + 13px);
 		}
 		opacity: 0;
 	}
 	100% {
-		right: 0;
+		@include media(iPhone){
+			right: 0;
+		}
+		@include media(PC){
+			right: -13px;
+		}
 		opacity: 1;
 	}
 }
 @keyframes frame-out {
 	0% {
-		right: 0;
+		@include media(iPhone){
+			right: 0;
+		}
+		@include media(PC){
+			right: -13px;
+		}
 		opacity: 1;
 	}
 	99% {
@@ -43,11 +53,17 @@
 			right: calc(( 610 * 100 / 750 )* -1svw);
 		}
 		@include media(PC){
-			right: -610px;
+			right: calc(-610px + 13px);
 		}
 		opacity: 0.8;
 	}
 	100% {
+		@include media(iPhone){
+			right: calc(( 610 * 100 / 750 )* -1svw);
+		}
+		@include media(PC){
+			right: calc(-610px + 13px);
+		}
 		opacity: 0;
 	}
 }

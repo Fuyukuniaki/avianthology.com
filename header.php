@@ -5,6 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="閃火">
+	<meta property="og:type" content="fan-site">
+	<meta property="og:url" content="https://avianthology.com">
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/AVI_OGP.png">
+	<meta property="og:description" content="PSYCHO-PASS 煇・ワシリー・イグナトフ 中心全年齢アンソロジー">
+	<meta property="og:site_name" content="PP非公式アンソロジー「閃火」">
+	<meta property="og:locale" content="JP">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@AVIantholo2024">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<script>
 		(function(d) {
@@ -32,26 +43,15 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-	<figure class="c-video">
+	<!-- <figure class="c-video">
 		<video id="video" poster="" webkit-playsinline playsinline muted autoplay loop>
-		<!--
-			poster：動画ファイルが利用できない環境で代替表示される画像
-			webkit-playsinline：iOS 9までのSafari用インライン再生指定
-			playsinline：iOS 10以降のSafari用インライン再生指定
-			muted：音声をミュートさせる
-			autoplay：動画を自動再生させる
-			loop：動画をループさせる
-			controls：コントロールバーを表示する
-		-->
 			<source src="https://avianthology.com/wp-content/uploads/mixkit-terrifying-lightening-storm-at-night-during-a-cyclone-47272-medium.mp4" type="video/mp4">
 		</video>
-	</figure>
+	</figure> -->
 
-
-
-	<header id="top" class="l-header js-header">
+	<header id="pagetop" class="l-header js-header">
 		<a class="p-header__link">
-			<h1 href="/#top" class="c-logo">閃火</h1>
+			<h1 href="/#pagetop" class="c-logo">閃火</h1>
 		</a>
 		<nav class="p-header__nav">
 			<dl class="p-hamburger-menu">
@@ -59,25 +59,25 @@
 				<dd class="p-hidden-menu">
 					<ul class="c-hidden-menu__lists">
 						<li class="c-hidden-menu__lists--list">
-							<a class="c-hidden-menu__link u-top" href="#top">top</a>
+							<a class="c-hidden-menu__link u-top" href="#pagetop">top</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
 							<a class="c-hidden-menu__link u-about" href="#about">about</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a href="#info" class="c-hidden-menu__link u-info">info</a>
+							<a class="c-hidden-menu__link u-info" href="#info">info</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a href="#flyer" class="c-hidden-menu__link u-flyer">flyer</a>
+							<a class="c-hidden-menu__link u-flyer" href="#flyer">flyer</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a href="#project" class="c-hidden-menu__link u-project">project</a>
+							<a class="c-hidden-menu__link u-project" href="#project">project</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a href="#concept" class="c-hidden-menu__link u-concept">concept</a>
+							<a class="c-hidden-menu__link u-concept" href="#concept">concept</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a href="#contact" class="c-hidden-menu__link u-contact">contact</a>
+							<a class="c-hidden-menu__link u-contact" href="#contact">contact</a>
 						</li>
 					</ul>
 					<button class="c-button__close">close</button>

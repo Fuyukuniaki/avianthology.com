@@ -26,12 +26,12 @@
 		color: $textColor_0color;
 		position: relative;
 		background-repeat: no-repeat;
+		background-position: left center;
 		@include media(iPhone){
 			background-size: contain;
 			height: calc(( 60 * 100 / 750 )* 1svw);
 			min-width: calc(( 290 * 100 / 750 )* 1svw);
 			width: calc(( 610 * 100 / 750 )* 1svw);
-			background-position: calc(( 60 * 100 / 750 )* 1svw) center;
 			margin: calc(( 20 * 100 / 750 )* 1svw) 0;
 		}
 		@include media(PC){
@@ -39,7 +39,6 @@
 			height: 60px;
 			min-width: 290px;
 			width: 610px;
-			background-position: 60px center;
 			margin: 20px 0;
 		}
 		&::after {
@@ -48,7 +47,12 @@
 			bottom: 0;
 			left: 0%;
 			width: 100%;
-			height: 1px;
+			@include media(iPhone){
+				height: calc(( 1 * 100 / 750 )* 1svw);
+			}
+			@include media(PC){
+				height: 3.3px;
+			}
 			background:$bgColor_Black;
 			transition: all 350ms;
 			transform: scale(0, 1);

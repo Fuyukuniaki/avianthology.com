@@ -2,16 +2,17 @@
 
 .p-hamburger-menu {
 	position: absolute;
-	top: 0;
 	display: block;
 	background-color: $bgColor_PaleGray;
 	margin: 0 0 0 auto;
 	@include media(iPhone){
 		right: calc(( 610 * 100 / 750 )* -1svw);
+		top: calc(( 50 * 100 / 750 )* -1svw);
 		width: calc(( 610 * 100 / 750 )* 1svw);
 	}
 	@include media(PC){
-		right: -610px;
+		right: calc(-610px + 13px);
+		top: -50px;
 		width: 610px;
 	}
 	
@@ -19,7 +20,13 @@
 		overflow-y: scroll;
 		overflow-x: hidden;
 		height: 100svh;
-		right: 0;
+		top: 0;
+		@include media(iPhone){
+			right: 0;
+		}
+		@include media(PC){
+			right: -13px;
+		}
 		animation: frame-in 700ms;
 	}
 	&:not(.js-open) {
@@ -39,19 +46,19 @@
 	&__button {
 		position: absolute;
 		display: flex;
-		top: 0;
 		justify-content: end;
 		align-items: center;
 		@include media(iPhone){
+			top: calc(( 50 * 100 / 750 ) * 1svw);
 			height: calc(( 100 * 100 / 750 ) * 1svw);
 			width: 100svw;
 			left: -100svw;
 		}
 		@include media(PC){
-
+			top: 50px;
 			height: 100px;
-			width: 750px;
-			left: -750px;
+			width: $widthMainContent;
+			left: -$widthMainContent;
 		}
 	}
 	.js-open > &__button {
@@ -68,7 +75,7 @@
 		@include media(PC){
 
 			height: 100px;
-			width: 750px;
+			width: $widthMainContent;
 			left: -99px;
 		}
 	}

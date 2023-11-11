@@ -14,12 +14,14 @@
 			height: calc((65 * 100 / 750)* 1svw);
 			font-size: calc((32 * 100 / 750)* 1svw);
 			padding: 0 calc((16.5 * 100 / 750)* 1svw);
+			margin-bottom: calc((25 * 100 / 750)* 1svw);
 		}
 		@include media(PC){
 			line-height: 65px;
 			height: 65px;
 			font-size: 32px;
 			padding: 0 16.5px;
+			margin-bottom: 25px;
 		}
 	}
 	&__content {

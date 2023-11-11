@@ -1,7 +1,7 @@
 @use "../../foundation/" as *;
 
 .c-icon {
-	&__hamburger {
+	&__hamburger:not(.js-open) {
 		display: block;
 		position: absolute;
 		background-color: $textColor_White;
@@ -99,7 +99,7 @@
 		}
 	}
 }
-.js-open .c-icon {
+.js-open.c-icon {
 	&__hamburger {
 		display: block;
 		position: absolute;
