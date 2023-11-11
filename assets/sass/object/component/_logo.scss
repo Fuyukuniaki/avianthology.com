@@ -4,7 +4,6 @@
 	background-image:url(../images/logo.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	color: $textColor_0color;
 	display: block;
 	@include media(iPhone){
 		height: calc(( 36.23 * 100 / 750 ) * 1svw);

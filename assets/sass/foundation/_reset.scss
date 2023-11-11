@@ -83,6 +83,7 @@ meter {
 ::-webkit-scrollbar {
 	width: 14px;
 	background-color: $textColor_0color;
+		font-size: 0px;
 	@include media(iPhone){
 		display: none;
 	}

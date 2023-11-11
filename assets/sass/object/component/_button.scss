@@ -5,8 +5,9 @@
 		display: block;
 		position: relative;
 		color: $textColor_0color;
-		background-image: url(../images/button-close.svg);
-		background-size: cover;
+		font-size: 0px;
+		background: url(../images/button-close.svg) center no-repeat;
+		background-size: contain;
 		@include media(iPhone){
 			height: calc(( 36 * 100 / 750 )* 1svw);
 			width: calc(( 176 * 100 / 750 )* 1svw);

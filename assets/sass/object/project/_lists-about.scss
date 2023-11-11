@@ -2,14 +2,15 @@
 
 .p-lists-about {
 	display: block;
-	width: 100%;
 	margin: auto;
 	color: $bgColor_Black;
 	@include media(iPhone){
-		padding: calc((250 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc((175 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
+		width: 100svw;
+		padding: calc((155 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc((175 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
 	}
 	@include media(PC){
-		padding: 250px 30px 175px 30px;
+		width: 100%;
+		padding: 155px 30px 175px 30px;
 	}
 	&__category {
 		background: $bgColor_Black;

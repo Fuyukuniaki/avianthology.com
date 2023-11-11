@@ -8,6 +8,7 @@
 		background-repeat: no-repeat;
 		background-size: 60%;
 		color: $textColor_0color;
+		font-size: 0px;
 		border-radius: 50%;
 		@include media(iPhone){
 			width: calc((83 * 100 / 750)* 1svw);
@@ -24,6 +25,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		color: $textColor_0color;
+		font-size: 0px;
 		@include media(iPhone){
 			width: calc((83 * 100 / 750)* 1svw);
 			height: calc((83 * 100 / 750)* 1svw);

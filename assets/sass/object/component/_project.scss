@@ -137,6 +137,7 @@
 			}
 		}
 		&--posts {
+			display: flex;
 			@include media(iPhone) {
 				padding: calc((60 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) 0 calc((30 * 100 / 750)* 1svw);
 				font-size: calc((32 * 100 / 750)* 1svw);

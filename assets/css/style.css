@@ -80,6 +80,7 @@ meter {
 ::-webkit-scrollbar {
   width: 14px;
   background-color: transparent;
+  font-size: 0px;
 }
 @media only screen and (max-width:750px) {
   ::-webkit-scrollbar {
@@ -427,13 +428,13 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .l-footer {
-    padding: 8svw 0 5.3333333333svw 0;
+    padding: 5.3333333333svw 0 2.6666666667svw 0;
     width: 100svw;
   }
 }
 @media only screen and (min-width:751px) {
   .l-footer {
-    padding: 60px 0 40px 0;
+    padding: 40px 0 20px 0;
     width: 750px;
   }
 }
@@ -445,11 +446,13 @@ meter {
 @media only screen and (max-width:750px) {
   .l-footer > .c-logo {
     height: 4.2666666667svw;
+    margin-bottom: 1.0666666667svw;
   }
 }
 @media only screen and (min-width:751px) {
   .l-footer > .c-logo {
     height: 32px;
+    margin-bottom: 8px;
   }
 }
 @media only screen and (max-width:750px) {
@@ -488,7 +491,6 @@ meter {
   background-image: url(../images/logo.png);
   background-size: cover;
   background-repeat: no-repeat;
-  color: transparent;
   display: block;
 }
 @media only screen and (max-width:750px) {
@@ -509,6 +511,7 @@ meter {
   position: absolute;
   background-color: #F2F2F2;
   color: transparent;
+  font-size: 0px;
   margin: auto;
   top: 0;
   bottom: 0;
@@ -620,7 +623,9 @@ meter {
   display: block;
   position: absolute;
   background-color: transparent;
+  font-size: 0px;
   color: transparent;
+  font-size: 0px;
 }
 @media only screen and (max-width:750px) {
   .js-open.c-icon__hamburger {
@@ -675,8 +680,9 @@ meter {
   display: block;
   position: relative;
   color: transparent;
-  background-image: url(../images/button-close.svg);
-  background-size: cover;
+  font-size: 0px;
+  background: url(../images/button-close.svg) center no-repeat;
+  background-size: contain;
 }
 @media only screen and (max-width:750px) {
   .c-button__close {
@@ -847,6 +853,7 @@ meter {
   background-size: cover;
   background-repeat: no-repeat;
   color: transparent;
+  font-size: 0px;
   display: inline-block;
 }
 @media only screen and (max-width:750px) {
@@ -875,12 +882,15 @@ meter {
     line-height: 43px;
   }
 }
+.c-keyvisual__data {
+  text-align: right;
+}
 @media only screen and (max-width:750px) {
   .c-keyvisual__data {
     font-size: 6.9333333333svw;
     line-height: 8.5333333333svw;
     letter-spacing: 0.2133333333svw;
-    margin: -12svw 5.0666666667svw auto auto;
+    margin: -12svw 0 auto auto;
   }
 }
 @media only screen and (min-width:751px) {
@@ -888,7 +898,7 @@ meter {
     font-size: 52px;
     line-height: 64px;
     letter-spacing: 1.6;
-    margin: -90px 38px auto auto;
+    margin: -90px 0 auto auto;
   }
 }
 .c-keyvisual__data::before {
@@ -924,14 +934,14 @@ meter {
   .c-keyvisual__data::after {
     width: 95.6613333333svw;
     height: 4.264svw;
-    margin: 4svw -5.0666666667svw auto -15.4666666667svw;
+    margin: 4svw 0 auto -15.4666666667svw;
   }
 }
 @media only screen and (min-width:751px) {
   .c-keyvisual__data::after {
     width: 717.46px;
     height: 31.98px;
-    margin: 30px -38px auto -116px;
+    margin: 30px 0 auto -116px;
   }
 }
 .c-keyvisual__text {
@@ -960,6 +970,7 @@ meter {
   background-position: center;
   background-repeat: no-repeat;
   color: transparent;
+  font-size: 0px;
   display: inline-block;
 }
 @media only screen and (max-width:750px) {
@@ -1098,6 +1109,7 @@ meter {
   background-position: center;
   background-repeat: no-repeat;
   color: transparent;
+  font-size: 0px;
   display: inline-block;
 }
 @media only screen and (max-width:750px) {
@@ -1149,6 +1161,7 @@ meter {
   background-position: right top;
   background-repeat: no-repeat;
   color: transparent;
+  font-size: 0px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -1231,6 +1244,7 @@ meter {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
+  font-size: 0px;
 }
 @media only screen and (max-width:750px) {
   .c-author-list__title {
@@ -1306,7 +1320,6 @@ meter {
 }
 .c-author-list__lists--wrap > .c-author-list__lists--member {
   opacity: 0;
-  transition: all 600ms ease-in-out;
 }
 .c-author-list__lists--title {
   display: flex;
@@ -1485,6 +1498,7 @@ meter {
 }
 .c-author-list__color {
   display: flex;
+  display: none;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -1532,6 +1546,7 @@ meter {
   background-repeat: no-repeat;
   background-size: 60%;
   color: transparent;
+  font-size: 0px;
   border-radius: 50%;
 }
 @media only screen and (max-width:750px) {
@@ -1552,6 +1567,7 @@ meter {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
+  font-size: 0px;
 }
 @media only screen and (max-width:750px) {
   .c-sns-link--pixiv {
@@ -1573,6 +1589,7 @@ meter {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
+  font-size: 0px;
 }
 @media only screen and (max-width:750px) {
   .c-staff-list__title {
@@ -1939,6 +1956,9 @@ meter {
   opacity: 1;
   transition: opacity 600ms ease-in-out;
 }
+.c-project__detail--posts {
+  display: flex;
+}
 @media only screen and (max-width:750px) {
   .c-project__detail--posts {
     padding: 8svw 4svw 0 4svw;
@@ -2249,6 +2269,7 @@ meter {
 .c-hidden-menu__link {
   display: block;
   color: transparent;
+  font-size: 0px;
   position: relative;
   background-repeat: no-repeat;
   background-position: left center;
@@ -2300,6 +2321,15 @@ meter {
   font-weight: 300;
 }
 
+.p-header__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  font-size: 0px;
+  padding: 50%;
+}
+
 .p-key-visual {
   display: block;
   background-image: url(../images/key-visual.png);
@@ -2325,15 +2355,16 @@ meter {
 .p-news {
   display: block;
   background: #0B0B0B;
-  width: 100%;
 }
 @media only screen and (max-width:750px) {
   .p-news {
+    width: 100svw;
     margin: auto auto 18.6666666667svw auto;
   }
 }
 @media only screen and (min-width:751px) {
   .p-news {
+    width: 100%;
     margin: auto auto 140px auto;
   }
 }
@@ -2361,16 +2392,17 @@ meter {
 .p-x-twitter {
   display: block;
   background: #0B0B0B;
-  width: 100%;
   margin: auto;
 }
 @media only screen and (max-width:750px) {
   .p-x-twitter {
+    width: 100svw;
     padding-bottom: 20svw;
   }
 }
 @media only screen and (min-width:751px) {
   .p-x-twitter {
+    width: 100%;
     padding-bottom: 150px;
   }
 }
@@ -2416,7 +2448,9 @@ meter {
   display: block;
   height: 100svh;
   background-color: transparent;
+  font-size: 0px;
   margin: 0 0 0 auto;
+  animation: frame-out 700ms;
 }
 @media only screen and (max-width:750px) {
   .p-hamburger-menu:not(.js-open) {
@@ -2440,16 +2474,16 @@ meter {
   .p-hamburger-menu__button {
     top: 6.6666666667svw;
     height: 13.3333333333svw;
-    width: 100svw;
-    left: -100svw;
+    width: 13.3333333333svw;
+    left: -13.3333333333svw;
   }
 }
 @media only screen and (min-width:751px) {
   .p-hamburger-menu__button {
     top: 50px;
     height: 100px;
-    width: 750px;
-    left: -750px;
+    width: 100px;
+    left: -100px;
   }
 }
 .js-open > .p-hamburger-menu__button {
@@ -2476,18 +2510,19 @@ meter {
 
 .p-lists-about {
   display: block;
-  width: 100%;
   margin: auto;
   color: #0B0B0B;
 }
 @media only screen and (max-width:750px) {
   .p-lists-about {
-    padding: 33.3333333333svw 4svw 23.3333333333svw 4svw;
+    width: 100svw;
+    padding: 20.6666666667svw 4svw 23.3333333333svw 4svw;
   }
 }
 @media only screen and (min-width:751px) {
   .p-lists-about {
-    padding: 250px 30px 175px 30px;
+    width: 100%;
+    padding: 155px 30px 175px 30px;
   }
 }
 .p-lists-about__category {
@@ -2497,17 +2532,18 @@ meter {
 
 .p-author-list {
   display: block;
-  width: 100%;
   font-family: "fot-tsukuardgothic-std", sans-serif;
   font-weight: 700;
 }
 @media only screen and (max-width:750px) {
   .p-author-list {
+    width: 100svw;
     margin-bottom: 20svw;
   }
 }
 @media only screen and (min-width:751px) {
   .p-author-list {
+    width: 100%;
     margin-bottom: 150px;
   }
 }
@@ -2518,7 +2554,6 @@ meter {
 
 .p-staff-list {
   display: block;
-  width: 100%;
   margin: auto;
 }
 .p-staff-list__lists {
@@ -2526,30 +2561,33 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .p-staff-list__lists {
+    width: 100svw;
     padding: 12.6666666667svw 4svw 20.6666666667svw 4svw;
   }
 }
 @media only screen and (min-width:751px) {
   .p-staff-list__lists {
+    width: 100%;
     padding: 95px 30px 155px 30px;
   }
 }
 
 .p-information {
   display: block;
-  width: 100%;
   margin: auto;
   color: #0B0B0B;
   background-repeat: repeat-y;
-  background: url("../images/background-info-line.svg");
+  background: url("../images/background-info-line.svg") #ffffff;
 }
 @media only screen and (max-width:750px) {
   .p-information {
+    width: 100svw;
     background-size: 100svw;
   }
 }
 @media only screen and (min-width:751px) {
   .p-information {
+    width: 750px;
     background-size: 750px;
   }
 }
@@ -2578,7 +2616,6 @@ meter {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: 700;
   display: block;
-  width: 100%;
   margin: auto;
   color: #0B0B0B;
   background: url("../images/title-project.svg") 0 -1px;
@@ -2587,12 +2624,14 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .p-project {
+    width: 100svw;
     background-size: 100svw;
     padding: 20.6666666667svw 4svw 6.6666666667svw 14.4svw;
   }
 }
 @media only screen and (min-width:751px) {
   .p-project {
+    width: 100%;
     background-size: 750px;
     padding: 155px 30px 50px 108px;
   }

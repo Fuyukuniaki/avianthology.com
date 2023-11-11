@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="491" height="61.403" viewBox="0 0 491 61.403">
-  <g id="ABOUT" transform="translate(-139 -308.597)">
-    <rect id="BG" width="491" height="61" transform="translate(139 309)" fill="rgba(255,255,255,0)"/>
-    <g id="コンポーネント_6_1" data-name="コンポーネント 6 – 1" transform="translate(199 308.597)">
-      <text id="ABOUT-2" data-name="ABOUT" transform="translate(0 47)" fill="#0b0b0b" font-size="50" font-family="EthnocentricLt-Regular, Ethnocentric" letter-spacing="0.2em"><tspan x="0" y="0">ABOUT</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="491" height="61" viewBox="0 0 491 61">
+  <g id="ABOUT" transform="translate(-139 -310)">
+    <rect id="BG" width="491" height="61" transform="translate(139 310)" fill="rgba(255,255,255,0)"/>
+    <g id="コンポーネント_6_1" data-name="コンポーネント 6 – 1" transform="translate(199.5 321)">
+      <path id="パス_55" data-name="パス 55" d="M50.7,0,29.3-31.85a4.206,4.206,0,0,0-3.55-2.05,4.3,4.3,0,0,0-3.55,2.05L.5,0H6.9L25.65-27.75l15.4,23.2H17.75L14.45,0ZM91.35,0c9.05,0,12.15-4.1,12.15-9.25a7.881,7.881,0,0,0-5.85-7.95,7.348,7.348,0,0,0,5.2-7.2c0-5.9-4.35-9.05-11.45-9.05H68l-3.7,4.6H91.6c3.75,0,6.1,1.75,6.1,5.2,0,2.9-2.1,4.85-5.45,4.85H64.15V0Zm1-14.8c3.85,0,5.75,2.1,5.75,5.2,0,2.75-2,5.05-6.7,5.05H69.55V-14.8Zm70.05-1.95C162.4-28.7,154.9-34,139.95-34S117.5-28.7,117.5-16.75,125,.55,139.95.55,162.4-4.8,162.4-16.75Zm-5.4,0C157-7.35,151.8-4,139.95-4S122.9-7.35,122.9-16.75s5.2-12.7,17.05-12.7S157-26.15,157-16.75Zm55.3,2.15c0,7.5-2.4,10.65-13.95,10.65s-16-3.15-16-10.65V-33.45h-5.4V-14.6c0,10.1,6.45,15.15,21.4,15.15,12.9,0,19.4-5.05,19.4-15.15V-33.45H212.3ZM253.5,0V-28.85h15.6l3.55-4.6h-38.7l-3.65,4.6h17.75V0Z" transform="translate(-0.5 34)" fill="#0b0b0b"/>
     </g>
   </g>
 </svg>

@@ -3,11 +3,12 @@
 .p-news {
 	display: block;
 	background: #0B0B0B;
-	width: 100%;
 	@include media(iPhone){
+		width: 100svw;
 		margin: auto auto calc((140 * 100 / 750)* 1svw) auto;
 	}
 	@include media(PC){
+		width: 100%;
 		margin: auto auto 140px auto;
 	}
 	&-contents {

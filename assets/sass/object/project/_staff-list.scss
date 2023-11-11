@@ -2,14 +2,15 @@
 
 .p-staff-list {
 	display: block;
-	width: 100%;
 	margin: auto;
 	&__lists {
 		color: $bgColor_Black;
 		@include media(iPhone){
+			width: 100svw;
 			padding: calc((155 * 100 / 750)* 1svw - 8svw) calc((30 * 100 / 750)* 1svw) calc((155 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
 		}
 		@include media(PC){
+			width: 100%;
 			padding: calc(155px - 60px) 30px 155px 30px;
 		}
 	}

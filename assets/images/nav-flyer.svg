@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="491" height="61.403" viewBox="0 0 491 61.403">
-  <g id="FLYER" transform="translate(-139 -751.597)">
-    <rect id="BG" width="491" height="61" transform="translate(139 752)" fill="rgba(255,255,255,0)"/>
-    <g id="コンポーネント_11_1" data-name="コンポーネント 11 – 1" transform="translate(199 751.597)">
-      <text id="FLYER-2" data-name="FLYER" transform="translate(0 47)" fill="#0b0b0b" font-size="50" font-family="EthnocentricLt-Regular, Ethnocentric" letter-spacing="0.2em"><tspan x="0" y="0">FLYER</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="491" height="61" viewBox="0 0 491 61">
+  <g id="FLYER" transform="translate(-139 -751)">
+    <rect id="BG" width="491" height="61" transform="translate(139 751)" fill="rgba(255,255,255,0)"/>
+    <g id="コンポーネント_11_1" data-name="コンポーネント 11 – 1" transform="translate(202 765.147)">
+      <path id="パス_53" data-name="パス 53" d="M32.45-14.2l3.3-4.3H8.4V-28.85H34.05l3.55-4.6H3V0H8.4V-14.2ZM80.65,0,84.2-4.55H56.3v-28.9H50.9V0Zm29.1,0V-12.4L130.6-33.45h-6.85L107.15-16.5,90.2-33.45h-7L104.35-12.4V0ZM176.1,0l3.55-4.55H149.3V-14.8h25.45l3.1-4H149.3V-28.85h26.55l3.55-4.6H143.9V0Zm60.8,0L223.2-12.05c6.8-.6,11.2-4.25,11.2-10.25,0-8.15-7.65-11.15-15.45-11.15h-22.5l-3.55,4.6h24.05c6.95,0,11.9,1.55,11.9,6.85,0,4.8-5.65,6.6-11.9,6.6H193V0h5.4V-11.05h19.2L229.55,0Z" transform="translate(-3 33.45)" fill="#0b0b0b"/>
     </g>
   </g>
 </svg>

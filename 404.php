@@ -50,36 +50,36 @@
 	</figure> -->
 
 	<header id="pagetop" class="l-header js-header">
+		
 		<h1 class="c-logo">
-			<a href="/#pagetop" class="p-header__link">
-				閃火
-			</a>
+			<a href="/#pagetop" class="p-header__link">閃火</a>
 		</h1>
+		
 		<nav class="p-header__nav">
 			<dl class="p-hamburger-menu">
 				<dt class="p-hamburger-menu__button"><button class="c-icon__hamburger">Tap to open</button></dt>
 				<dd class="p-hidden-menu">
 					<ul class="c-hidden-menu__lists">
 						<li class="c-hidden-menu__lists--list">
-							<a class="c-hidden-menu__link u-top" href="#pagetop">top</a>
+							<a class="c-hidden-menu__link u-top" href="/#pagetop">top</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a class="c-hidden-menu__link u-about" href="#about">about</a>
+							<a class="c-hidden-menu__link u-about" href="/#about">about</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a class="c-hidden-menu__link u-info" href="#info">info</a>
+							<a class="c-hidden-menu__link u-info" href="/#info">info</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a class="c-hidden-menu__link u-flyer" href="#flyer">flyer</a>
+							<a class="c-hidden-menu__link u-flyer" href="/#flyer">flyer</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a class="c-hidden-menu__link u-project" href="#project">project</a>
+							<a class="c-hidden-menu__link u-project" href="/#project">project</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a class="c-hidden-menu__link u-concept" href="#concept">concept</a>
+							<a class="c-hidden-menu__link u-concept" href="/#concept">concept</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
-							<a class="c-hidden-menu__link u-contact" href="#contact">contact</a>
+							<a class="c-hidden-menu__link u-contact" href="/#contact">contact</a>
 						</li>
 					</ul>
 					<button class="c-button__close">close</button>
@@ -87,3 +87,8 @@
 			</dl>
 		</nav>
 	</header>
+	<main style="text-align: center; padding-top: 200px; height:calc(100svh - 100px)">
+		<h2 style="font-size: 20svw">404</h2>
+		<p>error</p>
+	</main>
+	<?php get_footer(); ?>

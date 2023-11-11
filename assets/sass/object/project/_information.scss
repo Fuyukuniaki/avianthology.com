@@ -2,15 +2,16 @@
 
 .p-information {
 	display: block;
-	width: 100%;
 	margin: auto;
 	color: $bgColor_Black;
 	background-repeat: repeat-y;
-	background: url('../images/background-info-line.svg');
+	background: url('../images/background-info-line.svg') $bgColor_PureSnow;
 	@include media(iPhone){
+		width: 100svw;
 		background-size: 100svw;;
 	}
 	@include media(PC){
+		width: $widthMainContent;
 		background-size: $widthMainContent;
 	}
 	&__lists {

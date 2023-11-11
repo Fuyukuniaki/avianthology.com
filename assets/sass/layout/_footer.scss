@@ -6,20 +6,22 @@
 	justify-content: center;
 	align-items: center;
 	@include media(iPhone){
-		padding: calc(( 60 * 100 / 750 ) * 1svw) 0 calc(( 40 * 100 / 750 ) * 1svw) 0;
+		padding: calc(( 40 * 100 / 750 ) * 1svw) 0 calc(( 20 * 100 / 750 ) * 1svw) 0;
 		width: 100svw;
 	}
 	@include media(PC){
-		padding: 60px 0 40px 0; 
+		padding: 40px 0 20px 0; 
 		width: $widthMainContent;
 	}
 	& > .c-logo {
 		display: block;
 		@include media(iPhone){
 			height: calc(( 32 * 100 / 750 ) * 1svw);
+			margin-bottom: calc(( 8 * 100 / 750 ) * 1svw);
 		}
 		@include media(PC){
 			height: 32px;
+			margin-bottom: 8px;
 		}
 		aspect-ratio: 349 / 153;
 		width:auto;

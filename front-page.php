@@ -99,7 +99,7 @@
 								<li class="c-author-list__name">iruka</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/okomari_desuka">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/okomari_desuka">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -107,7 +107,7 @@
 								<li class="c-author-list__name">osu</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/pp_osu_2">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/pp_osu_2">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -115,7 +115,7 @@
 								<li class="c-author-list__name">からあげ弁当</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/28grtm">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/28grtm">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -123,7 +123,7 @@
 								<li class="c-author-list__name">北とおき</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/north_far_2">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/north_far_2">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -131,7 +131,7 @@
 								<li class="c-author-list__name">syma</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/syma00000000">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/syma00000000">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -139,7 +139,7 @@
 								<li class="c-author-list__name">たこすけ</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/TAKOSUKE_PP3">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/TAKOSUKE_PP3">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -147,7 +147,7 @@
 								<li class="c-author-list__name">中川</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/nkpps_n">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nkpps_n">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -155,7 +155,7 @@
 								<li class="c-author-list__name">はごろ</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/856_zatta">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/856_zatta">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -163,15 +163,15 @@
 								<li class="c-author-list__name">鶲 -ひたき-</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/Hitaki_TEMPO">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/Hitaki_TEMPO">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
 							<ul class="c-author-list__name--wrap">
-								<li class="c-author-list__name">ぴろびろ</li>
+								<li class="c-author-list__name">ぴろぴろ</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/AzarashiBall">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/AzarashiBall">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -179,7 +179,7 @@
 								<li class="c-author-list__name">纏い</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/matoi_hgmt">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/matoi_hgmt">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -187,7 +187,7 @@
 								<li class="c-author-list__name">よくがんばらない</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/chottohanamaru">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/chottohanamaru">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -195,7 +195,7 @@
 								<li class="c-author-list__name">よくに</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/ykn11tsk21">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ykn11tsk21">X</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -211,7 +211,7 @@
 								<li class="c-author-list__name">Janesonn</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/yo_Janesonn">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/yo_Janesonn">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -219,15 +219,15 @@
 								<li class="c-author-list__name">goggles</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/tetriauto">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/tetriauto">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
 							<ul class="c-author-list__name--wrap">
-								<li class="c-author-list__name">seaの</li>
+								<li class="c-author-list__name">Seaの</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/Sea11211121">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/Sea11211121">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -235,7 +235,7 @@
 								<li class="c-author-list__name">かゆき</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/kayuki96">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kayuki968">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -243,7 +243,7 @@
 								<li class="c-author-list__name">倉田聖司</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/seizi_0920">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/seizi_0920">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -251,7 +251,7 @@
 								<li class="c-author-list__name">くるわ亜希</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/kuruwa_a">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kuruwa_a">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -259,7 +259,7 @@
 								<li class="c-author-list__name">しお</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/si_parasa2">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/sio_parasa2">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -267,7 +267,7 @@
 								<li class="c-author-list__name">ヒトミ</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/JvSATMjXxmS8N8J<">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/JvSATMjXxmS8N8J">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -275,7 +275,7 @@
 								<li class="c-author-list__name">もやしとマドレーヌ</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/mo84toM0211">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/mo84toM0211">X</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -291,7 +291,7 @@
 								<li class="c-author-list__name">歩夢</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/ayumu_volpe">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ayumu_volpe">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -299,7 +299,7 @@
 								<li class="c-author-list__name">伊藤 無明</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/1100noname">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/1100noname">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -307,7 +307,7 @@
 								<li class="c-author-list__name">館出 楼</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/mirage_kandatu">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/mirage_kandatu">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -315,7 +315,7 @@
 								<li class="c-author-list__name">くれ</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/surlyginB">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/surlyginB">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -323,7 +323,7 @@
 								<li class="c-author-list__name">琴呼</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/kotoko_km"></a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kotoko_km"></a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -331,7 +331,7 @@
 								<li class="c-author-list__name">DAHLIHA</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/UJjere">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/UJjere">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -339,7 +339,7 @@
 								<li class="c-author-list__name">DGDA</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/nuuuukoplus">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/nyuuuukoplus">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -347,7 +347,7 @@
 								<li class="c-author-list__name">私たちはどこから</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--pixiv" href="https://www.pixiv.net/users/94817842">pixiv</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--pixiv" target="_blank" rel="noopener noreferrer" href="https://www.pixiv.net/users/94817842">pixiv</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -363,7 +363,7 @@
 								<li class="c-author-list__name">いの</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/ainomamani64cos">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ainomamani64cos">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -371,7 +371,7 @@
 								<li class="c-author-list__name">オリコ</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/orico714">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/orico714">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -379,7 +379,7 @@
 								<li class="c-author-list__name">佐理</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/the_first_aegis">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/the_first_aegis">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -387,7 +387,7 @@
 								<li class="c-author-list__name">たむう</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" href="https://twitter.com/tamuu_PP">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/tamuu_PP">X</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -403,7 +403,7 @@
 				</dt>
 				<dd class="c-staff-list__lists--list">
 					<ul class="c-staff-list__name--wrap">
-						<li class="c-staff-list__name">はごろ(<a class="c-link" href="https://twitter.com/856_zetta">@856_zatta</a>)</li>
+						<li class="c-staff-list__name">はごろ(<a class="c-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/856_zetta">@856_zatta</a>)</li>
 					</ul>
 				</dd>
 				<dt class="c-staff-list__lists--title">
@@ -411,8 +411,8 @@
 				</dt>
 				<dd class="c-staff-list__lists--list">
 					<ul class="c-staff-list__name--wrap">
-						<li class="c-staff-list__name">オリコ(<a class="c-link" href="https://twitter.com/orico714">@orico714</a>)</li>
-						<li class="c-staff-list__name">纏い(<a class="c-link" href="https://twitter.com/matoi_hgmt">@matoi_hgmt</a>)</li>
+						<li class="c-staff-list__name">オリコ(<a class="c-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/orico714">@orico714</a>)</li>
+						<li class="c-staff-list__name">纏い(<a class="c-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/matoi_hgmt">@matoi_hgmt</a>)</li>
 					</ul>
 				</dd>
 				<dt class="c-staff-list__lists--title">
@@ -420,7 +420,7 @@
 				</dt>
 				<dd class="c-staff-list__lists--list">
 					<ul class="c-staff-list__name--wrap">
-						<li class="c-staff-list__name">藍石要(<a class="c-link" href="https://twitter.com/KanameAiishi_">@KanameAiishi_</a>)</li>
+						<li class="c-staff-list__name">藍石要(<a class="c-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/KanameAiishi_">@KanameAiishi_</a>)</li>
 					</ul>
 				</dd>
 			</dl>
@@ -467,7 +467,7 @@
 		ご連絡をいただけますと幸いです。<br>
 		ご検討のほど何卒よろしくお願いいたします。
 		</p>
-		<a class="c-button__flyer--wrapper" href="https://docs.google.com/forms/d/e/1FAIpQLSfsdqNCo0kN2P8JtywyHgQNeF0b12a9udvS99Bk7XRPBgld-A/viewform?usp=sf_link">
+		<a class="c-button__flyer--wrapper" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfsdqNCo0kN2P8JtywyHgQNeF0b12a9udvS99Bk7XRPBgld-A/viewform?usp=sf_link">
 			<p class="c-button__flyer">フライヤー配布ご協力フォーム</p>
 		</a>
 	</section>
@@ -496,7 +496,7 @@
 					<dd class="c-project-detail__text--text">
 						<ol class="c-project-detail-text__wrap c-lists__number">
 							<li class="c-project-detail-text__title">①公式アカウントの投稿をチェック！
-								<p class="c-project-detail-text__text c-text__unbold">不定期的に公式アカウント(<a href="https://twitter.com/AVIantholo2024">@AVIantholo2024</a>)から発表されるお題と投稿期間をチェック！</p>
+								<p class="c-project-detail-text__text c-text__unbold">不定期的に公式アカウント(<a href="https://twitter.com/AVIantholo2024" target="_blank" rel="noopener noreferrer">@AVIantholo2024</a>)から発表されるお題と投稿期間をチェック！</p>
 							</li>
 							<li class="c-project-detail-text__title">②投稿期間内にハッシュタグ<br>「#こんな煇イグナトフを見てみたい」<br>をつけてX(Twitter)に投稿！
 								<p class="c-project-detail-text__text c-text__unbold">
@@ -538,7 +538,7 @@
 				<button href="#project__howto" class="c-button__modal-close">閉じる</button>
 			</dd>
 			<dd class="c-project__detail--posts">
-				<a class="c-button__project--wrapper" href="https://twitter.com/hashtag/%E3%81%93%E3%82%93%E3%81%AA%E7%85%87%E3%82%A4%E3%82%B0%E3%83%8A%E3%83%88%E3%83%95%E3%81%8C%E8%A6%8B%E3%81%A6%E3%81%BF%E3%81%9F%E3%81%84?src=hashtag_click&f=live">
+				<a class="c-button__project--wrapper" target="_blank" rel="noopener noreferrer" href="https://twitter.com/hashtag/%E3%81%93%E3%82%93%E3%81%AA%E7%85%87%E3%82%A4%E3%82%B0%E3%83%8A%E3%83%88%E3%83%95%E3%81%8C%E8%A6%8B%E3%81%A6%E3%81%BF%E3%81%9F%E3%81%84?src=hashtag_click&f=live">
 					<p class="c-button__project">#こんな煇イグナトフを見てみたい<br>投稿作品を見る</p>
 				</a>
 			</dd>
@@ -573,7 +573,7 @@
 			<dd class="c-contact__lists--list">
 				<ul class="c-icon__list">
 					<li class="c-icon"><a href="mailto:avianthology2024@gmail.com" class="c-icon__mail c-link">mail</i></a></li>
-					<li class="c-icon"><a href="https://twitter.com/AVIantholo2024" class="c-icon__sns c-link">X</a></li>
+					<li class="c-icon"><a href="https://twitter.com/AVIantholo2024" target="_blank" rel="noopener noreferrer" class="c-icon__sns c-link">X</a></li>
 				</ul>
 			</dd>
 			<dt class="c-contact__lists--category">
@@ -582,7 +582,7 @@
 			<dd class="c-contact__lists--list">
 				<ul class="c-icon__list">
 					<li class="c-icon"><a href="mailto:info@avianthology.com" class="c-icon__mail c-link">mail</a></li>
-					<li class="c-icon"><a href="https://twitter.com/856_zatta" class="c-icon__sns c-link">X</a></li>
+					<li class="c-icon"><a href="https://twitter.com/856_zatta" target="_blank" rel="noopener noreferrer" class="c-icon__sns c-link">X</a></li>
 				</ul>
 			</dd>
 		</dl>

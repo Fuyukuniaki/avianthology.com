@@ -2,13 +2,14 @@
 
 .p-author-list {
 	display: block;
-	width: 100%;
 	font-family: "fot-tsukuardgothic-std", sans-serif;
 	font-weight: 700;
 	@include media(iPhone){
+		width: 100svw;
 		margin-bottom: calc((150 * 100 / 750)* 1svw);
 	}
 	@include media(PC){
+		width: 100%;
 		margin-bottom: 150px;
 	}
 	&__lists {

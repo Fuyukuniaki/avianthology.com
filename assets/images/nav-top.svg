@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="491" height="61" viewBox="0 0 491 61">
   <g id="TOP" transform="translate(-139 -200)">
     <rect id="BG" width="491" height="61" transform="translate(139 200)" fill="rgba(255,255,255,0)"/>
-    <g id="コンポーネント_5_1" data-name="コンポーネント 5 – 1" transform="translate(199 200)">
-      <text id="TOP-2" data-name="TOP" transform="translate(0 47)" fill="#0b0b0b" font-size="50" font-family="EthnocentricLt-Regular, Ethnocentric" letter-spacing="0.2em"><tspan x="0" y="0">TOP</tspan></text>
+    <g id="コンポーネント_5_1" data-name="コンポーネント 5 – 1" transform="translate(199 213)">
+      <path id="パス_56" data-name="パス 56" d="M23.2,0V-28.85H38.8l3.55-4.6H3.65L0-28.85H17.75V0ZM94.75-16.75C94.75-28.7,87.25-34,72.3-34S49.85-28.7,49.85-16.75,57.35.55,72.3.55,94.75-4.8,94.75-16.75Zm-5.4,0C89.35-7.35,84.15-4,72.3-4S55.25-7.35,55.25-16.75s5.2-12.7,17.05-12.7S89.35-26.15,89.35-16.75ZM135.5-10.9c9.25,0,15.05-4,15.05-11.1,0-7.15-5.85-11.45-15.05-11.45H113.25l-3.6,4.6H133.6c6.85,0,11.55,1.6,11.55,6.8,0,4.85-5.15,6.65-11.5,6.65h-23.9V0h5.4V-10.9Z" transform="translate(0 34)" fill="#0b0b0b"/>
     </g>
   </g>
 </svg>

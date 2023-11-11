@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="491" height="61.403" viewBox="0 0 491 61.403">
-  <g id="INFO" transform="translate(-139 -641.597)">
-    <rect id="BG" width="491" height="61" transform="translate(139 642)" fill="rgba(255,255,255,0)"/>
-    <g id="コンポーネント_12_1" data-name="コンポーネント 12 – 1" transform="translate(199 641.597)">
-      <text id="INFO-2" data-name="INFO" transform="translate(0 47)" fill="#0b0b0b" font-size="50" font-family="EthnocentricLt-Regular, Ethnocentric" letter-spacing="0.2em"><tspan x="0" y="0">INFO</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="491" height="61" viewBox="0 0 491 61">
+  <g id="INFO" transform="translate(-139 -641)">
+    <rect id="BG" width="491" height="61" transform="translate(139 641)" fill="rgba(255,255,255,0)"/>
+    <g id="コンポーネント_12_1" data-name="コンポーネント 12 – 1" transform="translate(202.1 654.597)">
+      <path id="パス_54" data-name="パス 54" d="M8.5,0V-33.45H3.1V0ZM56.35-.7a2.994,2.994,0,0,0,2.3,1c1.6,0,3.05-1,3.05-3.4V-33.45H56.75v26.3L29.9-32.85a3.167,3.167,0,0,0-2.35-1.05c-1.6,0-3,1-3,3.4V0h4.9V-26.4Zm50.6-13.5,3.3-4.3H82.9V-28.85h25.65l3.55-4.6H77.5V0h5.4V-14.2Zm60.95-2.55C167.9-28.7,160.4-34,145.45-34S123-28.7,123-16.75,130.5.55,145.45.55,167.9-4.8,167.9-16.75Zm-5.4,0C162.5-7.35,157.3-4,145.45-4S128.4-7.35,128.4-16.75s5.2-12.7,17.05-12.7S162.5-26.15,162.5-16.75Z" transform="translate(-3.1 34)" fill="#0b0b0b"/>
     </g>
   </g>
 </svg>

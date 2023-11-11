@@ -8,6 +8,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		color: $textColor_0color;
+		font-size: 0px;
 
 		@include media(iPhone) {
 			line-height: calc((34 * 100 / 750)* 1svw);
@@ -83,7 +84,6 @@
 
 			& > .c-author-list__lists--member {
 				opacity: 0;
-				transition: all 600ms ease-in-out;
 			}
 		}
 
@@ -257,6 +257,7 @@
 
 	&__color {
 		display: flex;
+		display: none;
 		flex-flow: row wrap;
 		justify-content: center;
 		align-items: center;

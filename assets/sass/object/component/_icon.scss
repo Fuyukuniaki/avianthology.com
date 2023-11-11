@@ -6,6 +6,7 @@
 		position: absolute;
 		background-color: $textColor_White;
 		color: $textColor_0color;
+		font-size: 0px;
 		margin: auto;
 		top: 0;
 		bottom: 0;
@@ -104,7 +105,9 @@
 		display: block;
 		position: absolute;
 		background-color: $textColor_0color;
+		font-size: 0px;
 		color: $textColor_0color;
+		font-size: 0px;
 		@include media(iPhone){
 			height: calc(( 80 * 100 / 750 )* 1svw);
 			width: calc(( 45 * 100 / 750 )* 1svw);

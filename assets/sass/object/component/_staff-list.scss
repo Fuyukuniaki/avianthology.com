@@ -8,6 +8,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		color: $textColor_0color;
+		font-size: 0px;
 		@include media(iPhone){
 			line-height: calc((60 * 100 / 750)* 1svw);
 			height: calc((34 * 100 / 750)* 1svw);

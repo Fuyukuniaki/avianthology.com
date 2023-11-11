@@ -3,12 +3,13 @@
 .p-x-twitter {
 	display: block;
 	background: $bgColor_Black;
-	width: 100%;
 	margin: auto;
 	@include media(iPhone){
+		width: 100svw;
 		padding-bottom: calc((150 * 100 / 750)* 1svw);
 	}
 	@include media(PC){
+		width: 100%;
 		padding-bottom: 150px;
 	}
 }
