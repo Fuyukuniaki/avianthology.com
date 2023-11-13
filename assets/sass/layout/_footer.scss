@@ -7,7 +7,7 @@
 	align-items: center;
 	@include media(iPhone){
 		padding: calc(( 40 * 100 / 750 ) * 1svw) 0 calc(( 20 * 100 / 750 ) * 1svw) 0;
-		width: 100svw;
+		width: 100%;
 	}
 	@include media(PC){
 		padding: 40px 0 20px 0; 

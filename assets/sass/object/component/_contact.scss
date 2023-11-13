@@ -12,7 +12,8 @@
 		background-repeat: no-repeat;
 		color: $bgColor_Black;
 		@include media(iPhone){
-			background-size: 100svw;
+			background-size: 100%
+;
 			padding: calc(( 150 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw) calc(( 50 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw);
 		}
 		@include media(PC){

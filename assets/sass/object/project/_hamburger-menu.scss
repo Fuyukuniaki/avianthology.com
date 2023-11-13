@@ -71,8 +71,8 @@
 		align-items: center;
 		@include media(iPhone){
 			height: calc(( 100 * 100 / 750 ) * 1svw);
-			width: 100svw;
-			left: calc(( -99 * 100 / 750 ) * 1svw);
+			width: calc(( 100 * 100 / 750 ) * 1svw);
+			left: calc(( 511 * 100 / 750 ) * 1svw);
 		}
 		@include media(PC){
 

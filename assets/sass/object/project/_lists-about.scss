@@ -5,7 +5,7 @@
 	margin: auto;
 	color: $bgColor_Black;
 	@include media(iPhone){
-		width: 100svw;
+		width: 100%;
 		padding: calc((155 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc((175 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
 	}
 	@include media(PC){

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="l-main">
+<main class="l-main" id="pagetop">
 	<section class="l-top-part">
 		<article class="p-key-visual">
 			<h2 class="c-keyvisual__logo">
@@ -453,7 +453,7 @@
 	</section>
 	<section class="l-flyer-part" id="flyer">
 		<figure class="c-flyer__image--wrap">
-			<img class="c-flyer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-about-cover.svg" alt="フライヤー" decoding="async">
+			<img class="c-flyer__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_flyer2311.png" alt="フライヤー" decoding="async">
 		</figure>
 		<p class="c-flyer__explain">
 		フライヤーの配布にご協力して頂ける方を<br>

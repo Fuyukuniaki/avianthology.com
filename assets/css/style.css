@@ -78,28 +78,46 @@ meter {
 }
 
 ::-webkit-scrollbar {
-  width: 14px;
   background-color: transparent;
-  font-size: 0px;
 }
 @media only screen and (max-width:750px) {
   ::-webkit-scrollbar {
-    display: none;
+    width: 0;
+    display: block;
+    border-radius: 9px;
   }
 }
 @media only screen and (min-width:751px) {
   ::-webkit-scrollbar {
+    width: 14px;
     display: block;
     border-radius: 9px;
   }
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  box-shadow: inset 0 0 10px 10px #707070;
-  border: solid 2px transparent;
+@media only screen and (max-width:750px) {
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 transparent;
+    border: solid 0 transparent;
+  }
+}
+@media only screen and (min-width:751px) {
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px 10px #707070;
+    border: solid 2px transparent;
+  }
 }
 
+@media screen and (max-width: 750px) {
+  html,
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 @keyframes slideUp {
   0% {
     height: 100%;
@@ -167,19 +185,19 @@ meter {
 }
 @keyframes scroll {
   0% {
-    background-image: url(../images/icon-scroll-00.svg);
+    background-image: url("../images/icon-scroll-00.svg");
   }
   30% {
-    background-image: url(../images/icon-scroll-01.svg);
+    background-image: url("../images/icon-scroll-01.svg");
   }
   60% {
-    background-image: url(../images/icon-scroll-02.svg);
+    background-image: url("../images/icon-scroll-02.svg");
   }
   90% {
-    background-image: url(../images/icon-scroll-03.svg);
+    background-image: url("../images/icon-scroll-03.svg");
   }
   100% {
-    background-image: url(../images/icon-scroll-03.svg);
+    background-image: url("../images/icon-scroll-03.svg");
   }
 }
 .l-body {
@@ -190,7 +208,8 @@ meter {
   color: #F2F2F2;
   background-color: #0B0B0B;
   overflow-x: hidden;
-  width: 100svw;
+  max-width: 100svw;
+  box-sizing: border-box;
   font-family: "fot-tsukuaoldmin-pr6n", a-otf-ryumin-pr6n, sans-serif;
   font-weight: 300;
 }
@@ -213,7 +232,7 @@ meter {
     padding-right: 0;
     padding-bottom: 4svw;
     padding-left: 4.2666666667svw;
-    width: 100svw;
+    width: 100%;
     height: 13.3333333333svw;
   }
 }
@@ -239,7 +258,7 @@ meter {
 @media only screen and (max-width:750px) {
   .l-header.js-open {
     padding: 4.2666666667svw 0 4svw 4.2666666667svw;
-    width: 100svw;
+    width: 100%;
     height: 13.3333333333svw;
     top: 0;
   }
@@ -262,7 +281,7 @@ meter {
 @media only screen and (max-width:750px) {
   .l-main {
     margin: auto;
-    width: 100svw;
+    width: 100%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -285,7 +304,7 @@ meter {
 @media only screen and (max-width:750px) {
   .l-top-part {
     background-size: 100%;
-    width: 100svw;
+    width: 100%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -308,7 +327,7 @@ meter {
 @media only screen and (max-width:750px) {
   .l-about-part {
     background-size: 100%;
-    width: 100svw;
+    width: 100%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -330,7 +349,7 @@ meter {
 @media only screen and (max-width:750px) {
   .l-flyer-part {
     background-size: 100%;
-    width: 100svw;
+    width: 100%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -352,7 +371,7 @@ meter {
 @media only screen and (max-width:750px) {
   .l-project {
     background-size: 100%;
-    width: 100svw;
+    width: 100%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -374,7 +393,7 @@ meter {
 @media only screen and (max-width:750px) {
   .l-concept-part {
     background-size: 100%;
-    width: 100svw;
+    width: 100%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -408,7 +427,7 @@ meter {
 
 @media only screen and (max-width:750px) {
   .l-main {
-    width: 100svw;
+    width: 100%;
     padding-top: 13.3333333333svw;
   }
 }
@@ -429,7 +448,7 @@ meter {
 @media only screen and (max-width:750px) {
   .l-footer {
     padding: 5.3333333333svw 0 2.6666666667svw 0;
-    width: 100svw;
+    width: 100%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -491,6 +510,8 @@ meter {
   background-image: url(../images/logo.png);
   background-size: cover;
   background-repeat: no-repeat;
+  color: transparent;
+  font-size: 0;
   display: block;
 }
 @media only screen and (max-width:750px) {
@@ -904,10 +925,9 @@ meter {
 .c-keyvisual__data::before {
   content: "";
   display: block;
-  animation: scroll 700ms ease-in infinite;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-image: url(../images/icon-scroll-00.svg);
+  background-size: contain;
+  background-image: url("../images/icon-scroll-03.svg");
 }
 @media only screen and (max-width:750px) {
   .c-keyvisual__data::before {
@@ -1268,12 +1288,11 @@ meter {
   border-style: solid;
   height: 100%;
   overflow: hidden;
-  animation: slideDown 700ms 1;
   transition: all 700ms ease-in-out;
 }
 @media only screen and (max-width:750px) {
   .c-author-list__lists--wrap.js-open {
-    width: 100svw;
+    width: 100%;
     margin: 8svw auto 0 auto;
     padding: 0;
     font-size: 4.2666666667svw;
@@ -1289,7 +1308,7 @@ meter {
 }
 .c-author-list__lists--wrap.js-open > .c-author-list__lists--member {
   opacity: 1;
-  transition: all 600ms ease-in-out;
+  transition: all 700ms ease-in-out;
 }
 .c-author-list__lists--wrap {
   display: block;
@@ -1299,12 +1318,11 @@ meter {
   border-style: solid;
   height: 0;
   overflow: hidden;
-  animation: slideUp 700ms 1;
   transition: all 700ms ease-in-out;
 }
 @media only screen and (max-width:750px) {
   .c-author-list__lists--wrap {
-    width: 100svw;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     font-size: 4.2666666667svw;
@@ -1334,7 +1352,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .c-author-list__lists--title {
-    width: 100svw;
+    width: 100%;
     margin: 0;
     padding: 0 7.3333333333svw;
     font-size: 4.2666666667svw;
@@ -1396,7 +1414,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .c-author-list__lists--member {
-    width: 100svw;
+    width: 100%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -1413,7 +1431,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .c-author-list__lists--list {
-    width: 50svw;
+    width: 50%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -1771,7 +1789,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .c-flyer__image--wrap {
-    background-size: 100svw;
+    background-size: 100%;
     padding: 20svw 17.3333333333svw 13.3333333333svw 0;
   }
 }
@@ -1842,7 +1860,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .c-project__detail--title {
-    width: 100svw;
+    width: 100%;
     margin: 0;
     padding: 0 7.3333333333svw;
     font-size: 3.4666666667svw;
@@ -1907,7 +1925,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .c-project__detail--text {
-    width: 100svw;
+    width: 100%;
     margin: 0;
     padding: 0 7.3333333333svw;
     font-size: 4.2666666667svw;
@@ -1938,7 +1956,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .c-project__detail--text.js-open {
-    width: 100svw;
+    width: 100%;
     margin: 0;
     padding: 9.3333333333svw 7.3333333333svw 0 7.3333333333svw;
     font-size: 4.2666666667svw;
@@ -2060,7 +2078,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .c-concept__lists {
-    background-size: 100svw;
+    background-size: 100%;
     padding: 0 14.4svw 20.6666666667svw 7.3333333333svw;
   }
 }
@@ -2144,7 +2162,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .c-contact__lists {
-    background-size: 100svw;
+    background-size: 100%;
     padding: 20svw 14.4svw 6.6666666667svw 14.4svw;
   }
 }
@@ -2358,7 +2376,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .p-news {
-    width: 100svw;
+    width: 100%;
     margin: auto auto 18.6666666667svw auto;
   }
 }
@@ -2396,7 +2414,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .p-x-twitter {
-    width: 100svw;
+    width: 100%;
     padding-bottom: 20svw;
   }
 }
@@ -2496,8 +2514,8 @@ meter {
 @media only screen and (max-width:750px) {
   .js-open > .p-hamburger-menu__button {
     height: 13.3333333333svw;
-    width: 100svw;
-    left: -13.2svw;
+    width: 13.3333333333svw;
+    left: 68.1333333333svw;
   }
 }
 @media only screen and (min-width:751px) {
@@ -2515,7 +2533,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .p-lists-about {
-    width: 100svw;
+    width: 100%;
     padding: 20.6666666667svw 4svw 23.3333333333svw 4svw;
   }
 }
@@ -2537,7 +2555,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .p-author-list {
-    width: 100svw;
+    width: 100%;
     margin-bottom: 20svw;
   }
 }
@@ -2555,19 +2573,18 @@ meter {
 .p-staff-list {
   display: block;
   margin: auto;
+  width: 100%;
 }
 .p-staff-list__lists {
   color: #0B0B0B;
 }
 @media only screen and (max-width:750px) {
   .p-staff-list__lists {
-    width: 100svw;
     padding: 12.6666666667svw 4svw 20.6666666667svw 4svw;
   }
 }
 @media only screen and (min-width:751px) {
   .p-staff-list__lists {
-    width: 100%;
     padding: 95px 30px 155px 30px;
   }
 }
@@ -2581,8 +2598,8 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .p-information {
-    width: 100svw;
-    background-size: 100svw;
+    width: 100%;
+    background-size: 100%;
   }
 }
 @media only screen and (min-width:751px) {
@@ -2601,7 +2618,7 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .p-information__lists {
-    background-size: 100svw;
+    background-size: 100%;
     padding: 20.6666666667svw 4svw 14svw 14.4svw;
   }
 }
@@ -2624,8 +2641,8 @@ meter {
 }
 @media only screen and (max-width:750px) {
   .p-project {
-    width: 100svw;
-    background-size: 100svw;
+    width: 100%;
+    background-size: 100%;
     padding: 20.6666666667svw 4svw 6.6666666667svw 14.4svw;
   }
 }

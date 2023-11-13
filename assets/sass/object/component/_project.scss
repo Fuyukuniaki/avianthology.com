@@ -37,7 +37,7 @@
 			border-color: $bgColor_Black $textColor_0color $textColor_0color $textColor_0color;
 			border-style: solid;
 			@include media(iPhone){
-				width: 100svw;
+				width: 100%;
 				margin: 0;
 				padding: 0 calc((55 * 100 / 750)* 1svw);
 				font-size: calc((26 * 100 / 750)* 1svw);
@@ -92,7 +92,7 @@
 			height: 0;
 			overflow: hidden;
 			@include media(iPhone){
-				width: 100svw;
+				width: 100%;
 				margin: 0;
 				padding: 0 calc((55 * 100 / 750)* 1svw);
 				font-size: calc((32 * 100 / 750)* 1svw);
@@ -119,7 +119,7 @@
 			position: relative;
 			height: 100%;
 			@include media(iPhone){
-				width: 100svw;
+				width: 100%;
 				margin: 0;
 				padding: calc((70 * 100 / 750)* 1svw) calc((55 * 100 / 750)* 1svw) 0 calc((55 * 100 / 750)* 1svw);
 				font-size: calc((32 * 100 / 750)* 1svw);

@@ -21,7 +21,7 @@
 	
 	function avianthology_script() {
 		wp_enqueue_script('jQuery', '//code.jquery.com/jquery-3.7.1.min.js', array(), '3.7.1' );
-		wp_enqueue_script('javascript',  get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true );
+		wp_enqueue_script('javascript',  get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0' );
 		wp_enqueue_style( 'ress', '//unpkg.com/modern-css-reset/dist/reset.min.css', array() );
 		wp_enqueue_style( 'avianthology', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.0' );
 		wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );

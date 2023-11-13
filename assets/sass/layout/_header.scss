@@ -16,7 +16,7 @@
 		padding-right: 0;
 		padding-bottom: calc(( 30 * 100 / 750 ) * 1svw);
 		padding-left: calc(( 32 * 100 / 750 ) * 1svw);
-		width: 100svw;
+		width: 100%;
 		height: calc(( 100 * 100 / 750 ) * 1svw);
 	}
 	@include media(PC){
@@ -37,7 +37,7 @@
 		transition: top 700ms;
 		@include media(iPhone){
 			padding: calc(( 32 * 100 / 750 ) * 1svw) 0 calc(( 30 * 100 / 750 ) * 1svw) calc(( 32 * 100 / 750 ) * 1svw);
-			width: 100svw;
+			width: 100%;
 			height: calc(( 100 * 100 / 750 ) * 1svw);
 			top: 0;
 		}

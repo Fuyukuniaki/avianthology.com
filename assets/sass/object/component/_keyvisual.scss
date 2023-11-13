@@ -44,12 +44,8 @@
 			margin: -90px 0 auto auto;
 		}
 		&::before {
-			content: "";
+			content:'';
 			display: block;
-			animation: scroll 700ms ease-in infinite;
-			background-repeat: no-repeat;
-			background-size: 100%;
-			background-image: url(../images/icon-scroll-00.svg);
 			@include media(iPhone){
 				width: calc(( 18 * 100 / 750 ) * 1svw);
 				height: calc(( 163 * 100 / 750 ) * 1svw);
@@ -60,6 +56,10 @@
 				height: 163px;
 				margin: -163px 100% auto auto;
 			}
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url('../images/icon-scroll-03.svg');
+			// animation: scroll 700ms ease-in infinite;
 		}
 		&::after {
 			content: "";

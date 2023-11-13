@@ -11,7 +11,6 @@ $(window).on('load resize',function(){
 
 $(window).on('load resize', function(){
 	if(window.matchMedia("(max-width: 750px)").matches){
-		function iPhone(){
 			let headerHeight = Number($('.l-header').css('height').slice(0,-2));
 			$('a[href^="#"]').on('touchstart', function () {
 				let href = $(this).attr('href');
@@ -89,11 +88,8 @@ $(window).on('load resize', function(){
 					.done($('html, body').animate({ scrollTop: position }, 300, "swing"));
 				});
 			});
-		};
-		iPhone();
 
 	} else {
-		function desktop(){
 			let headerHeight = 100;
 			$('a[href^="#"]').on('click', function () {
 				let href = $(this).attr('href');
@@ -171,7 +167,5 @@ $(window).on('load resize', function(){
 					.done($('html, body').animate({ scrollTop: position }, 700, "swing"));
 				});
 			});	
-		};
-		desktop();
 	}
 });	

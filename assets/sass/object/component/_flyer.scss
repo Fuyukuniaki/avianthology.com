@@ -53,7 +53,8 @@
 			background: url('../images/background-flyer.svg');
 			background-repeat: no-repeat;
 			@include media(iPhone){
-				background-size: 100svw;
+				background-size: 100%
+;
 				padding: calc((150 * 100 / 750)* 1svw) calc((130 * 100 / 750)* 1svw) calc((100 * 100 / 750)* 1svw) 0;
 			}
 			@include media(PC){

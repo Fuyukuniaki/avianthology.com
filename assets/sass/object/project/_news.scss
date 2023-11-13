@@ -4,7 +4,7 @@
 	display: block;
 	background: #0B0B0B;
 	@include media(iPhone){
-		width: 100svw;
+		width: 100%;
 		margin: auto auto calc((140 * 100 / 750)* 1svw) auto;
 	}
 	@include media(PC){

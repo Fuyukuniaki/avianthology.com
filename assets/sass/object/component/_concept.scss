@@ -23,7 +23,8 @@
 		background: url('../images/title-concept.svg');
 		background-repeat: no-repeat;
 		@include media(iPhone){
-			background-size: 100svw;
+			background-size: 100%
+;
 			padding: 0 calc(( 108 * 100 / 750 )* 1svw) calc(( 155 * 100 / 750 )* 1svw) calc(( 55 * 100 / 750 )* 1svw);
 		}
 		@include media(PC){
