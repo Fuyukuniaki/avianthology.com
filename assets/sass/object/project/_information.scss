@@ -2,14 +2,13 @@
 
 .p-information {
 	display: block;
-	margin: auto;
+	// margin: auto;
 	color: $bgColor_Black;
 	background-repeat: repeat-y;
 	background: url('../images/background-info-line.svg') $bgColor_PureSnow;
 	@include media(iPhone){
 		width: 100%;
-		background-size: 100%
-;;
+		background-size: 100%;
 	}
 	@include media(PC){
 		width: $widthMainContent;
@@ -23,8 +22,7 @@
 		background: url('../images/background-info.svg');
 		background-repeat: no-repeat;
 		@include media(iPhone){
-			background-size: 100%
-;
+			background-size: 100%;
 			padding: calc((155 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw) calc(((155 - 50) * 100 / 750) * 1svw) calc((108 * 100 / 750)* 1svw);
 		}
 		@include media(PC){

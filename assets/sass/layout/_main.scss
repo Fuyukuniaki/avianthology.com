@@ -81,7 +81,6 @@
 	justify-content: center;
 	align-items: flex-start;
 	background: url(../images/background-info-line.svg) $bgColor_PureSnow;
-	background-position: top right;
 	background-repeat: repeat-y;
 	@include media(iPhone){
 		background-size: 100%;
@@ -115,14 +114,13 @@
 	justify-content: center;
 	align-items: flex-start;
 	background: url(../images/background-info-line.svg) $bgColor_PureSnow;
-	background-position: top right;
 	background-repeat: repeat-y;
 	@include media(iPhone){
 		background-size: 100%;
-		width: 100svw;
+		width: 100%;
 	}
 	@include media(PC){
-		background-size: auto;
+		background-size: $widthMainContent;
 		width: 100%;
 	}
 }

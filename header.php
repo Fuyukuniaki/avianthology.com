@@ -16,7 +16,7 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@AVIantholo2024">
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
-	<meta http-equiv="Cache-Control" content="no-cache">
+	<!-- <meta http-equiv="Cache-Control" content="no-cache"> -->
 	<script>
 		(function(d) {
 	var config = {

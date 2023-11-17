@@ -49,6 +49,7 @@
 		}
 	}
 	&__flyer {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -73,11 +74,13 @@
 		}
 		&::after {
 			content: "";
+			position: absolute;
+			right: 0;
 			display: inline-block;
 			border-width: 0.5em;
 			border-style: solid;
 			border-color: $textColor_0color $textColor_0color $textColor_0color $bgColor_White;
-			margin: 0.1em 0 0 0.5em;
+			margin: 0.1em 1em 0 0.5em;
 		}
 		&--wrapper {
 			display: block;
@@ -97,6 +100,7 @@
 		}
 	}
 	&__project {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -121,11 +125,13 @@
 		}
 		&::after {
 			content: "";
+			position: absolute;
+			right: 0;
 			display: inline-block;
 			border-width: 0.5em;
 			border-style: solid;
 			border-color: $textColor_0color $textColor_0color $textColor_0color $bgColor_White;
-			margin: 0.1em 0 0 0.5em;
+			margin: 0.1em 1em 0 0.5em;
 		}
 		&--wrapper {
 			display: block;

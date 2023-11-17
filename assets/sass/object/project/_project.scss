@@ -4,14 +4,13 @@
 	font-family: $textFont_English;
 	font-weight: $textFont_WeightBold;
 	display: block;
-	margin: auto;
+	// margin: auto;
 	color: $bgColor_Black;
 	background: url('../images/title-project.svg') 0 -1px;
 	background-repeat: no-repeat;
 	@include media(iPhone){
 		width: 100%;
-		background-size: 100%
-;
+		background-size: 100%;
 		padding: calc(( 155 * 100 / 750 )* 1svw) calc(( 30 * 100 / 750 )* 1svw) calc(( 50 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw);
 	}
 	@include media(PC){

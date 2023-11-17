@@ -365,7 +365,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   background: url(../images/background-info-line.svg) #ffffff;
-  background-position: top right;
   background-repeat: repeat-y;
 }
 @media only screen and (max-width:750px) {
@@ -409,18 +408,17 @@ body {
   justify-content: center;
   align-items: flex-start;
   background: url(../images/background-info-line.svg) #ffffff;
-  background-position: top right;
   background-repeat: repeat-y;
 }
 @media only screen and (max-width:750px) {
   .l-contact {
     background-size: 100%;
-    width: 100svw;
+    width: 100%;
   }
 }
 @media only screen and (min-width:751px) {
   .l-contact {
-    background-size: auto;
+    background-size: 750px;
     width: 100%;
   }
 }
@@ -757,6 +755,7 @@ body {
   }
 }
 .c-button__flyer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -786,11 +785,13 @@ body {
 }
 .c-button__flyer::after {
   content: "";
+  position: absolute;
+  right: 0;
   display: inline-block;
   border-width: 0.5em;
   border-style: solid;
   border-color: transparent transparent transparent #F4F4F4;
-  margin: 0.1em 0 0 0.5em;
+  margin: 0.1em 1em 0 0.5em;
 }
 .c-button__flyer--wrapper {
   display: block;
@@ -813,6 +814,7 @@ body {
   }
 }
 .c-button__project {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -842,11 +844,13 @@ body {
 }
 .c-button__project::after {
   content: "";
+  position: absolute;
+  right: 0;
   display: inline-block;
   border-width: 0.5em;
   border-style: solid;
   border-color: transparent transparent transparent #F4F4F4;
-  margin: 0.1em 0 0 0.5em;
+  margin: 0.1em 1em 0 0.5em;
 }
 .c-button__project--wrapper {
   display: block;
@@ -1288,7 +1292,6 @@ body {
   border-style: solid;
   height: 100%;
   overflow: hidden;
-  transition: all 700ms ease-in-out;
 }
 @media only screen and (max-width:750px) {
   .c-author-list__lists--wrap.js-open {
@@ -1318,7 +1321,6 @@ body {
   border-style: solid;
   height: 0;
   overflow: hidden;
-  transition: all 700ms ease-in-out;
 }
 @media only screen and (max-width:750px) {
   .c-author-list__lists--wrap {
@@ -1373,13 +1375,19 @@ body {
 .c-author-list__lists--title::after {
   content: url("../images/icon-down.svg");
   opacity: 1;
-  transform: rotate(0deg);
   transition: all;
   z-index: 0;
 }
 @media only screen and (max-width:750px) {
   .c-author-list__lists--title::after {
     transform: rotate(0deg) scale(0.5);
+    margin: 1svw 0 0 0;
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-author-list__lists--title::after {
+    transform: rotate(0deg);
+    margin: -4px 0 0 0;
   }
 }
 .c-author-list__lists--title.menu-open::after {
@@ -1395,6 +1403,13 @@ body {
 @media only screen and (max-width:750px) {
   .c-author-list__lists--title:has(+ .js-open)::after {
     transform: rotate(180deg) scale(0.5);
+    margin: 0 0 1svw 0;
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-author-list__lists--title:has(+ .js-open)::after {
+    transform: rotate(180deg);
+    margin: 0 0 -4px 0;
   }
 }
 @media only screen and (max-width:750px) {
@@ -1880,13 +1895,19 @@ body {
 }
 .c-project__detail--title::after {
   content: url("../images/icon-down.svg");
-  transform: rotate(0deg);
   transition: all 700ms;
   z-index: 0;
 }
 @media only screen and (max-width:750px) {
   .c-project__detail--title::after {
+    margin: 1svw 0 0 0;
     transform: rotate(0deg) scale(0.5);
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-project__detail--title::after {
+    margin: 0 0 2px 0;
+    transform: rotate(0deg);
   }
 }
 .c-project__detail--title.menu-open::after {
@@ -1894,13 +1915,19 @@ body {
 }
 .c-project__detail--title.js-open::after {
   content: url("../images/icon-down.svg");
-  transform: rotate(180deg);
   transition: all 700ms;
   z-index: 0;
 }
 @media only screen and (max-width:750px) {
   .c-project__detail--title.js-open::after {
+    margin: 0 0 1svw 0;
     transform: rotate(180deg) scale(0.5);
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-project__detail--title.js-open::after {
+    margin: 0 0 2px 0;
+    transform: rotate(180deg);
   }
 }
 @media only screen and (max-width:750px) {
@@ -2591,7 +2618,6 @@ body {
 
 .p-information {
   display: block;
-  margin: auto;
   color: #0B0B0B;
   background-repeat: repeat-y;
   background: url("../images/background-info-line.svg") #ffffff;
@@ -2633,7 +2659,6 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: 700;
   display: block;
-  margin: auto;
   color: #0B0B0B;
   background: url("../images/title-project.svg") 0 -1px;
   background-repeat: no-repeat;
@@ -2714,4 +2739,9 @@ body {
 
 .u-contact {
   background-image: url(../images/nav-contact.svg);
+}
+
+body > #wpadminbar {
+  top: auto;
+  bottom: 0;
 }

@@ -54,11 +54,15 @@
 			}
 			&::after {
 				content: url('../images/icon-down.svg');
-				transform: rotate(0deg);
 				transition: all 700ms;
 				z-index: 0;
 				@include media(iPhone){
+					margin: 1svw 0 0 0;
 					transform: rotate(0deg) scale(0.5);
+				}
+				@include media(PC){
+					margin: 0 0 2px 0;
+					transform: rotate(0deg);
 				}
 			}
 			&.menu-open::after {
@@ -66,11 +70,15 @@
 			}
 			&.js-open::after {
 				content: url('../images/icon-down.svg');
-				transform: rotate(180deg);
 				transition: all 700ms;
 				z-index: 0;
 				@include media(iPhone){
+					margin: 0 0 1svw 0;
 					transform: rotate(180deg) scale(0.5);
+				}
+				@include media(PC){
+					margin: 0 0 2px 0;
+					transform: rotate(180deg);
 				}
 
 			}

@@ -47,8 +47,7 @@
 				font-size: 32px;
 			}
 
-			// animation: slideDown 700ms;
-			transition: all 700ms ease-in-out;
+			// transition: all 700ms ease-in-out;
 
 			&>.c-author-list__lists--member {
 				opacity: 1;
@@ -80,7 +79,7 @@
 			}
 
 			// animation: slideUp 700ms;
-			transition: all 700ms ease-in-out;
+			// transition: all 700ms ease-in-out;
 
 			& > .c-author-list__lists--member {
 				opacity: 0;
@@ -119,11 +118,15 @@
 			&::after {
 				content: url('../images/icon-down.svg');
 				opacity: 1;
-				transform: rotate(0deg);
 				transition: all;
 				z-index: 0;
 				@include media(iPhone){
 					transform: rotate(0deg) scale(0.5);
+					margin: 1svw 0 0 0;
+				}
+				@include media(PC){
+					transform: rotate(0deg);
+					margin: -4px 0 0 0;
 				}
 			}
 			&.menu-open::after {
@@ -138,7 +141,13 @@
 				z-index: 0;
 				@include media(iPhone){
 					transform: rotate(180deg) scale(0.5);
+					margin: 0 0 1svw 0;
 				}
+				@include media(PC){
+					transform: rotate(180deg);
+					margin: 0 0 -4px 0;
+				}
+
 			}
 		}
 
