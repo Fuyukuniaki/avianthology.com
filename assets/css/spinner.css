@@ -1,0 +1,51 @@
+#loading {
+	width: 100svw;
+	height: 100svh;
+	transition: all 1s;
+	background-image: url('../../assets/images/tetrahedron.svg');
+	background-position: center center;
+	background-size: 200px auto;
+	background-repeat: no-repeat;
+	background-color: #0B0B0B;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	opacity: 1;
+	transition: opacity 700ms ease-in;
+}
+
+.spinner {
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	background: #FFF;
+	border-radius: 100%;	
+	-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+	animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+#loading.loaded {
+	display: none;
+	opacity: 0;
+}
+@-webkit-keyframes sk-scaleout {
+	0% { -webkit-transform: scale(0) }
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@keyframes sk-scaleout {
+	0% { 
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	} 100% {
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+		opacity: 0;
+	}
+}

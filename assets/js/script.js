@@ -1,14 +1,3 @@
-$(window).on('load',function(){
-	$(window).on('pageshow', function() {
-		if(window.name != 'avi'){
-			// location.reload(true);
-			window.name = 'avi';
-		} else {
-			window.name = '';
-		}
-	});
-});
-
 $(window).on('load resize', function(){
 	if(window.matchMedia("(max-width: 750px)").matches){
 		let headerHeight = Number($('.l-header').css('height').slice(0,-2));

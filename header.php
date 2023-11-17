@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="<?php language_attributes(); ?>">
-
+	
 <head>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/spinner.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
@@ -38,16 +39,14 @@
 </head>
 
 <body <?php body_class( 'l-body js-body' ); ?>>
+<section id="loading">
+	<div class="spinner"></div>
+</section>
+
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ24VNT5"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-
-	<!-- <figure class="c-video">
-		<video id="video" poster="" webkit-playsinline playsinline muted autoplay loop>
-			<source src="https://avianthology.com/wp-content/uploads/mixkit-terrifying-lightening-storm-at-night-during-a-cyclone-47272-medium.mp4" type="video/mp4">
-		</video>
-	</figure> -->
 
 	<header class="l-header js-header">
 		<h1 class="c-logo">

@@ -1,0 +1,12 @@
+<svg id="group_1" data-name="group 1" xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect id="square_1" data-name="square 1" width="1080" height="1080" fill="#0b0b0b"/>
+  <g id="tetrahedron" transform="translate(207.25 140)">
+    <g id="triangle_1" data-name="triangle 1" fill="none">
+      <path d="M332.5,0,665,575H0Z" stroke="none"/>
+      <path d="M 332.5 1.99761962890625 L 1.7333984375 574 L 663.2666015625 574 L 332.5 1.99761962890625 M 332.5 0 L 665 575 L 0 575 L 332.5 0 Z" stroke="none" fill="#ccc"/>
+    </g>
+    <line id="line_1" data-name="line 1" x2="333" y2="173" transform="translate(332.5 402.5)" fill="none" stroke="#ccc" stroke-width="1"/>
+    <line id="line_2" data-name="line 2" x1="332" y2="173" transform="translate(0.5 402.5)" fill="none" stroke="#ccc" stroke-width="1"/>
+    <line id="line_3" data-name="line 3" y2="402" transform="translate(332.5 0.5)" fill="none" stroke="#ccc" stroke-width="1"/>
+  </g>
+</svg>
