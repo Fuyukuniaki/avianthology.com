@@ -319,7 +319,7 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
-  background: url(../images/background-part2-line.svg);
+  background: url(../images/background-part3.svg);
   background-position: top right;
   background-repeat: repeat-y;
   color: #F2F2F2;
@@ -342,7 +342,7 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
-  background: url(../images/background-part2-line.svg);
+  background: url(../images/background-part3.svg);
   background-position: top right;
   background-repeat: repeat-y;
 }
@@ -385,7 +385,7 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
-  background: url(../images/background-part2-line.svg);
+  background: url(../images/background-part3.svg);
   background-position: top right;
   background-repeat: repeat-y;
 }
@@ -2739,9 +2739,4 @@ body {
 
 .u-contact {
   background-image: url(../images/nav-contact.svg);
-}
-
-body > #wpadminbar {
-  top: auto;
-  bottom: 0;
 }
