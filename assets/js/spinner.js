@@ -1,5 +1,9 @@
 $(window).on('load',function(){
-	setTimeout(function(){
-		$('#loading').fadeOut();
-	  }, 5000).remove('#loading');
+	$('#loading').delay(10000).fadeOut('slow', function(){
+		$('body').removeClass('js-hidden');
+	});
+	$('.loading-bg').on('animationend', function() {
+		$('#loading').remove();
+	});
 });
+

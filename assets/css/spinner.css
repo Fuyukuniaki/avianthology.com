@@ -1,3 +1,7 @@
+body > .loading-bg {
+	display: none;
+}
+
 #loading {
 	width: 100svw;
 	height: 100svh;
@@ -15,7 +19,7 @@
 	left: 0;
 	z-index: 99999;
 	opacity: 1;
-	transition: opacity 700ms ease-in;
+	transition: opacity 1000ms ease-in;
 }
 
 .spinner {
@@ -24,28 +28,73 @@
 	margin: auto;
 	background: #FFF;
 	border-radius: 100%;	
-	-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-	animation: sk-scaleout 1.0s infinite ease-in-out;
+	animation: sk-scaleout 1000ms infinite ease-in-out;
 }
-#loading.loaded {
-	display: none;
-	opacity: 0;
-}
-@-webkit-keyframes sk-scaleout {
-	0% { -webkit-transform: scale(0) }
-	100% {
-		-webkit-transform: scale(1.0);
-		opacity: 0;
-	}
-}
-
 @keyframes sk-scaleout {
 	0% { 
-		-webkit-transform: scale(0);
 		transform: scale(0);
 	} 100% {
-		-webkit-transform: scale(1.0);
 		transform: scale(1.0);
 		opacity: 0;
 	}
 }
+.l-body:not(.js-hidden) > .loading-bg{
+	display: block;
+	content: "";
+	position: fixed;
+	z-index: 99999;
+	width: 100%;
+	height: 100svh;
+	top: 0;
+	left: 0;
+	transform: scaleX(0);
+	background-color: #0B0B0B66;
+	animation-name: PageAnime;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes PageAnime{
+	0% {
+		transform-origin: left;
+		transform: scaleX(0);
+	}
+	50% {
+		transform-origin: left;
+		transform: scaleX(1);
+	}
+	50.001% {
+		transform-origin: right;
+	}
+	100% {
+		transform-origin: right;
+		transform: scaleX(0);
+	}
+}
+
+.l-body.js-hidden > .l-header,
+.l-body.js-hidden > .l-main,
+.l-body.js-hidden > .l-footer {
+	opacity: 0.3;
+}
+
+.l-body:not(.js-hidden) > .l-header,
+.l-body:not(.js-hidden) > .l-main,
+.l-body:not(.js-hidden) > .l-footer{
+	animation-name: PageAnimeAppear;
+	/* animation-duration: 1s; */
+	animation-delay: 1000ms;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+
+@keyframes PageAnimeAppear{
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+

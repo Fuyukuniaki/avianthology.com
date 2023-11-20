@@ -38,11 +38,11 @@
 	<!-- End Google Tag Manager -->
 </head>
 
-<body <?php body_class( 'l-body js-body' ); ?>>
+<body <?php body_class( 'l-body js-body js-hidden' ); ?>>
 <section id="loading">
-	<div class="spinner"></div>
+	<figure class="spinner"></figure>
 </section>
-
+<figure class="loading-bg"></figure>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ24VNT5"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
