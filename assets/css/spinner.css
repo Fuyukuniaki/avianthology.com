@@ -1,16 +1,11 @@
-body > .loading-bg {
-	display: none;
-}
-
 #loading {
 	width: 100svw;
 	height: 100svh;
-	transition: all 1s;
 	background-image: url('../../assets/images/tetrahedron.svg');
 	background-position: center center;
 	background-size: 200px auto;
 	background-repeat: no-repeat;
-	background-color: #0B0B0B;
+	background-color: #0b0b0b;
 	position: fixed;
 	display: flex;
 	justify-content: center;
@@ -19,7 +14,7 @@ body > .loading-bg {
 	left: 0;
 	z-index: 99999;
 	opacity: 1;
-	transition: opacity 1000ms ease-in;
+	transform: scale(1, -1);
 }
 
 .spinner {
@@ -30,32 +25,40 @@ body > .loading-bg {
 	border-radius: 100%;	
 	animation: sk-scaleout 1000ms infinite ease-in-out;
 }
+
 @keyframes sk-scaleout {
 	0% { 
+		-webkit-transform: scale(0);
 		transform: scale(0);
 	} 100% {
+		-webkit-transform: scale(1.0);
 		transform: scale(1.0);
 		opacity: 0;
 	}
 }
+
+body.js-hidden > .loading-bg {
+	display: none;
+}
+
 .l-body:not(.js-hidden) > .loading-bg{
 	display: block;
 	content: "";
 	position: fixed;
 	z-index: 99999;
 	width: 100%;
-	height: 100svh;
+	height: 100vh;
 	top: 0;
 	left: 0;
 	transform: scaleX(0);
-	background-color: #0B0B0B66;
+	background-color: #0b0b0b66;
 	animation-name: PageAnime;
-	animation-duration: 800ms;
+	animation-duration: 1200ms;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 }
 
-@keyframes PageAnime{
+@keyframes PageAnime {
 	0% {
 		transform-origin: left;
 		transform: scaleX(0);
@@ -76,25 +79,24 @@ body > .loading-bg {
 .l-body.js-hidden > .l-header,
 .l-body.js-hidden > .l-main,
 .l-body.js-hidden > .l-footer {
-	opacity: 0.3;
+	opacity: 0;
 }
 
 .l-body:not(.js-hidden) > .l-header,
 .l-body:not(.js-hidden) > .l-main,
-.l-body:not(.js-hidden) > .l-footer{
+.l-body:not(.js-hidden) > .l-footer {
 	animation-name: PageAnimeAppear;
-	/* animation-duration: 1s; */
-	animation-delay: 1000ms;
-	animation-fill-mode:forwards;
+	animation-duration: 1000ms;
+	animation-delay: 800ms;
+	animation-fill-mode: forwards;
 	opacity: 1;
 }
 
-@keyframes PageAnimeAppear{
+@keyframes PageAnimeAppear {
 	0% {
-		opacity: 0.3;
+	opacity: 0;
 	}
 	100% {
-		opacity: 1;
+	opacity: 1;
 	}
 }
-
