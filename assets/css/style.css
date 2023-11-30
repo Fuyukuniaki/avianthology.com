@@ -1393,7 +1393,7 @@ body {
 .c-author-list__lists--title::after {
   content: url("../images/icon-down.svg");
   opacity: 1;
-  transition: all;
+  transition: all 700ms;
   z-index: 0;
 }
 @media only screen and (max-width:750px) {
@@ -1415,7 +1415,7 @@ body {
   content: url("../images/icon-down.svg");
   opacity: 1;
   transform: rotate(180deg);
-  transition: all;
+  transition: all 700ms;
   z-index: 0;
 }
 @media only screen and (max-width:750px) {

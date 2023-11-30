@@ -2,11 +2,9 @@
 <html lang="<?php language_attributes(); ?>">
 	
 <head>
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/spinner.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="閃火">
 	<meta property="og:type" content="fan-site">
 	<meta property="og:url" content="https://avianthology.com">
@@ -38,11 +36,11 @@
 	<!-- End Google Tag Manager -->
 </head>
 
-<body <?php body_class( 'l-body js-body js-hidden' ); ?>>
+<body <?php body_class( 'l-body js-body' ); ?>>
 <section id="loading">
 	<figure class="spinner"></figure>
 </section>
-<figure class="loading-bg"></figure>
+<!-- <figure class="loading-bg"></figure> -->
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ24VNT5"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

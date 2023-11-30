@@ -52,7 +52,7 @@
 	<article class="p-x-twitter">
 		<h2 class="c-x-twitter__title">X（twitter）</h2>
 		<section class="c-x-twitter__data">
-			<a class="twitter-timeline" href="https://twitter.com/AVIantholo2024?ref_src=twsrc%5Etfw">Tweets by AVIantholo2024</a>
+			<a class="twitter-timeline" href="https://twitter.com/AVIantholo2024?ref_src=twsrc%5Etfw" data-chrome="noborders noscrollbar">Tweets by AVIantholo2024</a>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</section>
 	</article>
@@ -260,6 +260,13 @@
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<li class="c-author-list__color">モノクロ</li>
 								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/sio_parasa2">X</a></li>
+							</ul>
+						</li>						<li class="c-author-list__lists--list">
+							<ul class="c-author-list__name--wrap">
+								<li class="c-author-list__name">旦</li>
+								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
+								<li class="c-author-list__color">モノクロ</li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/sancha_rotten">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -538,8 +545,8 @@
 				<button href="#project__howto" class="c-button__modal-close">閉じる</button>
 			</dd>
 			<dd class="c-project__detail--posts">
-				<a class="c-button__project--wrapper" target="_blank" rel="noopener noreferrer" href="https://twitter.com/hashtag/%E3%81%93%E3%82%93%E3%81%AA%E7%85%87%E3%82%A4%E3%82%B0%E3%83%8A%E3%83%88%E3%83%95%E3%81%8C%E8%A6%8B%E3%81%A6%E3%81%BF%E3%81%9F%E3%81%84?src=hashtag_click&f=live">
-					<p class="c-button__project">#こんな煇イグナトフを見てみたい<br>投稿作品を見る</p>
+				<a class="c-button__project--wrapper" target="_blank" rel="noopener noreferrer" href="https://bit.ly/AVIantholoHashTag">
+					<p class="c-button__project">#こんな煇イグナトフが見てみたい<br>投稿作品を見る</p>
 				</a>
 			</dd>
 		</dl>
