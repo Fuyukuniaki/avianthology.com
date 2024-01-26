@@ -112,7 +112,7 @@ meter {
 
 @media screen and (max-width: 750px) {
   html,
-body {
+  body {
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -1549,7 +1549,6 @@ body {
 }
 .c-author-list__color {
   display: flex;
-  display: none;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
