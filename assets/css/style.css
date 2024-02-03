@@ -9,6 +9,7 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  word-break: auto-phrase;
 }
 
 a,
@@ -34,6 +35,7 @@ table {
 input,
 textarea {
   -webkit-user-select: auto;
+  user-select: auto;
 }
 
 textarea {
@@ -66,7 +68,9 @@ meter {
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
   -webkit-line-break: after-white-space;
+  line-break: after-white-space;
   -webkit-user-select: auto;
+  user-select: auto;
 }
 
 :where([draggable=true]) {
@@ -112,7 +116,7 @@ meter {
 
 @media screen and (max-width: 750px) {
   html,
-  body {
+body {
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -2736,6 +2740,13 @@ meter {
 
 .u-about {
   background-image: url(../images/nav-about.svg);
+}
+
+.u-author-list {
+  background-image: url(../images/title-author-list.svg);
+  background-position-x: 130%;
+  background-size: 90%;
+  height: 30px;
 }
 
 .u-info {

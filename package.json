@@ -1,5 +1,7 @@
 {
-	
+	"scripts": {
+		"sass": "sass src/assets/scss/:src/assets/css/ --no-source-map --style expanded --watch"
+	},
 	"dependencies": {
 		"sass": "^1.70.0",
 		"webpack": "^5.90.0",

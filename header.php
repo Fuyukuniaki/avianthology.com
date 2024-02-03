@@ -64,6 +64,9 @@
 							<a class="c-hidden-menu__link u-about" href="#about">about</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">
+							<a class="c-hidden-menu__link u-author-list" href="#author-list">author list</a>
+						</li>
+						<li class="c-hidden-menu__lists--list">
 							<a class="c-hidden-menu__link u-info" href="#info">info</a>
 						</li>
 						<li class="c-hidden-menu__lists--list">

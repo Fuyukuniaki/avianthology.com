@@ -85,7 +85,7 @@
 			<dt class="c-lists-about__category">頒布価格</dt>
 			<dd class="c-lists-about__content">COMING SOON</dd>
 		</dl>
-		<article class="p-author-list">
+		<article class="p-author-list" id="author-list">
 			<h2 class="c-author-list__title">author list</h2>
 			<p class="c-author-list__caption">クリックして&nbsp;寄稿者一覧・サンプルを開く</p>
 			<dl class="p-author-list__lists">
@@ -508,7 +508,7 @@
 							</li>
 							<li class="c-project-detail-text__title">②投稿期間内にハッシュタグ<br>「#こんな煇イグナトフを見てみたい」<br>をつけてX(Twitter)に投稿！
 								<p class="c-project-detail-text__text c-text__unbold">
-									投稿期間内にお題に沿った文章、イラスト、写真などにハッシュタグ「#こんな煇イグナトフを見てみたい」を付けてX(Twitter)にてご投稿ください。<br>
+									投稿期間内にお題に沿った文章、イラスト、<wbr>写真などにハッシュタグ<wbr>「#こんな煇イグナトフを見てみたい」<wbr>を付けてX(Twitter)にてご投稿ください。<br>
 									「〇〇な煇が見てみたい……」<br>
 									「煇には〇〇が似合いそう！」<br>
 									といった妄想ポスト（ツイート）も大歓迎！<br>
@@ -524,9 +524,14 @@
 								</p>
 							</li>
 						</ol>
-						<p class="c-text__caption c-text__unbold">※投稿数に関わらずお一人様一点のみのお渡しとなります。<br>数に限りがございます。<br>
-						<br>
-						また、イベントでの頒布が諸般の事情にて困難になった際は他のイベントでの配布に変更、もしくは配布を中止する可能性がございます。あらかじめご了承ください。</p>
+						<p class="c-text__caption c-text__unbold">
+							※投稿数に関わらずお一人様一点のみのお渡しとなります。<br>
+							数に限りがございます。<br>
+							<br>
+							また、イベントでの頒布が諸般の事情にて困難になった際は<wbr>
+							他のイベントでの配布に変更、<wbr>
+							もしくは配布を中止する可能性がございます。<br>
+							あらかじめご了承ください。</p>
 					</dd>
 					<dt class="c-project-detail__text--title">注意事項</dt>
 					<dd class="c-project-detail__text--text">
