@@ -1,0 +1,1 @@
+console.log("Hello World! (from item-image-item-image block)");

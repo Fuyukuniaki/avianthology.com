@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "item-image/item-image",
+  "version": "0.1.0",
+  "title": "サンプル画像",
+  "category": "media",
+  "icon": "image",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "item-image",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
