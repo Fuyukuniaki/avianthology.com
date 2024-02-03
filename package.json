@@ -1,6 +1,9 @@
 {
-  "dependencies": {
-    "sass": "^1.70.0",
-    "webpack": "^5.90.0"
-  }
+	
+	"dependencies": {
+		"sass": "^1.70.0",
+		"webpack": "^5.90.0",
+		"wepack": "^0.0.1",
+		"wepack-cli": "^0.0.1-security"
+	}
 }

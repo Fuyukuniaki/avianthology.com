@@ -307,7 +307,7 @@
 								<li class="c-author-list__name">伊藤 無明</li>
 								<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-comingsoon.png" decoding="async"></figure></li>
 								<!--<li class="c-author-list__color">&nbsp;</li>-->
-								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/1100noname">X</a></li>
+								<li class="c-author-list__sns"><a class="c-author-list__sns--link c-sns-link--twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/110noname0">X</a></li>
 							</ul>
 						</li>
 						<li class="c-author-list__lists--list">
@@ -411,7 +411,7 @@
 				</dt>
 				<dd class="c-staff-list__lists--list">
 					<ul class="c-staff-list__name--wrap">
-						<li class="c-staff-list__name">はごろ(<a class="c-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/856_zetta">@856_zatta</a>)</li>
+						<li class="c-staff-list__name">はごろ(<a class="c-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/856_zatta">@856_zatta</a>)</li>
 					</ul>
 				</dd>
 				<dt class="c-staff-list__lists--title">
