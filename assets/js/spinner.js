@@ -1,10 +1,12 @@
 const webStorage = function () {
 	if (sessionStorage.getItem('visit')) {
-			$('body').addClass('js-view');
 			$('#loading').animate({ 'left': '100svw', 'opacity': '0' }, 2000);
-			$('#loading').remove();
+			setTimeout(function () {
+				$('body').addClass('js-view');
+				$('#loading').remove();
+			}, 5000);
 	} else {
-		sessionStorage.removeItem('visit');
+		// sessionStorage.removeItem('visit');
 		$(window).on('pageshow', function () {
 			sessionStorage.setItem('visit', 'true'); 
 			setTimeout(function () {
@@ -13,7 +15,7 @@ const webStorage = function () {
 			setTimeout(function () {
 				$('body').addClass('js-view');
 				$('#loading').remove();
-			}, 3000);
+			}, 5000);
 		});
 	}
 };
