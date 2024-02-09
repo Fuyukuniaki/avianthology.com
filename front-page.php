@@ -32,8 +32,8 @@
 		<dl class="p-news-contents__wrap">
 			<?php
 				$args = array(
-				'posts_per_page' => 100,
-				'category' => 3,
+				'posts_per_page' => -1,
+				'category' => 2,
 				);
 				$posts = get_posts( $args );
 				foreach ( $posts as $post ):
@@ -88,7 +88,7 @@
 		<article class="p-author-list" id="author-list">
 			<h2 class="c-author-list__title">author list</h2>
 			<p class="c-author-list__caption">クリックして&nbsp;寄稿者一覧・サンプルを開く</p>
-			<dl class="p-author-list__lists">
+						<dl class="p-author-list__lists">
 				<dt class="c-author-list__lists--title" id="illustration">
 					イラスト
 				</dt>
@@ -540,10 +540,10 @@
 								<p class="c-project-detail-text__text c-text__unbold">なるべく多くの方に楽しんでいただきたいため、<br>R-18・R-18Gに該当するご投稿は非推奨ですが、<br>どうしても投稿したい場合は必ずセンシティブ設定や<br>ふせったーなどをご利用の上ご投稿ください。</p>
 							</li>
 							<li class="c-project-detail-text__title">・運営アカウントがRPする可能性がございます。<br>ご了承の上ご参加ください。
-								<p class="c-project-detail-text__text c-text__unbold">ご投稿は運営アカウントがRP（RT）にて<br>ご紹介する可能性がございます。<br>ご了承いただけますと幸いです。<br>選定は優劣を判断するものではございません。<br>また、選定の基準につきましては<br>お問い合わせいただきましてもお答え致しかねます。<br>予めご了承ください。</p>
+								<p class="c-project-detail-text__text c-text__unbold">ご投稿は運営アカウントがRP（RT）にて<br>ご紹介する可能性がございます。<br>ご了承いただけますと幸いです。<br>選定は優劣を判断するものではございません。<br>また、選定の基準につきましては<br>お問い合わせいただきましても<br>お答え致しかねます。<br>予めご了承ください。</p>
 							</li>
 							<li class="c-project-detail-text__title">・ネタ被りは気にしすぎず、<br>同じ趣味である喜びを分かち合いましょう
-								<p class="c-project-detail-text__text c-text__unbold">情報量が少ないキャラクターのため、<br>投稿するネタが被る可能性は十分に考えられます。<br>もし誰かとネタが被っても落ち込まず/怒らず<br>ポジティブに楽しんでいただければ幸いです。</p>
+								<p class="c-project-detail-text__text c-text__unbold">情報量が少ないキャラクターのため、<br>投稿するネタが被る可能性は<br>十分に考えられます。<br>もし誰かとネタが被っても落ち込まず/怒らず<br>ポジティブに楽しんでいただければ幸いです。</p>
 							</li>
 						</ul>
 					</dd>

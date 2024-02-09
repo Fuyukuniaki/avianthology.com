@@ -19,6 +19,35 @@
 			margin: 120px auto 120px 60px;
 		}
 	}
+	&__accordion-close {
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		font-family: $textFont_Japanese;
+		@include media(iPhone){
+			font-size: calc((32 * 100 / 750)* 1svw);
+			margin: calc((60 * 100 / 750)* 1svw) auto;
+		}
+		@include media(PC){
+			font-size: 32px;
+			margin: 60px auto;
+		}
+		&::after {
+			display: inline-block;
+			content: url('../images/icon-down.svg');
+			padding: 0 0.5em 0.1em 0;
+			@include media(iPhone){
+				font-size: calc((32 * 100 / 750)* 1svw);
+				transform: rotate(180deg) scale(0.5);
+			}
+			@include media(PC){
+				transform: rotate(180deg) scale(0.8);
+				font-size: 32px;
+			}
+		}
+	}
 	&__modal-close {
 		width: 100%;
 		display: flex;

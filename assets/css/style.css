@@ -9,7 +9,6 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  word-break: auto-phrase;
 }
 
 a,
@@ -35,7 +34,6 @@ table {
 input,
 textarea {
   -webkit-user-select: auto;
-  user-select: auto;
 }
 
 textarea {
@@ -719,6 +717,43 @@ body {
     height: 36px;
     width: 176px;
     margin: 120px auto 120px 60px;
+  }
+}
+.c-button__accordion-close {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "fot-tsukuaoldmin-pr6n", a-otf-ryumin-pr6n, sans-serif;
+}
+@media only screen and (max-width:750px) {
+  .c-button__accordion-close {
+    font-size: 4.2666666667svw;
+    margin: 8svw auto;
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-button__accordion-close {
+    font-size: 32px;
+    margin: 60px auto;
+  }
+}
+.c-button__accordion-close::after {
+  display: inline-block;
+  content: url("../images/icon-down.svg");
+  padding: 0 0.5em 0.1em 0;
+}
+@media only screen and (max-width:750px) {
+  .c-button__accordion-close::after {
+    font-size: 4.2666666667svw;
+    transform: rotate(180deg) scale(0.5);
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-button__accordion-close::after {
+    transform: rotate(180deg) scale(0.8);
+    font-size: 32px;
   }
 }
 .c-button__modal-close {
