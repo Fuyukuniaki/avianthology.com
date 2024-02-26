@@ -1595,17 +1595,28 @@ body {
 }
 @media only screen and (max-width:750px) {
   .c-author-list__color {
-    font-size: 4svw;
+    font-size: 3.7333333333svw;
     line-height: 8svw;
     padding-bottom: 3.4666666667svw;
   }
 }
 @media only screen and (min-width:751px) {
   .c-author-list__color {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 60px;
     padding-bottom: 26px;
   }
+}
+#manga + .c-author-list__lists--wrap > .c-author-list__lists--member > .c-author-list__lists--list > .c-author-list__name--wrap > .c-author-list__color {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  min-height: 5.2em;
+}
+#manga + .c-author-list__lists--wrap > .c-author-list__lists--member > .c-author-list__lists--list:first-of-type > .c-author-list__name--wrap > .c-author-list__color {
+  font-family: "M PLUS Rounded 1c";
+  font-stretch: 30%;
 }
 .c-author-list__sns {
   display: flex;
@@ -1798,6 +1809,33 @@ body {
 .c-information__text {
   font-weight: 700;
 }
+.c-information__image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media only screen and (max-width:750px) {
+  .c-information__image {
+    background-size: 100%;
+    margin: 0 -4svw 0 0;
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-information__image {
+    background-size: 750px;
+    margin: 0 -30px 0 0;
+  }
+}
+@media only screen and (max-width:750px) {
+  .c-information__image > .c-information__image--space {
+    width: 86.6666666667svw;
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-information__image > .c-information__image--space {
+    width: 650px;
+  }
+}
 
 .c-flyer__lists--title {
   display: inline-block;
@@ -1874,6 +1912,7 @@ body {
   display: block;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   color: #0B0B0B;
+  text-decoration: line-through;
 }
 @media only screen and (max-width:750px) {
   .c-flyer__explain {
@@ -1887,6 +1926,25 @@ body {
     font-size: 28px;
     line-height: 50px;
     padding: 0 130px 100px 30px;
+  }
+}
+.c-flyer__explain-ends {
+  display: block;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #0B0B0B;
+}
+@media only screen and (max-width:750px) {
+  .c-flyer__explain-ends {
+    font-size: 3.7333333333svw;
+    line-height: 6.6666666667svw;
+    padding: 0 13.8666666667svw 13.3333333333svw 4svw;
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-flyer__explain-ends {
+    font-size: 28px;
+    line-height: 50px;
+    padding: 0 104px 100px 30px;
   }
 }
 
@@ -2293,6 +2351,25 @@ body {
     font-size: 64px;
     line-height: 83px;
     padding: 50px 0 100px 0;
+  }
+}
+.c-contact__lists--explain {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  letter-spacing: 20;
+  padding: 0 0 11.0666666667svw 0;
+}
+@media only screen and (max-width:750px) {
+  .c-contact__lists--explain {
+    font-size: 3.7333333333svw;
+    line-height: 6.4svw;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-contact__lists--explain {
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: 600;
   }
 }
 

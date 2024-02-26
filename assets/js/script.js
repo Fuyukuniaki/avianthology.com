@@ -180,4 +180,4 @@ $(window).on('load', function(){
 		}
 		onClickEvent();
 	}
-});	
+});

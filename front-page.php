@@ -58,7 +58,7 @@
 	</article>
 	<section class="l-about-part" id="about">
 		<figure class="c-bookcover__image--wrap">
-			<img class="c-bookcover__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-about-cover.svg" alt="書影" decoding="async">
+			<img class="c-bookcover__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-about-cover.png" alt="書影" decoding="async">
 		</figure>
 		<dl class="p-lists-about">
 			<dt class="c-lists-about__category">タイトル</dt>
@@ -79,7 +79,7 @@
 			<dt class="c-lists-about__category">発行日・イベント</dt>
 			<dd class="c-lists-about__content">2024年3月17日 HARU COMIC CITY 32 /東京</dd>
 			<dt class="c-lists-about__category">仕様</dt>
-			<dd class="c-lists-about__content">A5サイズ/カラー・モノクロ/ページ数未定</dd>
+			<dd class="c-lists-about__content">A5サイズ/カラー・モノクロ/ページ数約200ページ<br>表紙：ホログラムペーパー/マットPP/エンボスニス</dd>
 			<dt class="c-lists-about__category">ノベルティ</dt>
 			<dd class="c-lists-about__content">COMING SOON</dd>
 			<dt class="c-lists-about__category">頒布価格</dt>
@@ -129,8 +129,13 @@
 			<dd class="c-information__lists--list">
 				<ul class="c-information__name--wrap">
 					<li class="c-information__text">
-						2024/3/17 HARU COMIC CITY 32 / 東京<br>
-						<span class="c-text__unbold">スペース未定</span>
+						2024/3/17 HARU COMIC CITY 32<br>
+						<span class="c-text__unbold">東京ビッグサイト / 東4ホールさ03b</span>
+					</li>
+					<li class="c-information__text">
+						<figure class="c-information__image">
+							<img class="c-information__image--space" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-info-space.png" alt="東京ビッグサイト / 東4ホールさ03b" decoding="async">
+						</figure>
 					</li>
 				</ul>
 			</dd>
@@ -162,9 +167,15 @@
 		ご連絡をいただけますと幸いです。<br>
 		ご検討のほど何卒よろしくお願いいたします。
 		</p>
-		<a class="c-button__flyer--wrapper" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfsdqNCo0kN2P8JtywyHgQNeF0b12a9udvS99Bk7XRPBgld-A/viewform?usp=sf_link">
+		<p class="c-flyer__explain-ends">
+		募集受付を終了いたしました。<br>
+		たくさんのご協力誠にありがとうございました！<br>
+		フライヤー残部はHARU COMIC CITY32にて<br>
+		先着順にて配布いたします。
+		</p>
+		<!-- <a class="c-button__flyer--wrapper" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfsdqNCo0kN2P8JtywyHgQNeF0b12a9udvS99Bk7XRPBgld-A/viewform?usp=sf_link">
 			<p class="c-button__flyer">フライヤー配布ご協力フォーム</p>
-		</a>
+		</a> -->
 	</section>
 	<section class="l-project" id="project">
 		<ul class="p-project">
@@ -267,6 +278,12 @@
 	</section>
 	<section class="l-contact" id="contact">
 		<dl class="c-contact__lists">
+			<dd class="c-contact__lists--explain">
+				当企画はファンによる非公式企画です。<br>
+				版権元、実在の組織・団体とは一切関係ありません。<br>
+				<br>
+				アンソロジーに関するお問い合わせは企画アカウントのDMもしくはメールアドレスまでお願いいたします。
+			</dd>
 			<dt class="c-contact__lists--category">
 				運営公式
 			</dt>

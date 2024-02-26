@@ -67,6 +67,7 @@
 		display: block;
 		font-family: $textFont_English;
 		color: $bgColor_Black;
+		text-decoration: line-through;
 		@include media(iPhone){
 			font-size: calc((28 * 100 / 750)* 1svw);
 			line-height: calc((50 * 100 / 750)* 1svw);
@@ -78,4 +79,20 @@
 			padding: 0 130px 100px 30px;
 		}
 	}
+	&__explain-ends {
+		display: block;
+		font-family: $textFont_English;
+		color: $bgColor_Black;
+		@include media(iPhone){
+			font-size: calc((28 * 100 / 750)* 1svw);
+			line-height: calc((50 * 100 / 750)* 1svw);
+			padding: 0 calc((104 * 100 / 750)* 1svw) calc((100 * 100 / 750)* 1svw) calc((30 * 100 / 750)* 1svw);
+		}
+		@include media(PC){
+			font-size: 28px; 
+			line-height: 50px;
+			padding: 0 104px 100px 30px;
+		}
+	}
+
 }

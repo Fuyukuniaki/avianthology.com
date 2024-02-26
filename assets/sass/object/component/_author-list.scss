@@ -81,7 +81,7 @@
 			// animation: slideUp 700ms;
 			// transition: all 700ms ease-in-out;
 
-			& > .c-author-list__lists--member {
+			&>.c-author-list__lists--member {
 				opacity: 0;
 			}
 		}
@@ -120,15 +120,18 @@
 				opacity: 1;
 				transition: all 700ms;
 				z-index: 0;
-				@include media(iPhone){
+
+				@include media(iPhone) {
 					transform: rotate(0deg) scale(0.5);
 					margin: 1svw 0 0 0;
 				}
-				@include media(PC){
+
+				@include media(PC) {
 					transform: rotate(0deg);
 					margin: -4px 0 0 0;
 				}
 			}
+
 			&.menu-open::after {
 				z-index: -1;
 			}
@@ -139,11 +142,13 @@
 				transform: rotate(180deg);
 				transition: all 700ms;
 				z-index: 0;
-				@include media(iPhone){
+
+				@include media(iPhone) {
 					transform: rotate(180deg) scale(0.5);
 					margin: 0 0 1svw 0;
 				}
-				@include media(PC){
+
+				@include media(PC) {
 					transform: rotate(180deg);
 					margin: 0 0 -4px 0;
 				}
@@ -151,7 +156,7 @@
 			}
 		}
 
-		&--wrap + &--title {
+		&--wrap+&--title {
 			@include media(iPhone) {
 				margin-top: calc((20 * 100 / 750)* 1svw);
 			}
@@ -165,10 +170,12 @@
 			display: flex;
 			flex-flow: row wrap;
 			margin: 0;
-			@include media(iPhone){
+
+			@include media(iPhone) {
 				width: 100%;
 			}
-			@include media(PC){
+
+			@include media(PC) {
 				width: 100%;
 			}
 		}
@@ -273,16 +280,28 @@
 		color: $textColor_PGray;
 
 		@include media(iPhone) {
-			font-size: calc((30 * 100 / 750)* 1svw);
+			font-size: calc((28 * 100 / 750)* 1svw);
 			line-height: calc((60 * 100 / 750)* 1svw);
 			padding-bottom: calc((26 * 100 / 750)* 1svw);
 		}
 
 		@include media(PC) {
-			font-size: 30px;
+			font-size: 28px;
 			line-height: 60px;
 			padding-bottom: 26px;
 		}
+	}
+
+	#manga + &__lists--wrap > &__lists--member > &__lists--list > &__name--wrap > &__color {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		text-align: center;
+		min-height: 5.2em;
+	}
+	#manga + &__lists--wrap > &__lists--member > &__lists--list:first-of-type > &__name--wrap > &__color {
+		font-family: "M PLUS Rounded 1c";
+		font-stretch: 30%;
 	}
 
 	&__sns {

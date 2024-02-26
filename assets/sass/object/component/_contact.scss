@@ -12,8 +12,7 @@
 		background-repeat: no-repeat;
 		color: $bgColor_Black;
 		@include media(iPhone){
-			background-size: 100%
-;
+			background-size: 100%;
 			padding: calc(( 150 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw) calc(( 50 * 100 / 750 )* 1svw) calc(( 108 * 100 / 750 )* 1svw);
 		}
 		@include media(PC){
@@ -50,6 +49,22 @@
 				font-size: 64px;
 				line-height: 83px;
 				padding: 50px 0 100px 0;
+			}
+
+		}
+		&--explain {
+			font-family: $textFont_English;
+			letter-spacing: 20;
+			padding: 0 0 calc((83 * 100 / 750)* 1svw) 0;
+			@include media(iPhone){
+				font-size: calc((28 * 100 / 750)* 1svw);
+				line-height: calc((48 * 100 / 750)* 1svw);
+				font-weight: 600;
+			}
+			@include media(PC){
+				font-size: 28px;
+				line-height: 48px;
+				font-weight: 600;
 			}
 		}
 	}
