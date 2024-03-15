@@ -46,4 +46,9 @@
 			padding-bottom: 50px;
 		}
 	}
+	&__image {
+		width: 90svw;
+		height: auto;
+		aspect-ratio: 1 / 1;
+	}
 }

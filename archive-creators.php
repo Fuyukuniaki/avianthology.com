@@ -112,6 +112,14 @@
 				<ul class="c-author-list__name--wrap">
 					<li class="c-author-list__name">
 						<?php the_field('creator_name'); ?>
+						<span class="c-author-list__color"><?php
+							$custom_field = get_field('creation_name');
+							if($custom_field){
+								echo $custom_field;
+							} else {
+								echo '&nbsp;';
+							}
+						?></span>
 					</li>
 					<li class="c-author-list__image"><figure class="c-author-list__sample"><img class="c-author-list__sample--image" src="
 						<?php
@@ -121,16 +129,6 @@
 							} else {
 								echo 'https://avianthology.com/wp-content/themes/avianthology.com/assets/images/sample-comingsoon.png';
 							} ?>" decoding="async"></figure></li>
-					<li class="c-author-list__color">
-						<?php
-							$custom_field = get_field('creation_name');
-							if($custom_field){
-								echo $custom_field;
-							} else {
-								echo '&nbsp;';
-							}
-						?>
-					</li>
 					<li class="c-author-list__sns">
 						<?php
 							$custom_field = get_field('sns');

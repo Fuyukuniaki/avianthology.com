@@ -79,11 +79,21 @@
 			<dt class="c-lists-about__category">発行日・イベント</dt>
 			<dd class="c-lists-about__content">2024年3月17日 HARU COMIC CITY 32 /東京</dd>
 			<dt class="c-lists-about__category">仕様</dt>
-			<dd class="c-lists-about__content">A5サイズ/カラー・モノクロ/ページ数約200ページ<br>表紙：ホログラムペーパー/マットPP/エンボスニス</dd>
+			<dd class="c-lists-about__content">A5サイズ/全220ページうちカラー16ページ<br>表紙：ホログラムペーパー/マットPP/エンボスニス<br>/銀箔押し</dd>
 			<dt class="c-lists-about__category">ノベルティ</dt>
-			<dd class="c-lists-about__content">COMING SOON</dd>
+			<dd class="c-lists-about__content">捜査資料風ブロマイド</dd>
+			<dd class="c-lists-about__content">
+				<figure class="c-lists-about__image--wrap">
+					<img class="c-lists-about__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/novelty.jpeg" width=600 height=600>
+				</figure>
+			</dd>
 			<dt class="c-lists-about__category">頒布価格</dt>
-			<dd class="c-lists-about__content">COMING SOON</dd>
+			<dd class="c-lists-about__content">会場頒布価格2000円<br>ステッカーセット(本+ノベルティ+ステッカー2枚)2300円</dd>
+			<dd class="c-lists-about__content">
+				<figure class="c-lists-about__image--wrap">
+					<img class="c-lists-about__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/stickerset_event.png" width=600 height=600>
+				</figure>
+			</dd>
 		</dl>
 		<article class="p-author-list" id="author-list">
 			<h2 class="c-author-list__title">author list</h2>
@@ -185,7 +195,11 @@
 				「#こんな煇イグナトフを見てみたい」<br>
 				を実施中！<br>
 				<p class="c-text__unbold">投稿企画にご参加いただいた上、頒布イベント当日スペースに来てくださった方には<br>
-				先着順でノベルティをプレゼント！<br>
+				先着順でノベルティをプレゼント！</p>
+				<figure class="c-project__headline--wrap">
+					<img class="c-project__headline--image" src="<?php echo get_template_directory_uri(); ?>/assets/images/AVI_CP_0315.png" alt="sample">
+				</figure>
+				<p class="c-text__unbold">
 				参加方法は下記をご覧ください。</p>
 			</li>
 			<li class="c-project__caption c-text__unbold">

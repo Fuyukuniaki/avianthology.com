@@ -304,6 +304,38 @@
 		font-stretch: 30%;
 	}
 
+	#novel + &__lists--wrap > &__lists--member > &__lists--list {
+		width: 100%;
+	}
+	#novel + &__lists--wrap > &__lists--member > &__lists--list > &__name--wrap > &__image > &__sample > &__sample--image {
+		@include media(iPhone) {
+			padding: 0 0.8rem;
+			width: 100%;
+			height: 100%;
+		}
+		@include media(PC) {
+			padding: 0 1.2rem;
+			width: auto;
+			height: 100%;
+		}
+	}
+	#novel + &__lists--wrap > &__lists--member > &__lists--list > &__name--wrap > &__name {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: baseline;
+		font-family: $textFont_Japanese;
+		@include media(iPhone) {
+			padding: 0 0.8rem;
+		}
+		@include media(PC) {
+			padding: 0 1.2rem;
+		}
+		& > .c-author-list__color {
+			font-family: $textFont_Japanese;
+		}
+	}
+	
 	&__sns {
 		display: flex;
 		flex-flow: row wrap;
