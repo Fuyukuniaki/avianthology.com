@@ -1317,11 +1317,17 @@ body {
     padding-bottom: 50px;
   }
 }
+.c-lists-about__image--wrap > .c-lists-about__image {
+  display: block;
+  width: calc(100% - 1.7svw);
+  height: auto;
+  aspect-ratio: 1/1;
+}
 .c-lists-about__image--wrap:has(.c-lists-about__novelty-image) {
   display: block;
   width: 70%;
-  height: auto;
   aspect-ratio: 1/1;
+  height: auto;
 }
 
 .c-author-list__title {

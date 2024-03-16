@@ -47,11 +47,17 @@
 		}
 	}
 	&__image {
+		&--wrap > & {
+			display: block;
+			width: calc(100% - 1.7svw);
+			height: auto;
+			aspect-ratio: 1 / 1;
+		}
 		&--wrap:has(.c-lists-about__novelty-image){
 			display: block;
 			width: 70%;
-			height: auto;
 			aspect-ratio: 1 / 1;
+			height: auto;
 		}
 	}
 }
