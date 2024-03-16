@@ -47,8 +47,11 @@
 		}
 	}
 	&__image {
-		width: 55svw;
-		height: auto;
-		aspect-ratio: 1 / 1;
+		&--wrap:has(.c-lists-about__novelty-image){
+			display: block;
+			width: 70%;
+			height: auto;
+			aspect-ratio: 1 / 1;
+		}
 	}
 }

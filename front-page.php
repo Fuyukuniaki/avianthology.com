@@ -84,7 +84,7 @@
 			<dd class="c-lists-about__content">捜査資料風ブロマイド</dd>
 			<dd class="c-lists-about__content">
 				<figure class="c-lists-about__image--wrap">
-					<img class="c-lists-about__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/novelty.jpeg" width=600 height=600>
+					<img class="c-lists-about__image c-lists-about__novelty-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/novelty.jpeg" width=600 height=600>
 				</figure>
 			</dd>
 			<dt class="c-lists-about__category">頒布価格</dt>

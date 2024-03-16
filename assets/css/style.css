@@ -1317,8 +1317,9 @@ body {
     padding-bottom: 50px;
   }
 }
-.c-lists-about__image {
-  width: 55svw;
+.c-lists-about__image--wrap:has(.c-lists-about__novelty-image) {
+  display: block;
+  width: 70%;
   height: auto;
   aspect-ratio: 1/1;
 }
