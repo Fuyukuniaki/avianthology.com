@@ -88,7 +88,7 @@
 				</figure>
 			</dd>
 			<dt class="c-lists-about__category">頒布価格</dt>
-			<dd class="c-lists-about__content">会場頒布価格2000円<br>ステッカーセット(本+ノベルティ+ステッカー2枚)2300円</dd>
+			<dd class="c-lists-about__content">会場頒布価格2000円<br>ステッカーセット(本 + ノベルティ + ステッカー2枚)2300円</dd>
 			<dd class="c-lists-about__content">
 				<figure class="c-lists-about__image--wrap">
 					<img class="c-lists-about__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/stickerset_event.png" width=600 height=600>
