@@ -138,15 +138,28 @@
 			</dt>
 			<dd class="c-information__lists--list">
 				<ul class="c-information__name--wrap">
-					<li class="c-information__text">
-						2024/3/17 HARU COMIC CITY 32<br>
-						<span class="c-text__unbold">東京ビッグサイト / 東4ホールさ03b</span>
+					<li class="c-information__text c-text__end">
+						2024/5/5 超サイコバースト2024</li>
+				<li class="c-information__text c-text__end"><span class="c-text__unbold">東京ビッグサイト / 東6ホールら21a</span>
 					</li>
-					<li class="c-information__text">
+					<li class="c-information__text c-text__end"><span class="c-text__unbold">東京ビッグサイト / 東6ホールら28a「Hi」※委託頒布スペース</span>
+					</li>
+					<!--li class="c-information__text">
 						<figure class="c-information__image">
 							<img class="c-information__image--space" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-info-space.png" alt="東京ビッグサイト / 東4ホールさ03b" decoding="async">
 						</figure>
+					</li-->
+</ul>
+<ul class="c-information__name--wrap">
+					<li class="c-information__text c-text__end">
+						2024/3/17 HARU COMIC CITY 32<br>
+						<span class="c-text__unbold">東京ビッグサイト / 東4ホールさ03b</span>
 					</li>
+					<!--li class="c-information__text">
+						<figure class="c-information__image">
+							<img class="c-information__image--space" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-info-space.png" alt="東京ビッグサイト / 東4ホールさ03b" decoding="async">
+						</figure>
+							</li-->
 				</ul>
 			</dd>
 			<dt class="c-information__lists--title">
@@ -155,7 +168,19 @@
 			<dd class="c-information__lists--list">
 				<ul class="c-information__name--wrap">
 					<li class="c-information__text">
-						<span class="c-text__unbold">coming soon</span>
+						<a href="https://saesaeko1118.booth.pm/items/5518647" target="_blanc" rel="noreferrer noopener">
+						<span class="c-text__unbold">BOOTH</span>
+							</a>
+					</li>
+					<li class="c-information__text">
+						<a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2349810" target="_blanc" rel="noreferrer noopener">
+						<span class="c-text__unbold">フロマージュ(メロンブックス)</span>
+							</a>
+					</li>
+					<li class="c-information__text">
+						<a href="https://ecs.toranoana.jp/joshi/ec/item/040031141259/" target="_blanc" rel="noreferrer noopener">
+						<span class="c-text__unbold">とらのあな</span>
+							</a>
 					</li>
 				</ul>
 			</dd>

@@ -1860,7 +1860,12 @@ body {
 @media only screen and (max-width:750px) {
   .c-information__lists--title + .c-information__lists--list {
     padding-bottom: 6.6666666667svw;
-  }
+  }
+	.c-information__name--wrap
+> .c-information__text.c-text__end {
+	display: inline-block;
+	text-decoration: line-through;
+	}
 }
 @media only screen and (min-width:751px) {
   .c-information__lists--title + .c-information__lists--list {
@@ -1869,6 +1874,11 @@ body {
 }
 .c-information__text {
   font-weight: 700;
+}
+.c-information__name--wrap
+> .c-information__text.c-text__end {
+	display:inline-block;
+	text-decoration: line-through;
 }
 .c-information__image {
   display: flex;
