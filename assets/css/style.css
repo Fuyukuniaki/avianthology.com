@@ -1317,6 +1317,18 @@ body {
     padding-bottom: 50px;
   }
 }
+@media only screen and (max-width:750px) {
+  .c-lists-about__category + .c-lists-about__content + .c-lists-about__content {
+    padding-bottom: 6.6666666667svw;
+    margin-top: -4.6666666667svw;
+  }
+}
+@media only screen and (min-width:751px) {
+  .c-lists-about__category + .c-lists-about__content + .c-lists-about__content {
+    padding-bottom: 50px;
+    margin-top: -35px;
+  }
+}
 .c-lists-about__image--wrap > .c-lists-about__image {
   display: block;
   width: calc(100% - 1.7svw);
